@@ -1,0 +1,8 @@
+{
+  "/findwork/page": "app/findwork/page.js",
+  "/myjobs/page": "app/myjobs/page.js",
+  "/page": "app/page.js",
+  "/post/page": "app/post/page.js",
+  "/profile/page": "app/profile/page.js",
+  "/settings/page": "app/settings/page.js"
+}
