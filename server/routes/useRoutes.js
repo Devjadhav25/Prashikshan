@@ -1,5 +1,7 @@
 import express from "express";
-import { getUserProfile } from "../controllers/userController.js";
+import { getUserProfile, updateUserProfile } from "../controllers/jobController.js";
+import { upload } from "../utils/cloudinary.js";
+import { uploadProfilePicture } from "../controllers/jobController.js";
 
 const router = express.Router();
 
@@ -14,10 +16,15 @@ router.get("/check-auth", (req, res) => {
     return res.status(200).json(false);
   }
 });
-//  router.get("/user/:id", (req, res) => {
-// //    // your logic here
-//    res.send(`User ID is: ${req.params.id}`);
-// });
+ ;
 router.get("/user/:id", getUserProfile);
+
+router.put("/user/update", (req, res, next) => {
+  if (req.oidc.isAuthenticated()) return next();
+  res.status(401).json({ message: "Not authenticated" });
+}, updateUserProfile);
+
+
+router.post("/user/upload-avatar", upload.single("avatar"), uploadProfilePicture);
 
 export default router;

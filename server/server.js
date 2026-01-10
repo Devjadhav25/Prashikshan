@@ -45,7 +45,14 @@ const config = {
   },
   logoutParams: {
     returnTo: process.env.CLIENT_URL
-  }
+  },
+  idpLogout: true,
+  session: {
+    cookie: {
+      secure: false,
+      sameSite: 'Lax', // Required for http://localhost
+    },
+  },
 };
 
 // Middleware

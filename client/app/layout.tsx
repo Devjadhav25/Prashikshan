@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ContextProvider from "@/providers/ContextProvider";
-
+import { ThemeProvider } from "@/context/themeProvider";
 import { Roboto } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 
@@ -12,25 +11,33 @@ const roboto = Roboto({
   variable: "--font-roboto",
 });
 
+export const metadata: Metadata = {
+  title: "Prashikshan | Find Your Dream Job",
+  description: "Advanced Job Portal for Students and Professionals",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-          crossOrigin="anonymous"
-          referrerPolicy="no-referrer"
         />
       </head>
       <body className={`${roboto.className} antialiased`}>
-        <Toaster position="top-center" />
-        <ContextProvider>{children}</ContextProvider>
+        {/* 1. Theme Provider handles Light/Dark mode */}
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          {/* 2. ContextProvider must WRAP the children to provide Job/Global state */}
+          <ContextProvider>
+            {children}
+            <Toaster position="top-center" />
+          </ContextProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -118,26 +118,24 @@ export const searchJobs = asyncHandler(async (req, res) => {
 export const applyJob = asyncHandler(async (req, res) => {
   try {
     const jobDoc = await job.findById(req.params.id);
-    if (!jobDoc) {
-      return res.status(404).json({ message: "Job not found" });
-    }
+    if (!jobDoc) return res.status(404).json({ message: "Job not found" });
+
+    // Ensure the user is found by auth0Id
     const user = await User.findOne({ auth0Id: req.oidc.user.sub });
-    if (!user) {
-      return res.status(404).json({ message: "User not found" });
-    }
+    if (!user) return res.status(404).json({ message: "User not synced to DB" });
+
     if (jobDoc.applicants.includes(user._id)) {
-      return res.status(400).json({ message: "You have already applied for this job" });
+      return res.status(400).json({ message: "Already applied" });
     }
+    
     jobDoc.applicants.push(user._id);
     await jobDoc.save();
     return res.status(200).json(jobDoc);
   } catch (error) {
-    console.log("Error in applyJob:", error);
-    return res.status(500).json({ message: "Internal Server Error" });
+    res.status(500).json({ message: "Internal Server Error" });
   }
 });
-
-// like/unlike job
+//like unlike job
 export const likeJob = asyncHandler(async (req, res) => {
   try {
     const jobDoc = await job.findById(req.params.id);
@@ -150,13 +148,16 @@ export const likeJob = asyncHandler(async (req, res) => {
     }
 
     const isLiked = jobDoc.likes.includes(user._id);
+    let message = "";
     if (isLiked) {
       jobDoc.likes = jobDoc.likes.filter((like) => !like.equals(user._id));
+      message = "Job removed from likes";
     } else {
       jobDoc.likes.push(user._id);
+      message = "Job added to likes";
     }
     await jobDoc.save();
-    return res.status(200).json(jobDoc);
+    return res.status(200).json({message , job : jobDoc});
   } catch (error) {
     console.log("Error in likeJob:", error);
     return res.status(500).json({ message: "Internal Server Error" });
@@ -177,6 +178,42 @@ export const jobById = asyncHandler(async (req, res) => {
     return res.status(500).json({ message: "Internal Server Error" });
   }
 });
+export const getUserProfile = asyncHandler(async (req, res) => {
+  try {
+    const { id } = req.params;
+    
+    // 1. Try finding by auth0Id (the 'sub' string)
+    let user = await User.findOne({ auth0Id: id });
+
+    // 2. If not found and it looks like a MongoDB ID, try finding by _id
+    if (!user && id.match(/^[0-9a-fA-F]{24}$/)) {
+      user = await User.findById(id);
+    }
+
+    // 3. AUTO-SYNC: If still not found but it's the logged-in user, create them
+    if (!user && req.oidc.isAuthenticated() && req.oidc.user.sub === id) {
+      user = new User({
+        auth0Id: req.oidc.user.sub,
+        name: req.oidc.user.name,
+        email: req.oidc.user.email,
+        profilePicture: req.oidc.user.picture,
+      });
+      await user.save();
+    }
+
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    return res.status(200).json(user);
+  } catch (error) {
+    console.log("Error in getUserProfile:", error);
+    return res.status(500).json({ message: "Internal Server Error" });
+  }
+});
+
+
+
 
 // delete job
 export const deleteJob = asyncHandler(async (req, res) => {
@@ -197,4 +234,78 @@ export const deleteJob = asyncHandler(async (req, res) => {
     console.log("Error in deleteJob:", error);
     return res.status(500).json({ message: "Internal Server Error" });
   }
+});
+// server/controllers/jobController.js
+
+
+
+// ✅ Update User Profile Controller
+export const updateUserProfile = asyncHandler(async (req, res) => {
+  try {
+    // 1. Authentication Check
+    if (!req.oidc || !req.oidc.user) {
+      return res.status(401).json({ message: "Not Authenticated" });
+    }
+
+    const userId = req.oidc.user.sub;
+
+    // 2. Extract ALL fields from the request body at the start
+    const { 
+      name, 
+      profession, 
+      location, 
+      bio, 
+      skills, 
+      socialLinks, 
+      interests 
+    } = req.body;
+
+    // 3. Validation
+    if (!name || name.trim() === "") {
+      return res.status(400).json({ message: "Name is required." });
+    }
+
+    // 4. Database Update
+    const updatedUser = await User.findOneAndUpdate(
+      { auth0Id: userId },
+      {
+        $set: {
+          name: name.trim(),
+          profession: profession || "",
+          location: location || "",
+          bio: bio || "",
+          skills: Array.isArray(skills) ? skills : [],
+          socialLinks: socialLinks || {}, 
+          interests: Array.isArray(interests) ? interests : [],
+        },
+      },
+      { new: true, runValidators: true }
+    );
+
+    // 5. Response Handling
+    if (!updatedUser) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    res.status(200).json(updatedUser);
+  } catch (error) {
+    console.error("Detailed Update Error:", error);
+    res.status(500).json({ message: "Server Error" });
+  }
+});
+
+export const uploadProfilePicture = asyncHandler(async (req, res) => {
+  if (!req.file) {
+    return res.status(400).json({ message: "No file uploaded" });
+  }
+
+  const userId = req.oidc.user.sub;
+  
+  const updatedUser = await User.findOneAndUpdate(
+    { auth0Id: userId },
+    { $set: { profilePicture: req.file.path } }, // req.file.path is the Cloudinary URL
+    { new: true }
+  );
+
+  res.status(200).json(updatedUser);
 });

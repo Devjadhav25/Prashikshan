@@ -88,6 +88,7 @@ export const JobsContextProvider =({children})   => {
     };
     
     const getUserJobs = async (userId) => {
+        
         setLoading(true);  
         try {
             const res = await axios.get("/api/v1/jobs/user/"+userId);
@@ -143,7 +144,7 @@ export const JobsContextProvider =({children})   => {
         console.log("Job liked", jobId);
         try {
             const res = await axios.put(`/api/v1/jobs/like/${jobId}`); 
-            toast.success("Job liked successfully");
+            toast.success(res.data.message || "Updated likes");
             getJobs();
             console.log("Like response:", res.data);
 
@@ -155,22 +156,26 @@ export const JobsContextProvider =({children})   => {
     };
 
     //apply to a job
-    const applyToJob = async (jobId) => {
-        const job = jobs.find((job) => job._id === jobId);
-        if(job && job.applicants.includes(userProfile._id)){
-            toast.error("Job not found");
-            return;
-        }
-        try {
-            const res = await axios.put(`/api/v1/jobs/apply/${jobId}`);   
-            toast.success("Applied to job successfully");
-            getJobs();
-            //update jobs state
-        } catch (error) {
-            console.error("Error applying to job", error);
-            toast.error(error.response?.data?.message || "Error applying to job");
-        }   
-    };
+   const applyToJob = async (jobId) => {
+    const job = jobs.find((j) => j._id === jobId);
+    if (!job) return toast.error("Job not found");
+
+    // Handle JSearch/External links
+    if (job.source && job.source !== 'Manual') {
+        const link = job.externalLink || job.job_apply_link || job.job_google_link;
+        return window.open(link, "_blank");
+    }
+
+    // Handle Manual links
+    try {
+        const res = await axios.put(`/api/v1/jobs/apply/${jobId}`); 
+        toast.success("Applied to job successfully");
+        getJobs();
+    } catch (error) {
+        toast.error(error.response?.data?.message || "Error applying to job");
+    }
+};
+
     //delete a job
     const deleteJob = async (jobId) => {
         try {
@@ -185,6 +190,7 @@ export const JobsContextProvider =({children})   => {
             toast.error(error.response?.data?.message || "Error deleting job");
         }   
     };
+    
 
     const handleSearchChange = (searchName, value) => {
         setSearchQuery((prev) => ({ ...prev, [searchName]: value }));

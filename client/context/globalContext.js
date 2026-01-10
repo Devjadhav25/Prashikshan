@@ -1,6 +1,7 @@
 import React, {createContext,  useContext, useEffect, useState} from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
+import { toast } from "react-hot-toast";
 
 
 
@@ -8,6 +9,7 @@ const GlobalContext = createContext();
 
 axios.defaults.baseURL = "http://localhost:8000";
 axios.defaults.withCredentials = true;
+
 
 
 export const GlobalContextProvider =({children})   => {
@@ -40,9 +42,24 @@ export const GlobalContextProvider =({children})   => {
             setLoading(true);
             try {
                 const res = await axios.get("/api/v1/check-auth"); 
-                setIsAuthenticated(res.data.isAuthenticated);
-                setAuth0User(res.data.user );
-                setLoading(false);
+                // setIsAuthenticated(res.data.isAuthenticated);
+                // setAuth0User(res.data.user );
+                // setLoading(false);
+                if (res.data.isAuthenticated) {
+                setIsAuthenticated(true);
+                setAuth0User(res.data.user);
+                
+                // ✅ REAL-TIME FIX: Fetch DB profile immediately using the sub ID
+                // This ensures userProfile is populated in the same cycle as login
+                if (res.data.user?.sub) {
+                    await getUserProfile(res.data.user.sub);
+                }
+            } else {
+                setIsAuthenticated(false);
+                setAuth0User(null);
+                setUserProfile({});
+            }
+                
             } catch (error) {
                 console.error("Error checking authentication", error);
                 
@@ -56,17 +73,41 @@ export const GlobalContextProvider =({children})   => {
     });
 
     const getUserProfile = async (id) => {
+        if (!id || id === "undefined") return;
         
         try {
+            
             const res = await axios.get(`/api/v1/user/${id}`);           
-            //console.log("Response:", res.data);
-            setUserProfile(res.data);
+            console.log("Response:", res.data);
+            if (res.data) {
+                // Update the local state with the new data from server
+                setUserProfile(res.data); 
+                
+            }
         } catch (error) {
             console.error("Error fetching user profile", error);
             // Set empty profile on error
             
         } 
 
+    };
+    const updateUserProfile = async (formData) => {
+        try {
+            setLoading(true);
+            const res = await axios.put("/api/v1/user/update", formData);
+
+
+            if (res.data) {
+                // Update the local state with the new data from server
+                setUserProfile(res.data); 
+                toast.success("Profile updated successfully!");
+            }
+        } catch (error) {
+            console.error("Error updating profile", error);
+            toast.error(error.response?.data?.message || "Failed to update profile");
+        } finally {
+            setLoading(false);
+        }
     };
     
     // handle input changes
@@ -141,6 +182,8 @@ export const GlobalContextProvider =({children})   => {
             setJobDescription,
             resetJobForm,
             setSalaryType,
+            updateUserProfile,
+            
             
             
         }}>

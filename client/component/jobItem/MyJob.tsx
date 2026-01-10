@@ -34,12 +34,18 @@ function MyJob({ job }: JobProps) {
     likeJob(id);
   };
 
+  // ✅ FIX: Add null check for createdBy
   // Keep your existing profile fetch logic
   useEffect(() => {
-    if (isAuthenticated && job.createdBy._id) {
+    if (isAuthenticated && job.createdBy?._id) {
       getUserProfile(job.createdBy._id);
     }
-  }, [isAuthenticated, job.createdBy._id]); // Removed getUserProfile from deps to avoid infinite loops if it's not memoized
+  }, [isAuthenticated, job.createdBy?._id]); // ✅ Use optional chaining
+
+  // ✅ Safe recruiter info (for API jobs where createdBy can be null)
+  const recruiterName = job.createdBy?.name || "JobHelper Recruiter";
+  const recruiterAvatar = job.createdBy?.profilePicture || "/user.png";
+  const recruiterId = job.createdBy?._id;
 
   return (
     <div className="p-8 bg-white rounded-xl flex flex-col gap-5">
@@ -50,7 +56,7 @@ function MyJob({ job }: JobProps) {
         >
           <Image
             alt={`logo`}
-            src={job.createdBy.profilePicture || "/user.png"} // Added .png extension for safety
+            src={recruiterAvatar}
             width={48}
             height={48}
             className="rounded-full shadow-sm"
@@ -61,7 +67,7 @@ function MyJob({ job }: JobProps) {
               {job.title}
             </CardTitle>
             <p className="text-sm text-muted-foreground">
-              {job.createdBy.name}
+              {recruiterName}
             </p>
           </div>
         </div>
@@ -88,14 +94,14 @@ function MyJob({ job }: JobProps) {
         <div className="flex justify-between">
           <div>
             <div className="flex flex-wrap gap-2 mb-2">
-              {job.skills.map((skill, index) => (
+              {(job.skills || []).map((skill, index) => (
                 <Badge key={index} variant="secondary">
                   {skill}
                 </Badge>
               ))}
             </div>
             <div className="flex flex-wrap gap-2">
-              {job.tags.map((tag, index) => (
+              {(job.tags || []).map((tag, index) => (
                 <Badge key={index} variant="outline">
                   {tag}
                 </Badge>
@@ -103,8 +109,8 @@ function MyJob({ job }: JobProps) {
             </div>
           </div>
           
-          {/* Action buttons shown only if current user is the creator */}
-          {job.createdBy._id === userProfile?._id && (
+          {/* ✅ FIX: Action buttons shown only if current user is the creator AND createdBy exists */}
+          {recruiterId && recruiterId === userProfile?._id && (
             <div className="self-end flex items-center">
               <Button variant="ghost" size="icon" className="text-gray-500">
                 <Pencil size={14} />
@@ -131,4 +137,4 @@ function MyJob({ job }: JobProps) {
   );
 }
 
-export default MyJob; 
+export default MyJob;

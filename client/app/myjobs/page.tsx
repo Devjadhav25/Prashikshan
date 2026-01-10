@@ -20,10 +20,11 @@ function Page() {
   const userIds = userProfile?._id;
   const router = useRouter();
 
-  const likedJobs = jobs ? jobs.filter((job:Job)=> {
-    return job.applicants.includes(userIds);
-
-  }) : [];
+  // Inside Page() component in myjobs/page.tsx
+const likedJobs = jobs ? jobs.filter((job: Job) => {
+  // ✅ Change 'applicants' to 'likes' to correctly show liked jobs
+  return job.likes && job.likes.includes(userIds);
+}) : [];
 
   useEffect(() => {
     if (!loading && !isAuthenticated) {

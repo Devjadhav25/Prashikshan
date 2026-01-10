@@ -11,8 +11,7 @@ import Footer from "@/component/Footer";
 import JobCard from "@/component/jobItem/jobCard";
 import { Job } from "@/types/custom";
 import formatMoney from "@/utils/formatMoney";
-import { Bookmark } from "lucide-react";
-import { bookmark, bookmarkEmpty } from "@/utils/icons";
+import { Bookmark, ExternalLink, MapPin, Briefcase, Clock, Users, Building2 } from "lucide-react";
 
 function Page() {
   const { jobs, likeJob, applyToJob } = useJobsContext();
@@ -21,28 +20,15 @@ function Page() {
   const router = useRouter();
   const { id } = params;
 
-  // 1. Find the data
   const job = jobs.find((job: Job) => job._id === id);
   const otherJobs = jobs.filter((job: Job) => job._id !== id);
 
-  
   if (!job) return null;
-  // 2. DERIVED STATE (No useEffect or useState needed here)
-  // These variables recalculate automatically whenever job or userProfile changes
-  // const isLiked = job.likes.includes(userProfile?._id);
-  // const isApplied = job.applicants.includes(userProfile?._id);
-  // ✅ Safe arrays for likes/applicants (handles undefined/null)
+
   const likes = Array.isArray(job.likes) ? job.likes : [];
   const applicants = Array.isArray(job.applicants) ? job.applicants : [];
-
-  
-  // ✅ Derived booleans (no extra state/useEffect needed)
-  const isLiked =
-    !!userProfile?._id && likes.includes(userProfile._id);
-  const isApplied =
-    !!userProfile?._id && applicants.includes(userProfile._id);
-
-  
+  const isLiked = !!userProfile?._id && likes.includes(userProfile._id);
+  const isApplied = !!userProfile?._id && applicants.includes(userProfile._id);
 
   const {
     title,
@@ -54,184 +40,226 @@ function Page() {
     createdAt,
     salaryType,
     negotiable,
+    employer_logo,
+    externalLink,
+    source,
+    job_apply_link,
+    job_google_link
   } = job;
 
+  // ✅ FIX: Prioritize JSearch logo, then recruiter pic, then fallback icon
   const recruiterName = createdBy?.name || "JobHelper Recruiter";
-const recruiterAvatar = createdBy?.profilePicture || "/user.png";
+  const recruiterAvatar = employer_logo || createdBy?.profilePicture || "/user.png";
 
   const handleLike = (jobId: string) => {
-    // Just call the context function. 
-    // When the context updates, this component re-renders and isLiked updates automatically.
     likeJob(jobId);
   };
 
+  const handleShare = () => {
+    const shareUrl = externalLink || job_apply_link || window.location.href;
+    navigator.clipboard.writeText(shareUrl);
+    toast.success("Job link copied to clipboard!");
+  };
+
+  // ✅ IMPROVED PARSER: Fixes sentence gaps and bullet alignment
+  const formatDescription = (text: string) => {
+    if (!text) return "No description provided.";
+    if (text.includes("<") && text.includes(">")) return text;
+
+    return text
+      .split("\n")
+      .map((line) => {
+        const trimmed = line.trim();
+        if (!trimmed) return ""; 
+
+        // Detect Headers
+        const isHeader = /^(requirements|responsibilities|what you|about the|qualifications|benefits|skills|summary|who we)/i.test(trimmed) || trimmed.endsWith(':');
+        
+        if (isHeader) {
+          return `<h3 class="text-lg font-extrabold text-gray-900 mt-8 mb-4 uppercase tracking-tight">${trimmed.replace(':', '')}</h3>`;
+        }
+
+        // Detect and Fix Bullet Points (Ensures text doesn't wrap under the bullet)
+        if (trimmed.startsWith('-') || trimmed.startsWith('•') || trimmed.startsWith('*') || /^\d+\./.test(trimmed)) {
+          const content = trimmed.replace(/^[-•*\d.]+\s*/, "");
+          return `<div class="flex items-start gap-3 mb-2 ml-1">
+                    <span class="text-[#7263f3] mt-1.5 flex-shrink-0 text-xs">●</span>
+                    <span class="text-gray-600 leading-relaxed text-sm md:text-base">${content}</span>
+                  </div>`;
+        }
+
+        // Regular sentences
+        return `<p class="text-gray-600 leading-relaxed mb-4 text-sm md:text-base">${trimmed}</p>`;
+      })
+      .filter(line => line !== "")
+      .join("");
+  };
+
+  const handleApply = () => {
+    const applyDestination = externalLink || job_apply_link || job_google_link;
+    if (source !== "Manual" && applyDestination) {
+      window.open(applyDestination, "_blank", "noopener,noreferrer");
+      return;
+    }
+    if (isAuthenticated) {
+      if (!isApplied) {
+        applyToJob(job._id);
+      } else {
+        toast.error("You have already applied to this job");
+      }
+    } else {
+      router.push("http://localhost:8000/login");
+    }
+  };
+
   return (
-    <main>
+    <main className="bg-[#F4F7FE] min-h-screen">
       <Header />
 
-      <div className="p-8 mb-8 mx-auto w-[90%] rounded-md flex gap-8">
-        <div className="w-[26%] flex flex-col gap-8">
-          <JobCard activeJob job={job} />
+      {/* ✅ FIX: Added larger gap and overflow-hidden to prevent sidebar overlap */}
+      <div className="pt-8 pb-20 px-4 md:px-8 mx-auto w-full max-w-[1440px] flex flex-col lg:flex-row gap-8 lg:gap-12 overflow-hidden">
+        
+        {/* LEFT SIDEBAR - Suggestions (Set width to prevent overlap) */}
+        <div className="hidden lg:flex lg:w-[360px] flex-shrink-0 flex-col gap-8">
+          <div className="sticky top-24 space-y-8">
+            <div>
+              <h3 className="font-bold text-gray-400 uppercase text-[10px] tracking-widest mb-4">Active Position</h3>
+              <JobCard activeJob job={job} />
+            </div>
 
-          {otherJobs.map((job: Job) => (
-            <JobCard job={job} key={job._id} />
-          ))}
+            <div>
+              <h3 className="font-bold text-gray-400 uppercase text-[10px] tracking-widest mb-4">Similar Opportunities</h3>
+              <div className="space-y-4">
+                {otherJobs.slice(0, 2).map((otherJob: Job) => (
+                  <JobCard job={otherJob} key={otherJob._id} />
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div className="flex-1 bg-white p-6 rounded-md">
-          <div className="flex flex-col gap-2">
-            <div className="flex justify-between items-center">
-              <div className="flex items-center gap-2">
-                <div className="w-14 h-14 relative overflow-hidden rounded-md flex items-center justify-center bg-gray-200">
+        {/* MAIN CONTENT AREA */}
+        <div className="flex-1 min-w-0">
+          <div className="bg-white p-6 md:p-10 rounded-3xl shadow-sm border border-gray-100">
+            
+            {/* Header Info */}
+            <div className="flex flex-col sm:flex-row justify-between items-start gap-6 mb-10">
+              <div className="flex items-center gap-6">
+                <div className="w-20 h-20 relative overflow-hidden rounded-2xl bg-gray-50 flex items-center justify-center p-3 border border-gray-100">
                   <Image
-                    src={recruiterAvatar || "/user.png"}
-                    alt={recruiterName || "User"}
-                    width={45}
-                    height={45}
-                    className="rounded-md"
+                    src={recruiterAvatar}
+                    alt={recruiterName}
+                    width={80}
+                    height={80}
+                    className="object-contain"
+                    unoptimized // Prevents potential issues with external API logos
                   />
                 </div>
-
                 <div>
-                  <p className="font-bold">{recruiterName}</p>
-                  <p className="text-sm">Recruiter</p>
+                  <h1 className="text-2xl md:text-3xl font-black text-gray-900 leading-tight mb-2">{title}</h1>
+                  <div className="flex flex-wrap items-center gap-4 text-gray-400 font-bold text-xs uppercase tracking-wider">
+                    <span className="flex items-center gap-1.5"><MapPin size={14} className="text-[#7263f3]"/> {location}</span>
+                    <span>•</span>
+                    <span className="flex items-center gap-1.5"><Building2 size={14}/> {source}</span>
+                  </div>
                 </div>
               </div>
               <button
-                className={`text-2xl ${
-                  isLiked ? "text-[#7263f3]" : "text-gray-400"
+                className={`p-3 rounded-2xl transition-all shadow-sm ${
+                  isLiked ? "bg-[#7263f3] text-white" : "bg-white text-gray-300 border border-gray-100"
                 }`}
-                onClick={() => {
-                  isAuthenticated
-                    ? handleLike(job._id)
-                    : router.push("http://localhost:8000/login");
-                }}
+                onClick={() => isAuthenticated ? handleLike(job._id) : router.push("http://localhost:8000/login")}
               >
-                {isLiked ? bookmark : bookmarkEmpty}
+                <Bookmark size={22} fill={isLiked ? "white" : "none"} />
               </button>
             </div>
 
-            <h1 className="text-2xl font-semibold">{title}</h1>
-            <div className="flex gap-4 items-center">
-              <p className="text-gray-500">{location}</p>
+            {/* Quick Stats Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+              {[
+                { icon: <Briefcase size={18}/>, label: "Salary", value: formatMoney(salary, "INR"), sub: `/${salaryType}`, color: "green" },
+                { icon: <Clock size={18}/>, label: "Posted", value: formatDates(createdAt), sub: "Ago", color: "blue" },
+                { icon: <Users size={18}/>, label: "Applicants", value: applicants.length, sub: "Applied", color: "purple" },
+                { icon: <Clock size={18}/>, label: "Type", value: jobType[0] || "Full Time", sub: "Contract", color: "yellow" }
+              ].map((stat, i) => (
+                <div key={i} className="bg-white border border-gray-50 p-4 rounded-2xl flex flex-col items-center justify-center text-center">
+                  <div className={`p-2 bg-${stat.color}-50 text-${stat.color}-600 rounded-xl mb-1`}>{stat.icon}</div>
+                  <span className="text-[10px] text-gray-400 font-black uppercase mb-1">{stat.label}</span>
+                  <span className="font-bold text-gray-900 text-sm">{stat.value}</span>
+                </div>
+              ))}
             </div>
 
-            <div className="mt-2 flex gap-4 justify-between items-center">
-              <p className="flex-1 py-2 px-4 flex flex-col items-center justify-center gap-1 bg-green-500/20 rounded-xl">
-                <span className="text-sm">Salary</span>
-                <span>
-                  <span className="font-bold">
-                    {formatMoney(salary, "GBP")}
-                  </span>
-                  <span className="font-medium text-gray-500 text-lg">
-                    /
-                    {salaryType === "Yearly" ? "pa" : 
-                     salaryType === "Monthly" ? "pcm" : 
-                     salaryType === "Weekly" ? "pw" : "ph"}
-                  </span>
-                </span>
-              </p>
-
-              <p className="flex-1 py-2 px-4 flex flex-col items-center justify-center gap-1 bg-purple-500/20 rounded-xl">
-                <span className="text-sm">Posted</span>
-                <span className="font-bold">{formatDates(createdAt)}</span>
-              </p>
-
-              <p className="flex-1 py-2 px-4 flex flex-col items-center justify-center gap-1 bg-blue-500/20 rounded-xl">
-                <span className="text-sm">Applicants</span>
-                <span className="font-bold">{applicants.length}</span>
-              </p>
-
-              <p className="flex-1 py-2 px-4 flex flex-col items-center justify-center gap-1 bg-yellow-500/20 rounded-xl">
-                <span className="text-sm">Job Type</span>
-                <span className="font-bold">{jobType[0]}</span>
-              </p>
+            {/* Structured Description */}
+            <div className="max-w-none">
+              <h2 className="text-xl font-black text-gray-900 mb-6 border-b pb-4">Job Description</h2>
+              <div
+                className="description-container"
+                dangerouslySetInnerHTML={{ __html: formatDescription(description) }}
+              ></div>
             </div>
-
-            <h2 className="font-bold text-2xl mt-2">Job Description</h2>
           </div>
-
-          <div
-            className="wysiwyg mt-2"
-            dangerouslySetInnerHTML={{ __html: description }}
-          ></div>
         </div>
 
-        <div className="w-[26%] flex flex-col gap-8">
-          <button
-            className={`text-white py-4 rounded-full transition-colors ${
-              isApplied ? "bg-green-500 cursor-default" : "bg-[#7263f3] hover:bg-[#7263f3]/90"
-            }`}
-            onClick={() => {
-              if (isAuthenticated) {
-                if (!isApplied) {
-                  applyToJob(job._id);
-                } else {
-                  toast.error("You have already applied to this job");
-                }
-              } else {
-                router.push("http://localhost:8000/login");
-              }
-            }}
-          >
-            {isApplied ? "Applied" : "Apply Now"}
-          </button>
+        {/* RIGHT SIDEBAR - Actions */}
+        <div className="w-full lg:w-[340px] flex-shrink-0 flex flex-col gap-8">
+          <div className="space-y-4">
+            <button
+              className={`w-full py-4 rounded-2xl font-black text-sm tracking-widest uppercase shadow-lg shadow-indigo-100 transition-all ${
+                isApplied ? "bg-emerald-500 text-white cursor-default" : "bg-[#7263f3] text-white"
+              }`}
+              onClick={handleApply}
+            >
+              {source !== "Manual" ? (
+                <span className="flex items-center justify-center gap-2">Apply on Site <ExternalLink size={16} /></span>
+              ) : isApplied ? "Applied" : "Apply Now"}
+            </button>
 
-          {/* Rest of your static information blocks... */}
-          <div className="p-6 flex flex-col gap-2 bg-white rounded-md">
-            <h3 className="text-lg font-semibold">Other Information</h3>
-            <div className="flex flex-col gap-2">
-              <p><span className="font-bold">Posted:</span> {formatDates(createdAt)}</p>
-              <p>
-                <span className="font-bold">Salary negotiable: </span>
-                <span className={negotiable ? "text-green-500" : "text-red-500"}>
-                  {negotiable ? "Yes" : "No"}
-                </span>
-              </p>
-              <p><span className="font-bold">Location:</span> {location}</p>
-              <p><span className="font-bold">Job Type:</span> {jobType[0]}</p>
-            </div>
-          </div>
-          <div className="p-6 flex flex-col gap-2 bg-white rounded-md">
-            <h3 className="text-lg font-semibold">Tags</h3>
-            <p>Other relevant tags for the job position.</p>
-
-            <div className="flex flex-wrap gap-4">
-              {job.skills.map((tag: string, index: number) => (
-                <span
-                  key={index}
-                  className="px-4 py-1 rounded-full text-sm font-medium flex items-center bg-red-500/20 text-red-600"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
+            <button 
+              onClick={handleShare}
+              className="w-full py-3 rounded-2xl border border-gray-100 bg-white text-gray-600 font-black text-xs uppercase tracking-widest shadow-sm"
+            >
+              Share Job Opportunity
+            </button>
           </div>
 
-          <div className="p-6 flex flex-col gap-2 bg-white rounded-md">
-            <h3 className="text-lg font-semibold">Skills</h3>
-            <p>
-              This is a full-time position. The successful candidate will be
-              responsible for the following:
-            </p>
+          {/* Re-labeled to Skills */}
+          <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm space-y-8">
+            <div>
+              <h3 className="font-black text-gray-900 mb-5 text-sm uppercase tracking-widest">Required Skills</h3>
+              <div className="flex flex-wrap gap-2">
+                {job.skills && job.skills.length > 0 ? (
+                  job.skills.map((skill: string, index: number) => (
+                    <span key={index} className="px-4 py-2 rounded-xl text-[11px] font-bold bg-indigo-50 text-[#7263f3]">
+                      {skill}
+                    </span>
+                  ))
+                ) : (
+                  <p className="text-xs text-gray-400 italic">Mentioned in description.</p>
+                )}
+              </div>
+            </div>
 
-            <div className="flex flex-wrap gap-4">
-              {job.skills.map((tag: string, index: number) => (
-                <span
-                  key={index}
-                  className="px-4 py-1 rounded-full text-sm font-medium flex items-center bg-indigo-500/20 text-[#7263f3]"
-                >
-                  {tag}
-                </span>
-              ))}
+            <div>
+              <h3 className="font-black text-gray-900 mb-5 text-sm uppercase tracking-widest">Category Tags</h3>
+              <div className="flex flex-wrap gap-2">
+                {job.tags && job.tags.length > 0 ? (
+                  job.tags.map((tag: string, index: number) => (
+                    <span key={index} className="px-3 py-1.5 rounded-xl text-[10px] font-bold bg-gray-50 text-gray-500 border border-gray-100">
+                      #{tag}
+                    </span>
+                  ))
+                ) : (
+                  <p className="text-xs text-gray-400 italic">No tags listed.</p>
+                )}
+              </div>
             </div>
           </div>
         </div>
       </div>
-
       <Footer />
     </main>
   );
 }
 
-export default Page; 
+export default Page;

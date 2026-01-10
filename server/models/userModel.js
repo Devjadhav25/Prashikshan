@@ -50,6 +50,18 @@ const userSchema = new mongoose.Schema({
         default: "Unemploymed",
 
     },
+    skills: [{ name: String, value: Number }],
+    location:{
+        type:String,
+        default: "India",
+    },
+    socialLinks: {
+    github: { type: String, default: "" },
+    twitter: { type: String, default: "" },
+    linkedin: { type: String, default: "" },
+    instagram: { type: String, default: "" },
+    },
+    interests: { type: [String], default: [] },
 
 
 },{
