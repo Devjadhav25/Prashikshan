@@ -2250,7 +2250,7 @@ const __TURBOPACK__default__export__ = SearchForm;
 
 __turbopack_context__.s([
     "default",
-    ()=>__TURBOPACK__default__export__
+    ()=>Page
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
@@ -2273,31 +2273,29 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$jobContext$2e$js_
 ;
 ;
 ;
-function Page() {
-    // ✅ Destructure handleSearchChange to sync with the Home Page search
+// ✅ SUB-COMPONENT: This part uses searchParams and needs to be wrapped
+function FindWorkContent() {
     const { jobs, filters, searchQuery, handleSearchChange } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$jobContext$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useJobsContext"])();
     const [columns, setColumns] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].useState(3);
     const searchParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSearchParams"])();
     const toggleGridColumns = ()=>{
         setColumns((prev)=>prev === 3 ? 2 : prev === 2 ? 1 : 3);
     };
-    // ✅ AUTO-SYNC: If the user searched on the Home Page, this effect fills the search bar here
+    // ✅ AUTO-SYNC: Syncs search from Home Page
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const titleQuery = searchParams.get("title");
         if (titleQuery) {
             handleSearchChange("title", titleQuery);
         }
     }, [
-        searchParams
+        searchParams,
+        handleSearchChange
     ]);
-    // ✅ COMPREHENSIVE FILTERING: Handles Search, Job Type, and Categories
+    // ✅ FILTERING LOGIC
     const filteredJobs = jobs.filter((job)=>{
-        // 1. Search Bar Filter (Title and Location)
         const matchesSearch = job.title.toLowerCase().includes(searchQuery.title.toLowerCase()) && job.location.toLowerCase().includes(searchQuery.location.toLowerCase());
-        // 2. Job Type Filters (Full Time, Part Time, etc.)
         const noTypeFilters = !filters.fullTime && !filters.partTime && !filters.contract && !filters.internship;
         const matchesType = noTypeFilters || filters.fullTime && job.jobType.some((t)=>t.toLowerCase().includes("full")) || filters.partTime && job.jobType.some((t)=>t.toLowerCase().includes("part")) || filters.contract && job.jobType.some((t)=>t.toLowerCase().includes("contract")) || filters.internship && job.jobType.some((t)=>t.toLowerCase().includes("intern"));
-        // 3. Category Filters (FullStack, Backend, etc.)
         const noCategoryFilters = !filters.fullStack && !filters.backend && !filters.devOps && !filters.uiux;
         const matchesCategory = noCategoryFilters || filters.fullStack && job.tags.some((tag)=>tag.toLowerCase().includes("stack")) || filters.backend && job.tags.some((tag)=>tag.toLowerCase().includes("backend")) || filters.devOps && job.tags.some((tag)=>tag.toLowerCase().includes("devops")) || filters.uiux && job.tags.some((tag)=>tag.toLowerCase().includes("ui"));
         return matchesSearch && matchesType && matchesCategory;
@@ -2307,7 +2305,7 @@ function Page() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$component$2f$Header$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/findwork/page.tsx",
-                lineNumber: 59,
+                lineNumber: 56,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2321,18 +2319,18 @@ function Page() {
                                 children: "Find Your Next Job Here"
                             }, void 0, false, {
                                 fileName: "[project]/app/findwork/page.tsx",
-                                lineNumber: 64,
+                                lineNumber: 61,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$component$2f$SearchForm$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/app/findwork/page.tsx",
-                                lineNumber: 67,
+                                lineNumber: 64,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/findwork/page.tsx",
-                        lineNumber: 63,
+                        lineNumber: 60,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2348,18 +2346,18 @@ function Page() {
                             }
                         }, void 0, false, {
                             fileName: "[project]/app/findwork/page.tsx",
-                            lineNumber: 72,
+                            lineNumber: 68,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/findwork/page.tsx",
-                        lineNumber: 71,
+                        lineNumber: 67,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/findwork/page.tsx",
-                lineNumber: 62,
+                lineNumber: 59,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2375,7 +2373,7 @@ function Page() {
                                         children: "Recent Jobs"
                                     }, void 0, false, {
                                         fileName: "[project]/app/findwork/page.tsx",
-                                        lineNumber: 86,
+                                        lineNumber: 82,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2387,13 +2385,13 @@ function Page() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/findwork/page.tsx",
-                                        lineNumber: 87,
+                                        lineNumber: 83,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/findwork/page.tsx",
-                                lineNumber: 85,
+                                lineNumber: 81,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2404,18 +2402,18 @@ function Page() {
                                     children: columns === 3 ? "Grid View" : columns === 2 ? "Table View" : "List View"
                                 }, void 0, false, {
                                     fileName: "[project]/app/findwork/page.tsx",
-                                    lineNumber: 94,
+                                    lineNumber: 90,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/findwork/page.tsx",
-                                lineNumber: 90,
+                                lineNumber: 86,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/findwork/page.tsx",
-                        lineNumber: 84,
+                        lineNumber: 80,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2425,12 +2423,12 @@ function Page() {
                                 className: "w-full md:w-[280px] shrink-0",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$component$2f$Filters$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                     fileName: "[project]/app/findwork/page.tsx",
-                                    lineNumber: 103,
+                                    lineNumber: 98,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/findwork/page.tsx",
-                                lineNumber: 102,
+                                lineNumber: 97,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2441,12 +2439,12 @@ function Page() {
                                             job: job
                                         }, job._id, false, {
                                             fileName: "[project]/app/findwork/page.tsx",
-                                            lineNumber: 114,
+                                            lineNumber: 108,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/app/findwork/page.tsx",
-                                    lineNumber: 109,
+                                    lineNumber: 103,
                                     columnNumber: 15
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex flex-col items-center justify-center py-20 bg-white rounded-xl border border-dashed border-gray-300",
@@ -2456,7 +2454,7 @@ function Page() {
                                             children: "No jobs found matching your criteria."
                                         }, void 0, false, {
                                             fileName: "[project]/app/findwork/page.tsx",
-                                            lineNumber: 119,
+                                            lineNumber: 113,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2465,45 +2463,71 @@ function Page() {
                                             children: "Clear all filters"
                                         }, void 0, false, {
                                             fileName: "[project]/app/findwork/page.tsx",
-                                            lineNumber: 120,
+                                            lineNumber: 114,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/findwork/page.tsx",
-                                    lineNumber: 118,
+                                    lineNumber: 112,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/findwork/page.tsx",
-                                lineNumber: 107,
+                                lineNumber: 101,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/findwork/page.tsx",
-                        lineNumber: 100,
+                        lineNumber: 96,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/findwork/page.tsx",
-                lineNumber: 83,
+                lineNumber: 79,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$component$2f$Footer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/findwork/page.tsx",
-                lineNumber: 131,
+                lineNumber: 125,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/findwork/page.tsx",
-        lineNumber: 58,
+        lineNumber: 55,
         columnNumber: 5
     }, this);
 }
-const __TURBOPACK__default__export__ = Page;
+function Page() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Suspense"], {
+        fallback: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "min-h-screen flex items-center justify-center bg-gray-50",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#7263F3]"
+            }, void 0, false, {
+                fileName: "[project]/app/findwork/page.tsx",
+                lineNumber: 135,
+                columnNumber: 9
+            }, void 0)
+        }, void 0, false, {
+            fileName: "[project]/app/findwork/page.tsx",
+            lineNumber: 134,
+            columnNumber: 7
+        }, void 0),
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(FindWorkContent, {}, void 0, false, {
+            fileName: "[project]/app/findwork/page.tsx",
+            lineNumber: 138,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/app/findwork/page.tsx",
+        lineNumber: 133,
+        columnNumber: 5
+    }, this);
+}
 }),
 ];
 

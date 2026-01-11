@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, Suspense } from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import Filters from "@/component/Filters";
@@ -10,8 +10,8 @@ import SearchForm from "@/component/SearchForm";
 import { useJobsContext } from "@/context/jobContext";
 import { Job } from "@/types/custom";
 
-function Page() {
-  // ✅ Destructure handleSearchChange to sync with the Home Page search
+// ✅ SUB-COMPONENT: This part uses searchParams and needs to be wrapped
+function FindWorkContent() {
   const { jobs, filters, searchQuery, handleSearchChange } = useJobsContext();
   const [columns, setColumns] = React.useState(3);
   const searchParams = useSearchParams();
@@ -20,22 +20,20 @@ function Page() {
     setColumns((prev) => (prev === 3 ? 2 : prev === 2 ? 1 : 3));
   };
 
-  // ✅ AUTO-SYNC: If the user searched on the Home Page, this effect fills the search bar here
+  // ✅ AUTO-SYNC: Syncs search from Home Page
   useEffect(() => {
     const titleQuery = searchParams.get("title");
     if (titleQuery) {
       handleSearchChange("title", titleQuery);
     }
-  }, [searchParams]);
+  }, [searchParams, handleSearchChange]);
 
-  // ✅ COMPREHENSIVE FILTERING: Handles Search, Job Type, and Categories
+  // ✅ FILTERING LOGIC
   const filteredJobs = jobs.filter((job: Job) => {
-    // 1. Search Bar Filter (Title and Location)
     const matchesSearch = 
       job.title.toLowerCase().includes(searchQuery.title.toLowerCase()) &&
       job.location.toLowerCase().includes(searchQuery.location.toLowerCase());
 
-    // 2. Job Type Filters (Full Time, Part Time, etc.)
     const noTypeFilters = !filters.fullTime && !filters.partTime && !filters.contract && !filters.internship;
     const matchesType = noTypeFilters || 
       (filters.fullTime && job.jobType.some(t => t.toLowerCase().includes("full"))) ||
@@ -43,7 +41,6 @@ function Page() {
       (filters.contract && job.jobType.some(t => t.toLowerCase().includes("contract"))) ||
       (filters.internship && job.jobType.some(t => t.toLowerCase().includes("intern")));
 
-    // 3. Category Filters (FullStack, Backend, etc.)
     const noCategoryFilters = !filters.fullStack && !filters.backend && !filters.devOps && !filters.uiux;
     const matchesCategory = noCategoryFilters ||
       (filters.fullStack && job.tags.some(tag => tag.toLowerCase().includes("stack"))) ||
@@ -67,7 +64,6 @@ function Page() {
           <SearchForm />
         </div>
 
-        {/* Hero Illustration */}
         <div className="hidden lg:block">
           <Image
             src="/woman-on-phone.jpg"
@@ -98,12 +94,10 @@ function Page() {
         </div>
 
         <div className="flex flex-col md:flex-row gap-8">
-          {/* Sidebar Filters Component */}
           <div className="w-full md:w-[280px] shrink-0">
             <Filters />
           </div>
 
-          {/* Jobs Display Grid */}
           <div className="flex-1">
             {filteredJobs.length > 0 ? (
               <div className={`grid gap-6 ${
@@ -133,4 +127,15 @@ function Page() {
   );
 }
 
-export default Page;
+// ✅ MAIN EXPORT: Wrapped in Suspense to satisfy Next.js build requirements
+export default function Page() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#7263F3]"></div>
+      </div>
+    }>
+      <FindWorkContent />
+    </Suspense>
+  );
+}
