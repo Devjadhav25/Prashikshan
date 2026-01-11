@@ -47,12 +47,15 @@ const config = {
     returnTo: process.env.CLIENT_URL
   },
   idpLogout: true,
+  
   session: {
-    cookie: {
-      secure: false,
-      sameSite: 'Lax', // Required for http://localhost
-    },
+  cookie: {
+    // ✅ Fix: Must be true in production for HTTPS
+    secure: process.env.NODE_ENV === 'production', 
+    // ✅ Fix: 'None' is required for cross-site cookies if frontend/backend domains differ
+    sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax', 
   },
+},
 };
 
 const PORT = process.env.PORT || 8000;
@@ -102,18 +105,15 @@ const ensureUserInDB = asyncHandler(async (user) => {
 
 // --- AUTOMATION: CRON JOB ---
 cron.schedule('0 0 * * *', async () => {
-   // ✅ Get io instance
-  await syncExternalJobs("Software Engineer", io); // ✅ Pass it here
   console.log('--- Running Hourly Job Sync ---');
   try {
-    const io = app.get("io");
-    await syncExternalJobs("Software Engineer",io);
-    res.send("Sync process started. Check your website!");
+    const ioInstance = app.get("io");
+    // Only call this once
+    await syncExternalJobs("Software Engineer", ioInstance); 
   } catch (err) {
     console.error("Cron Job Error:", err.message);
   }
 });
-
 // --- MANUAL TEST ROUTE ---
 // app.get("/api/v1/sync-now", asyncHandler(async (req, res) => {
 //   console.log("Manual Sync Requested...");
@@ -149,9 +149,11 @@ const startServer = async () => {
   try {
     await connect();
     // ✅ Listen on httpServer, not app
-    httpServer.listen(process.env.PORT || 8000, () => {
-      console.log(`Server running on port ${process.env.PORT || 8000}`);
-    });
+    // ✅ Fix: Bind to 0.0.0.0 so Render can detect the port
+const PORT = process.env.PORT || 8000;
+httpServer.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running on port ${PORT}`);
+});
   } catch (error) {
     console.log("Server error", error.message);
     process.exit(1);
