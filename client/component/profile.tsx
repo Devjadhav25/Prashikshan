@@ -27,12 +27,17 @@ function Profile() {
   const profileProfession = userProfile?.profession;
 
   const [imgSrc, setImgSrc] = useState(profileImg);
-  const handleLogout = () => {
-    // This grabs the baseURL you set in your Context (localhost:8000 or production)
-    const baseUrl = axios.defaults.baseURL; 
-    window.location.href = `${baseUrl}/logout`;
-  };
+ const handleLogout = () => {
+  // 1. Define the backend URL based on environment
+  const isProduction = process.env.NODE_ENV === "production";
+  const backendUrl = isProduction 
+    ? "https://prashikshan.onrender.com" 
+    : "http://localhost:8000";
 
+  // 2. Force a hard redirect to the backend logout endpoint
+  // This triggers the 'express-openid-connect' logout, which then redirects to Auth0
+  window.location.href = `${backendUrl}/logout`;
+};
   useEffect(() => {
     setImgSrc(profileImg);
   }, [profileImg]);
