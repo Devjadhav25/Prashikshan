@@ -393,18 +393,27 @@ const JobsContextProvider = ({ children })=>{
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].error(error.response?.data?.message || "Error deleting job");
         }
     };
-    const handleSearchChange = (searchName, value)=>{
-        setSearchQuery((prev)=>({
-                ...prev,
-                [searchName]: value
-            }));
-    };
-    const handleFilterChange = (filterName)=>{
-        setFilters((prev)=>({
-                ...prev,
-                [filterName]: !prev[filterName]
-            }));
-    };
+    const handleSearchChange = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "JobsContextProvider.useCallback[handleSearchChange]": (searchName, value)=>{
+            setSearchQuery({
+                "JobsContextProvider.useCallback[handleSearchChange]": (prev)=>({
+                        ...prev,
+                        [searchName]: value
+                    })
+            }["JobsContextProvider.useCallback[handleSearchChange]"]);
+        }
+    }["JobsContextProvider.useCallback[handleSearchChange]"], []);
+    // ✅ FIX: Wrap handleFilterChange in useCallback
+    const handleFilterChange = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "JobsContextProvider.useCallback[handleFilterChange]": (filterName)=>{
+            setFilters({
+                "JobsContextProvider.useCallback[handleFilterChange]": (prev)=>({
+                        ...prev,
+                        [filterName]: !prev[filterName]
+                    })
+            }["JobsContextProvider.useCallback[handleFilterChange]"]);
+        }
+    }["JobsContextProvider.useCallback[handleFilterChange]"], []);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "JobsContextProvider.useEffect": ()=>{
             getJobs();
@@ -467,11 +476,11 @@ const JobsContextProvider = ({ children })=>{
         children: children
     }, void 0, false, {
         fileName: "[project]/context/jobContext.js",
-        lineNumber: 231,
+        lineNumber: 232,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
-_s(JobsContextProvider, "j+Q+MyOXJzWAOhEFTnUHZCy4L4U=", false, function() {
+_s(JobsContextProvider, "7GX/vcW3247BEknH+GQdkhQOLWE=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
         __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$globalContext$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useGlobalContext"],

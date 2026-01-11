@@ -1,5 +1,5 @@
 import React, { use,createJob,  useEffect } from "react";
-import { createContext, useContext,useState } from "react";
+import { createContext, useContext,useState , useCallback} from "react";
 import { useGlobalContext } from "./globalContext";
 import axios from "axios";
 import toast from "react-hot-toast";
@@ -194,13 +194,14 @@ export const JobsContextProvider =({children})   => {
     };
     
 
-    const handleSearchChange = (searchName, value) => {
+   const handleSearchChange = useCallback((searchName, value) => {
         setSearchQuery((prev) => ({ ...prev, [searchName]: value }));
-    };
+    }, []);
 
-    const handleFilterChange = (filterName) => {
+    // ✅ FIX: Wrap handleFilterChange in useCallback
+    const handleFilterChange = useCallback((filterName) => {
         setFilters((prev) => ({ ...prev, [filterName]: !prev[filterName] }));
-    };
+    }, []);
 
     useEffect (() => {
         getJobs();

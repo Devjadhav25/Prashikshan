@@ -134,3 +134,159 @@ Import traces:
 [00:22:11.885] Server  LOG      ✓ Compiled in 159ms
 [00:23:04.377] Server  LOG      ✓ Compiled in 133ms
 [00:25:54.721] Server  LOG      ✓ Compiled in 348ms
+[00:31:59.483] Server  LOG     Auth0 User: undefined
+[00:32:00.672] Browser LOG     Auth0 User: undefined
+[00:32:00.673] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:32:00.912] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:32:01.221] Browser LOG     Auth0 User: undefined
+[00:32:01.221] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:32:01.479] Browser LOG     Current User: null
+[00:32:26.747] Server  LOG     Auth0 User: undefined
+[00:32:27.710] Browser LOG     Auth0 User: undefined
+[00:32:27.710] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:32:27.960] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:32:28.222] Browser LOG     Auth0 User: undefined
+[00:32:28.222] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:32:28.626] Browser LOG     Current User: null
+[00:32:35.461] Server  LOG     Auth0 User: undefined
+[00:43:38.615] Server  LOG     Auth0 User: undefined
+[00:43:39.983] Browser LOG     Auth0 User: undefined
+[00:43:39.984] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:43:39.984] Browser WARN    Image with src "/woman-on-phone.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:43:39.984] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:43:39.984] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:43:39.984] Browser LOG     Auth0 User: undefined
+[00:43:39.984] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:43:40.653] Browser LOG     Current User: null
+[00:43:53.547] Server  LOG     Auth0 User: undefined
+[00:43:54.451] Browser LOG     Auth0 User: undefined
+[00:43:54.451] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:43:54.722] Browser LOG     Auth0 User: undefined
+[00:43:54.722] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:43:55.116] Browser LOG     Current User: null
+[00:44:04.056] Server  LOG     Auth0 User: undefined
+[00:44:04.872] Browser LOG     Auth0 User: undefined
+[00:44:04.872] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:44:05.032] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:44:05.339] Browser LOG     Auth0 User: undefined
+[00:44:05.340] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:44:05.658] Browser LOG     Current User: null
+[00:44:21.266] Server  LOG     Auth0 User: undefined
+[00:44:22.047] Browser LOG     Auth0 User: undefined
+[00:44:22.047] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:44:22.403] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:44:22.403] Browser LOG     Auth0 User: Devesh Jadhav
+[00:44:22.404] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:44:22.404] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-11T16:56:55.536Z"}
+[00:44:22.404] Browser LOG     Auth0 User: Devesh Jadhav
+[00:44:22.404] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:44:22.404] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-11T16:56:55.536Z"}
+[00:44:22.404] Browser LOG     Auth0 User: Devesh Jadhav
+[00:44:22.404] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:44:22.562] Browser LOG     Current User: null
+[00:44:30.581] Server  LOG     Auth0 User: undefined
+[00:44:31.091] Browser LOG     Auth0 User: undefined
+[00:44:31.091] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:44:31.270] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:44:31.270] Browser LOG     Auth0 User: undefined
+[00:44:31.270] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:44:31.517] Browser LOG     Current User: null
+[00:53:30.053] Server  LOG      ✓ Compiled in 879ms
+[00:53:35.435] Server  LOG     Auth0 User: undefined
+[00:53:36.905] Browser LOG     Auth0 User: undefined
+[00:53:36.905] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:53:37.176] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:53:37.462] Browser LOG     Auth0 User: undefined
+[00:53:37.462] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:53:37.754] Browser LOG     Current User: null
+[00:53:40.783] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:54:03.477] Browser LOG     Auth0 User: undefined
+[00:54:03.477] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:54:03.477] Browser LOG     Auth0 User: undefined
+[00:54:03.477] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:54:03.839] Browser LOG     Auth0 User: undefined
+[00:54:03.839] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:54:03.966] Browser LOG     Auth0 User: undefined
+[00:54:03.966] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:54:05.385] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+[00:58:54.790] Server  LOG      ✓ Compiled in 649ms
+[00:58:54.862] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:58:56.754] Server  LOG     Auth0 User: undefined
+[00:58:59.684] Browser LOG     Auth0 User: undefined
+[00:58:59.684] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:58:59.684] Browser LOG     Auth0 User: undefined
+[00:58:59.685] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:59:00.005] Browser LOG     Current User: null
+[00:59:00.005] Browser LOG     Auth0 User: undefined
+[00:59:00.005] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[01:00:20.197] Server  LOG      ✓ Compiled in 289ms
+[01:00:20.995] Browser LOG     Auth0 User: undefined
+[01:00:20.995] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[01:00:21.991] Browser LOG     Current User: null
+[01:00:21.992] Browser LOG     Auth0 User: undefined
+[01:00:21.992] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[01:00:21.992] Browser LOG     Current User: null
+[01:00:28.883] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:00:28.883] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:00:36.111] Browser LOG     Auth0 User: undefined
+[01:00:36.111] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[01:00:36.111] Browser LOG     Auth0 User: undefined
+[01:00:36.111] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[01:00:36.310] Browser LOG     Auth0 User: undefined
+[01:00:36.310] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[01:00:36.476] Browser LOG     Auth0 User: undefined
+[01:00:36.476] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[01:00:36.642] Browser LOG     Auth0 User: undefined
+[01:00:36.642] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[01:00:37.672] Browser LOG     Auth0 User: undefined
+[01:00:37.672] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[01:00:49.790] Server  LOG     Auth0 User: undefined
+[01:00:50.722] Browser LOG     Auth0 User: undefined
+[01:00:50.722] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[01:00:51.077] Browser LOG     Auth0 User: Devesh Jadhav
+[01:00:51.077] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[01:00:51.077] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:00:51.077] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-11T16:56:55.536Z"}
+[01:00:51.077] Browser LOG     Auth0 User: Devesh Jadhav
+[01:00:51.077] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[01:00:51.289] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-11T16:56:55.536Z"}
+[01:00:51.289] Browser LOG     Auth0 User: Devesh Jadhav
+[01:00:51.289] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[01:00:51.289] Browser LOG     Current User: null
+[01:00:53.675] Browser LOG     Auth0 User: Devesh Jadhav
+[01:00:53.675] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[01:00:53.675] Browser LOG     Auth0 User: Devesh Jadhav
+[01:00:53.675] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[01:00:53.879] Browser LOG     Auth0 User: Devesh Jadhav
+[01:00:53.879] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[01:00:54.032] Browser LOG     Auth0 User: Devesh Jadhav
+[01:00:54.032] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[01:00:55.401] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:01:00.107] Server  LOG     Auth0 User: undefined
+[01:01:00.641] Browser LOG     Auth0 User: undefined
+[01:01:00.641] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[01:01:00.931] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:01:00.931] Browser LOG     Auth0 User: undefined
+[01:01:00.931] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[01:01:01.210] Browser LOG     Current User: null
+[01:03:09.010] Server  LOG     Auth0 User: undefined
+[01:03:10.005] Browser LOG     Auth0 User: undefined
+[01:03:10.005] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[01:03:10.247] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:03:10.247] Browser LOG     Auth0 User: Devesh Jadhav
+[01:03:10.248] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[01:03:10.522] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-11T16:56:55.536Z"}
+[01:03:10.522] Browser LOG     Auth0 User: Devesh Jadhav
+[01:03:10.522] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[01:03:10.522] Browser LOG     Current User: null
+[01:03:10.522] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-11T16:56:55.536Z"}
+[01:03:10.522] Browser LOG     Auth0 User: Devesh Jadhav
+[01:03:10.522] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[01:03:14.450] Server  LOG     Auth0 User: undefined
+[01:03:14.933] Browser LOG     Auth0 User: undefined
+[01:03:14.933] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[01:03:15.162] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:03:15.162] Browser LOG     Auth0 User: undefined
+[01:03:15.162] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[01:03:15.539] Browser LOG     Current User: null
