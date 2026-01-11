@@ -49,13 +49,18 @@ const config = {
   idpLogout: true,
   
   session: {
-  cookie: {
-    // ✅ Fix: Must be true in production for HTTPS
-    secure: process.env.NODE_ENV === 'production', 
-    // ✅ Fix: 'None' is required for cross-site cookies if frontend/backend domains differ
-    sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax', 
+    absoluteDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    cookie: {
+      // ✅ Dynamic domain: use the live domain in production, undefined for localhost
+      domain: process.env.NODE_ENV === 'production' ? "prashikshan.onrender.com" : undefined,
+      
+      // ✅ Must be true in production for HTTPS
+      secure: process.env.NODE_ENV === 'production', 
+      
+      // ✅ 'None' is required for cross-site cookies between Vercel and Render
+      sameSite: process.env.NODE_ENV === 'production' ? 'None' : 'Lax', 
+    },
   },
-},
 };
 
 const PORT = process.env.PORT || 8000;
