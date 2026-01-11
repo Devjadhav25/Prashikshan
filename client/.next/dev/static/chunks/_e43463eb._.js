@@ -642,34 +642,43 @@ function Profile() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
                                 className: "cursor-pointer rounded-xl py-2.5 focus:bg-[#7263f3]/5 group",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "p-1.5 rounded-lg bg-gray-50 group-hover:bg-[#7263f3]/10 mr-3 transition-colors",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$settings$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Settings$3e$__["Settings"], {
-                                            className: "h-4 w-4 text-gray-500 group-hover:text-[#7263f3]"
+                                asChild: true,
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: "/settings",
+                                    className: "flex items-center w-full",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "p-1.5 rounded-lg bg-gray-50 group-hover:bg-[#7263f3]/10 mr-3 transition-colors",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$settings$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Settings$3e$__["Settings"], {
+                                                className: "h-4 w-4 text-gray-500 group-hover:text-[#7263f3]"
+                                            }, void 0, false, {
+                                                fileName: "[project]/component/profile.tsx",
+                                                lineNumber: 104,
+                                                columnNumber: 15
+                                            }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/component/profile.tsx",
-                                            lineNumber: 102,
-                                            columnNumber: 15
+                                            lineNumber: 103,
+                                            columnNumber: 13
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "font-bold text-sm text-gray-700 group-hover:text-gray-900",
+                                            children: "Settings"
+                                        }, void 0, false, {
+                                            fileName: "[project]/component/profile.tsx",
+                                            lineNumber: 106,
+                                            columnNumber: 13
                                         }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/component/profile.tsx",
-                                        lineNumber: 101,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-bold text-sm text-gray-700 group-hover:text-gray-900",
-                                        children: "Settings"
-                                    }, void 0, false, {
-                                        fileName: "[project]/component/profile.tsx",
-                                        lineNumber: 104,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/component/profile.tsx",
+                                    lineNumber: 102,
+                                    columnNumber: 11
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "[project]/component/profile.tsx",
-                                lineNumber: 100,
-                                columnNumber: 11
+                                lineNumber: 101,
+                                columnNumber: 9
                             }, this)
                         ]
                     }, void 0, true, {
@@ -681,7 +690,7 @@ function Profile() {
                         className: "bg-gray-50"
                     }, void 0, false, {
                         fileName: "[project]/component/profile.tsx",
-                        lineNumber: 108,
+                        lineNumber: 111,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -696,12 +705,12 @@ function Profile() {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/component/profile.tsx",
-                                        lineNumber: 116,
+                                        lineNumber: 119,
                                         columnNumber: 16
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/component/profile.tsx",
-                                    lineNumber: 115,
+                                    lineNumber: 118,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -709,18 +718,18 @@ function Profile() {
                                     children: "Sign Out"
                                 }, void 0, false, {
                                     fileName: "[project]/component/profile.tsx",
-                                    lineNumber: 118,
+                                    lineNumber: 121,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/component/profile.tsx",
-                            lineNumber: 111,
+                            lineNumber: 114,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/component/profile.tsx",
-                        lineNumber: 110,
+                        lineNumber: 113,
                         columnNumber: 9
                     }, this)
                 ]

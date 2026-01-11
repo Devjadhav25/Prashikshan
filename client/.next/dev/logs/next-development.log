@@ -1,344 +1,761 @@
-[00:00:01.969] Server  LOG      ✓ Ready in 1406ms
-[00:00:14.810] Server  LOG      ○ Compiling /findwork ...
-[00:00:16.851] Server  ERROR   D:\intern\client\.next\dev\server\chunks\ssr\_36d2c04e._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:00:16.853] Server  ERROR    ⨯ TypeError: Cannot destructure property 'jobs' of '{imported module ./context/jobContext.js}.useJobsContext(...)' as it is undefined.
-[00:00:17.892] Browser ERROR   uncaughtError: TypeError: Cannot destructure property 'jobs' of '(0 , __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$jobContext$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__.useJobsContext)(...)' as it is undefined.
-[00:00:50.701] Server  ERROR   D:\intern\client\.next\dev\server\chunks\ssr\_1d0b5c98._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:00:50.701] Server  ERROR    ⨯ TypeError: Cannot destructure property 'jobTitle' of '{imported module ./context/globalContext.js}.default(...)' as it is undefined.
-[00:00:50.804] Server  ERROR   D:\intern\client\.next\dev\server\chunks\ssr\_1d0b5c98._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
-[00:00:50.804] Server  ERROR    ⨯ TypeError: Cannot destructure property 'jobTitle' of '{imported module ./context/globalContext.js}.default(...)' as it is undefined.
-[00:00:51.358] Browser LOG     Auth0 User: undefined
-[00:00:51.358] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
-[00:00:51.358] Browser ERROR   uncaughtError: TypeError: Cannot destructure property 'jobTitle' of '(0 , __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$globalContext$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__.default)(...)' as it is undefined.
-[00:03:01.979] Server  LOG     Auth0 User: undefined
-[00:03:02.959] Browser LOG     Auth0 User: undefined
-[00:03:02.959] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
-[00:03:03.486] Browser LOG     Auth0 User: undefined
-[00:03:03.486] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
-[00:03:03.486] Browser LOG     Auth0 User: undefined
-[00:03:03.486] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
-[00:03:03.486] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:03:03.486] Browser LOG     Auth0 User: Devesh Jadhav
-[00:03:03.486] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
-[00:03:03.486] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
-[00:03:03.486] Browser LOG     Auth0 User: Devesh Jadhav
-[00:03:03.486] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
-[00:03:03.486] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
-[00:03:03.486] Browser LOG     Auth0 User: Devesh Jadhav
-[00:03:03.486] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
-[00:03:03.486] Browser LOG     Current User: null
-[00:03:59.239] Server  LOG      ✓ Compiled in 150ms
-[00:04:00.181] Browser ERROR   ./component/profile.tsx:122:29
-Parsing ecmascript source code failed
-  120 |           </DropdownMenuItem>
-  121 |         </div>
-> 122 |       </DropdownMenuContent>
-      |                             ^
-> 123 |     </DropdownMenu>
-      | ^^^^^
-  124 |   );
-  125 | }
-  126 |
-
-Expected '</', got 'jsx text (
-    )'
-
-Import traces:
-  Client Component Browser:
-    ./component/profile.tsx [Client Component Browser]
-    ./component/Header.tsx [Client Component Browser]
-    ./app/findwork/page.tsx [Client Component Browser]
-    ./app/findwork/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./component/profile.tsx [Client Component SSR]
-    ./component/Header.tsx [Client Component SSR]
-    ./app/findwork/page.tsx [Client Component SSR]
-    ./app/findwork/page.tsx [Server Component]
-[00:04:04.385] Server  ERROR    ⨯ ./component/profile.tsx:122:29
-Parsing ecmascript source code failed
-  120 |           </DropdownMenuItem>
-  121 |         </div>
-> 122 |       </DropdownMenuContent>
-      |                             ^
-> 123 |     </DropdownMenu>
-      | ^^^^^
-  124 |   );
-  125 | }
-  126 |
-
-Expected '</', got 'jsx text (
-    )'
-
-Import traces:
-  Client Component Browser:
-    ./component/profile.tsx [Client Component Browser]
-    ./component/Header.tsx [Client Component Browser]
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./component/profile.tsx [Client Component SSR]
-    ./component/Header.tsx [Client Component SSR]
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-
-
-[00:04:04.506] Browser ERROR   ./component/profile.tsx:122:29
-Parsing ecmascript source code failed
-  120 |           </DropdownMenuItem>
-  121 |         </div>
-> 122 |       </DropdownMenuContent>
-      |                             ^
-> 123 |     </DropdownMenu>
-      | ^^^^^
-  124 |   );
-  125 | }
-  126 |
-
-Expected '</', got 'jsx text (
-    )'
-
-Import traces:
-  Client Component Browser:
-    ./component/profile.tsx [Client Component Browser]
-    ./component/Header.tsx [Client Component Browser]
-    ./app/findwork/page.tsx [Client Component Browser]
-    ./app/findwork/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./component/profile.tsx [Client Component SSR]
-    ./component/Header.tsx [Client Component SSR]
-    ./app/findwork/page.tsx [Client Component SSR]
-    ./app/findwork/page.tsx [Server Component]
-[00:04:05.369] Browser ERROR   ./component/profile.tsx:122:29
-Parsing ecmascript source code failed
-  120 |           </DropdownMenuItem>
-  121 |         </div>
-> 122 |       </DropdownMenuContent>
-      |                             ^
-> 123 |     </DropdownMenu>
-      | ^^^^^
-  124 |   );
-  125 | }
-  126 |
-
-Expected '</', got 'jsx text (
-    )'
-
-Import traces:
-  Client Component Browser:
-    ./component/profile.tsx [Client Component Browser]
-    ./component/Header.tsx [Client Component Browser]
-    ./app/findwork/page.tsx [Client Component Browser]
-    ./app/findwork/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./component/profile.tsx [Client Component SSR]
-    ./component/Header.tsx [Client Component SSR]
-    ./app/findwork/page.tsx [Client Component SSR]
-    ./app/findwork/page.tsx [Server Component]
-[00:04:05.519] Browser ERROR   ./component/profile.tsx:122:29
-Parsing ecmascript source code failed
-  120 |           </DropdownMenuItem>
-  121 |         </div>
-> 122 |       </DropdownMenuContent>
-      |                             ^
-> 123 |     </DropdownMenu>
-      | ^^^^^
-  124 |   );
-  125 | }
-  126 |
-
-Expected '</', got 'jsx text (
-    )'
-
-Import traces:
-  Client Component Browser:
-    ./component/profile.tsx [Client Component Browser]
-    ./component/Header.tsx [Client Component Browser]
-    ./app/findwork/page.tsx [Client Component Browser]
-    ./app/findwork/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./component/profile.tsx [Client Component SSR]
-    ./component/Header.tsx [Client Component SSR]
-    ./app/findwork/page.tsx [Client Component SSR]
-    ./app/findwork/page.tsx [Server Component]
-[00:04:06.225] Browser ERROR   ./component/profile.tsx:122:29
-Parsing ecmascript source code failed
-  120 |           </DropdownMenuItem>
-  121 |         </div>
-> 122 |       </DropdownMenuContent>
-      |                             ^
-> 123 |     </DropdownMenu>
-      | ^^^^^
-  124 |   );
-  125 | }
-  126 |
-
-Expected '</', got 'jsx text (
-    )'
-
-Import traces:
-  Client Component Browser:
-    ./component/profile.tsx [Client Component Browser]
-    ./component/Header.tsx [Client Component Browser]
-    ./app/findwork/page.tsx [Client Component Browser]
-    ./app/findwork/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./component/profile.tsx [Client Component SSR]
-    ./component/Header.tsx [Client Component SSR]
-    ./app/findwork/page.tsx [Client Component SSR]
-    ./app/findwork/page.tsx [Server Component]
-[00:04:06.461] Browser ERROR   uncaughtError: Error: ./component/profile.tsx:122:29
-Parsing ecmascript source code failed
-  120 |           </DropdownMenuItem>
-  121 |         </div>
-> 122 |       </DropdownMenuContent>
-      |                             ^
-> 123 |     </DropdownMenu>
-      | ^^^^^
-  124 |   );
-  125 | }
-  126 |
-
-Expected '</', got 'jsx text (
-    )'
-
-Import traces:
-  Client Component Browser:
-    ./component/profile.tsx [Client Component Browser]
-    ./component/Header.tsx [Client Component Browser]
-    ./app/findwork/page.tsx [Client Component Browser]
-    ./app/findwork/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./component/profile.tsx [Client Component SSR]
-    ./component/Header.tsx [Client Component SSR]
-    ./app/findwork/page.tsx [Client Component SSR]
-    ./app/findwork/page.tsx [Server Component]
-
-
-[00:04:06.604] Browser ERROR   ./component/profile.tsx:122:29
-Parsing ecmascript source code failed
-  120 |           </DropdownMenuItem>
-  121 |         </div>
-> 122 |       </DropdownMenuContent>
-      |                             ^
-> 123 |     </DropdownMenu>
-      | ^^^^^
-  124 |   );
-  125 | }
-  126 |
-
-Expected '</', got 'jsx text (
-    )'
-
-Import traces:
-  Client Component Browser:
-    ./component/profile.tsx [Client Component Browser]
-    ./component/Header.tsx [Client Component Browser]
-    ./app/findwork/page.tsx [Client Component Browser]
-    ./app/findwork/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./component/profile.tsx [Client Component SSR]
-    ./component/Header.tsx [Client Component SSR]
-    ./app/findwork/page.tsx [Client Component SSR]
-    ./app/findwork/page.tsx [Server Component]
-[00:04:06.604] Browser ERROR   ./component/profile.tsx:122:29
-Parsing ecmascript source code failed
-  120 |           </DropdownMenuItem>
-  121 |         </div>
-> 122 |       </DropdownMenuContent>
-      |                             ^
-> 123 |     </DropdownMenu>
-      | ^^^^^
-  124 |   );
-  125 | }
-  126 |
-
-Expected '</', got 'jsx text (
-    )'
-
-Import traces:
-  Client Component Browser:
-    ./component/profile.tsx [Client Component Browser]
-    ./component/Header.tsx [Client Component Browser]
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./component/profile.tsx [Client Component SSR]
-    ./component/Header.tsx [Client Component SSR]
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:06.712] Browser ERROR   ./component/profile.tsx:122:29
-Parsing ecmascript source code failed
-  120 |           </DropdownMenuItem>
-  121 |         </div>
-> 122 |       </DropdownMenuContent>
-      |                             ^
-> 123 |     </DropdownMenu>
-      | ^^^^^
-  124 |   );
-  125 | }
-  126 |
-
-Expected '</', got 'jsx text (
-    )'
-
-Import traces:
-  Client Component Browser:
-    ./component/profile.tsx [Client Component Browser]
-    ./component/Header.tsx [Client Component Browser]
-    ./app/findwork/page.tsx [Client Component Browser]
-    ./app/findwork/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./component/profile.tsx [Client Component SSR]
-    ./component/Header.tsx [Client Component SSR]
-    ./app/findwork/page.tsx [Client Component SSR]
-    ./app/findwork/page.tsx [Server Component]
-[00:04:29.813] Server  LOG      ✓ Compiled in 94ms
-[00:04:30.156] Server  LOG     Auth0 User: undefined
-[00:04:31.013] Browser LOG     Auth0 User: undefined
-[00:04:31.013] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
-[00:04:31.365] Browser LOG     Auth0 User: undefined
-[00:04:31.365] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
-[00:04:31.365] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:04:31.365] Browser LOG     Auth0 User: undefined
-[00:04:31.365] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
-[00:04:31.365] Browser LOG     Auth0 User: Devesh Jadhav
-[00:04:31.365] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
-[00:04:31.365] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
-[00:04:31.365] Browser LOG     Auth0 User: Devesh Jadhav
-[00:04:31.365] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
-[00:04:31.365] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
-[00:04:31.365] Browser LOG     Auth0 User: Devesh Jadhav
-[00:04:31.365] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
-[00:04:31.497] Browser LOG     Current User: null
-[00:05:04.497] Server  LOG      ✓ Compiled in 126ms
-[00:05:33.364] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:05:39.215] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
-[00:05:39.215] Browser LOG     Auth0 User: Devesh Jadhav
-[00:05:39.215] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
-[00:05:39.215] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
-[00:05:39.215] Browser LOG     Auth0 User: Devesh Jadhav
-[00:05:39.215] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
-[00:05:39.215] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
-[00:05:39.215] Browser LOG     Auth0 User: Devesh Jadhav
-[00:05:39.215] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
-[00:05:39.215] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
-[00:05:39.215] Browser LOG     Auth0 User: Devesh Jadhav
-[00:05:39.215] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
-[00:05:39.215] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
-[00:05:39.215] Browser LOG     Auth0 User: Devesh Jadhav
-[00:05:39.215] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
-[00:05:39.215] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
-[00:05:39.215] Browser LOG     Auth0 User: Devesh Jadhav
-[00:05:39.215] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
-[00:05:41.259] Browser LOG     Auth0 User: Devesh Jadhav
-[00:05:41.259] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:00:03.072] Server  LOG      ✓ Ready in 2.2s
+[00:06:25.226] Server  LOG      ○ Compiling / ...
+[00:06:38.588] Server  LOG     Auth0 User: undefined
+[00:06:42.756] Browser LOG     Auth0 User: undefined
+[00:06:42.756] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.756] Browser LOG     Auth0 User: undefined
+[00:06:42.756] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.756] Browser LOG     Auth0 User: undefined
+[00:06:42.756] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.756] Browser LOG     Auth0 User: undefined
+[00:06:42.757] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.757] Browser LOG     Auth0 User: undefined
+[00:06:42.757] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.757] Browser LOG     Auth0 User: undefined
+[00:06:42.757] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.757] Browser LOG     Auth0 User: undefined
+[00:06:42.757] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.757] Browser LOG     Auth0 User: undefined
+[00:06:42.757] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.757] Browser LOG     Auth0 User: undefined
+[00:06:42.757] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.758] Browser LOG     Auth0 User: undefined
+[00:06:42.758] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.758] Browser LOG     Auth0 User: undefined
+[00:06:42.758] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.758] Browser LOG     Auth0 User: undefined
+[00:06:42.758] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.758] Browser LOG     Auth0 User: undefined
+[00:06:42.758] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.758] Browser LOG     Auth0 User: undefined
+[00:06:42.758] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.758] Browser LOG     Auth0 User: undefined
+[00:06:42.758] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.758] Browser LOG     Auth0 User: undefined
+[00:06:42.758] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.758] Browser LOG     Auth0 User: undefined
+[00:06:42.758] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.758] Browser LOG     Auth0 User: undefined
+[00:06:42.759] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.759] Browser LOG     Auth0 User: undefined
+[00:06:42.759] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.759] Browser LOG     Auth0 User: undefined
+[00:06:42.759] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.759] Browser LOG     Auth0 User: undefined
+[00:06:42.759] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.759] Browser LOG     Auth0 User: undefined
+[00:06:42.759] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.759] Browser LOG     Auth0 User: undefined
+[00:06:42.759] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.759] Browser LOG     Auth0 User: undefined
+[00:06:42.759] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.759] Browser LOG     Auth0 User: undefined
+[00:06:42.759] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.759] Browser LOG     Auth0 User: undefined
+[00:06:42.759] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.759] Browser LOG     Auth0 User: undefined
+[00:06:42.759] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:42.867] Browser LOG     Auth0 User: Devesh Jadhav
+[00:06:42.867] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:06:43.024] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:06:43.024] Browser LOG     Auth0 User: Devesh Jadhav
+[00:06:43.024] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:06:43.024] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:06:43.167] Browser LOG     Current User: null
+[00:06:43.167] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:06:43.167] Browser LOG     Auth0 User: Devesh Jadhav
+[00:06:43.167] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:06:49.164] Server  LOG     Auth0 User: undefined
+[00:06:49.845] Browser LOG     Auth0 User: undefined
+[00:06:49.845] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:49.845] Browser LOG     Auth0 User: undefined
+[00:06:49.845] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:49.845] Browser LOG     Auth0 User: undefined
+[00:06:49.845] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:50.185] Browser LOG     Auth0 User: undefined
+[00:06:50.185] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:06:50.185] Browser LOG     Auth0 User: Devesh Jadhav
+[00:06:50.185] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:06:50.185] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:06:50.185] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:06:50.185] Browser LOG     Auth0 User: Devesh Jadhav
+[00:06:50.185] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:06:50.186] Browser LOG     Current User: null
+[00:06:50.186] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:06:50.186] Browser LOG     Auth0 User: Devesh Jadhav
+[00:06:50.186] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:06:55.167] Server  LOG      ○ Compiling /findwork ...
+[00:06:58.432] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:01.766] Server  LOG     Auth0 User: undefined
+[00:07:02.687] Browser LOG     Auth0 User: undefined
+[00:07:02.687] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:07:02.687] Browser LOG     Auth0 User: undefined
+[00:07:02.687] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:07:02.687] Browser LOG     Auth0 User: undefined
+[00:07:02.687] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:07:03.322] Browser LOG     Auth0 User: undefined
+[00:07:03.322] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:07:03.322] Browser LOG     Auth0 User: undefined
+[00:07:03.323] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:07:03.323] Browser LOG     Auth0 User: Devesh Jadhav
+[00:07:03.323] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:07:03.323] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:03.323] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:07:03.323] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:07:03.323] Browser LOG     Auth0 User: Devesh Jadhav
+[00:07:03.323] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:07:03.323] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:07:03.323] Browser LOG     Auth0 User: Devesh Jadhav
+[00:07:03.323] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:07:03.323] Browser LOG     Current User: null
+[00:07:08.446] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:07:08.446] Browser LOG     Auth0 User: Devesh Jadhav
+[00:07:08.446] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:07:08.446] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:07:08.446] Browser LOG     Auth0 User: Devesh Jadhav
+[00:07:08.446] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:07:08.446] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:07:08.446] Browser LOG     Auth0 User: Devesh Jadhav
+[00:07:08.446] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:07:08.446] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:07:08.446] Browser LOG     Auth0 User: Devesh Jadhav
+[00:07:08.446] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:07:08.446] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:07:08.446] Browser LOG     Auth0 User: Devesh Jadhav
+[00:07:08.446] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:07:08.446] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:07:08.446] Browser LOG     Auth0 User: Devesh Jadhav
+[00:07:08.446] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:07:09.711] Server  LOG     Auth0 User: undefined
+[00:07:10.402] Browser LOG     Auth0 User: undefined
+[00:07:10.402] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:07:10.403] Browser LOG     Auth0 User: undefined
+[00:07:10.403] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:07:10.403] Browser LOG     Auth0 User: undefined
+[00:07:10.403] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:07:10.403] Browser LOG     Auth0 User: undefined
+[00:07:10.403] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:07:10.577] Browser LOG     Auth0 User: Devesh Jadhav
+[00:07:10.577] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:07:10.921] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:07:10.922] Browser LOG     Auth0 User: Devesh Jadhav
+[00:07:10.922] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:07:10.922] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:10.922] Browser LOG     Current User: null
+[00:07:10.922] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:07:10.922] Browser LOG     Auth0 User: Devesh Jadhav
+[00:07:10.922] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:07:11.198] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:07:11.198] Browser LOG     Auth0 User: Devesh Jadhav
+[00:07:11.198] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:07:11.198] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:07:11.198] Browser LOG     Auth0 User: Devesh Jadhav
+[00:07:11.198] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:07:11.531] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:07:11.531] Browser LOG     Auth0 User: Devesh Jadhav
+[00:07:11.531] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:07:11.532] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:07:11.532] Browser LOG     Auth0 User: Devesh Jadhav
+[00:07:11.532] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:07:11.532] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:07:11.532] Browser LOG     Auth0 User: Devesh Jadhav
+[00:07:11.532] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:07:11.532] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:07:11.532] Browser LOG     Auth0 User: Devesh Jadhav
+[00:07:11.532] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:30:37.965] Server  LOG     Auth0 User: undefined
+[00:30:38.855] Browser LOG     Auth0 User: undefined
+[00:30:38.855] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:30:39.269] Browser LOG     Auth0 User: undefined
+[00:30:39.269] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:30:39.269] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:30:39.269] Browser LOG     Auth0 User: Devesh Jadhav
+[00:30:39.269] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:30:39.269] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:30:39.270] Browser LOG     Auth0 User: Devesh Jadhav
+[00:30:39.270] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:30:39.270] Browser LOG     Current User: null
+[00:30:39.270] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:30:39.270] Browser LOG     Auth0 User: Devesh Jadhav
+[00:30:39.270] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:30:42.362] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:30:42.362] Browser LOG     Auth0 User: Devesh Jadhav
+[00:30:42.362] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:30:42.362] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:30:42.362] Browser LOG     Auth0 User: Devesh Jadhav
+[00:30:42.362] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:30:42.362] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:30:42.362] Browser LOG     Auth0 User: Devesh Jadhav
+[00:30:42.362] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:30:42.362] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:30:42.362] Browser LOG     Auth0 User: Devesh Jadhav
+[00:30:42.362] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:30:42.362] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:30:42.362] Browser LOG     Auth0 User: Devesh Jadhav
+[00:30:42.362] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:30:42.362] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:30:42.362] Browser LOG     Auth0 User: Devesh Jadhav
+[00:30:42.362] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:30:44.397] Server  LOG     Auth0 User: undefined
+[00:30:44.845] Browser LOG     Auth0 User: undefined
+[00:30:44.845] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:30:44.845] Browser LOG     Auth0 User: undefined
+[00:30:44.845] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:30:44.845] Browser LOG     Auth0 User: undefined
+[00:30:44.845] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:30:44.845] Browser LOG     Auth0 User: undefined
+[00:30:44.845] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:30:45.168] Browser LOG     Auth0 User: Devesh Jadhav
+[00:30:45.168] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:30:45.168] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:30:45.168] Browser LOG     Auth0 User: Devesh Jadhav
+[00:30:45.168] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:30:45.168] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:30:45.168] Browser LOG     Auth0 User: Devesh Jadhav
+[00:30:45.168] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:30:45.168] Browser LOG     Current User: null
+[00:30:45.168] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:30:45.642] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:30:45.642] Browser LOG     Auth0 User: Devesh Jadhav
+[00:30:45.642] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:30:45.642] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:30:45.642] Browser LOG     Auth0 User: Devesh Jadhav
+[00:30:45.642] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:30:45.642] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:30:45.642] Browser LOG     Auth0 User: Devesh Jadhav
+[00:30:45.642] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:30:45.642] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:30:45.642] Browser LOG     Auth0 User: Devesh Jadhav
+[00:30:45.642] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:30:45.642] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:30:45.642] Browser LOG     Auth0 User: Devesh Jadhav
+[00:30:45.642] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:30:45.642] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:30:45.642] Browser LOG     Auth0 User: Devesh Jadhav
+[00:30:45.642] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:36.873] Server  LOG     Auth0 User: undefined
+[00:31:37.587] Browser LOG     Auth0 User: undefined
+[00:31:37.587] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:37.958] Browser LOG     Auth0 User: undefined
+[00:31:37.958] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:37.958] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:37.958] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:37.958] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:37.958] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:37.958] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:37.958] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:37.958] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:37.958] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:37.958] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:37.958] Browser LOG     Current User: null
+[00:31:40.156] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:40.156] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:40.156] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:40.156] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:40.156] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:40.156] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:40.156] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:40.156] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:40.156] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:40.156] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:40.156] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:40.156] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:40.156] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:40.156] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:40.156] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:40.156] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:40.156] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:40.156] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:42.241] Server  LOG     Auth0 User: undefined
+[00:31:43.096] Browser LOG     Auth0 User: undefined
+[00:31:43.097] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:43.097] Browser LOG     Auth0 User: undefined
+[00:31:43.097] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:43.097] Browser LOG     Auth0 User: undefined
+[00:31:43.097] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:43.097] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:43.097] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:43.097] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:43.097] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:43.097] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:43.097] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:43.097] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:43.097] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:43.097] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:43.386] Browser LOG     Current User: null
+[00:31:43.881] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:43.881] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:43.881] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:43.881] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:43.881] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:43.881] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:43.881] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:43.881] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:43.881] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:43.881] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:43.881] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:43.881] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:43.881] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:43.881] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:43.881] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:43.881] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:43.881] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:43.882] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:44.690] Server  LOG     Auth0 User: undefined
+[00:31:45.787] Server  LOG      ○ Compiling /_not-found/page ...
+[00:31:45.799] Browser LOG     Auth0 User: undefined
+[00:31:45.799] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.799] Browser LOG     Auth0 User: undefined
+[00:31:45.799] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.799] Browser LOG     Auth0 User: undefined
+[00:31:45.799] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.799] Browser LOG     Auth0 User: undefined
+[00:31:45.799] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.799] Browser LOG     Auth0 User: undefined
+[00:31:45.799] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.799] Browser LOG     Auth0 User: undefined
+[00:31:45.799] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.799] Browser LOG     Auth0 User: undefined
+[00:31:45.799] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.799] Browser LOG     Auth0 User: undefined
+[00:31:45.799] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.799] Browser LOG     Auth0 User: undefined
+[00:31:45.799] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.799] Browser LOG     Auth0 User: undefined
+[00:31:45.799] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.799] Browser LOG     Auth0 User: undefined
+[00:31:45.799] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.799] Browser LOG     Auth0 User: undefined
+[00:31:45.799] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.799] Browser LOG     Auth0 User: undefined
+[00:31:45.799] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.799] Browser LOG     Auth0 User: undefined
+[00:31:45.799] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.799] Browser LOG     Auth0 User: undefined
+[00:31:45.799] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.799] Browser LOG     Auth0 User: undefined
+[00:31:45.799] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.799] Browser LOG     Auth0 User: undefined
+[00:31:45.800] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.800] Browser LOG     Auth0 User: undefined
+[00:31:45.800] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.800] Browser LOG     Auth0 User: undefined
+[00:31:45.800] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.800] Browser LOG     Auth0 User: undefined
+[00:31:45.800] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.800] Browser LOG     Auth0 User: undefined
+[00:31:45.800] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.800] Browser LOG     Auth0 User: undefined
+[00:31:45.800] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:45.800] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:45.800] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:45.800] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:45.800] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:45.800] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:45.800] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:45.800] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:45.800] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:45.800] Browser LOG     Current User: null
+[00:31:45.800] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:46.239] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:46.239] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:46.239] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:46.239] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:46.239] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:46.239] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:46.239] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:46.239] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:46.239] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:46.239] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:46.239] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:46.239] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:46.239] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:46.239] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:46.239] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:46.239] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:46.239] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:46.239] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:48.495] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:31:50.088] Server  LOG     Auth0 User: undefined
+[00:31:50.582] Browser LOG     Auth0 User: undefined
+[00:31:50.582] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:51.014] Browser LOG     Auth0 User: undefined
+[00:31:51.014] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:51.014] Browser LOG     Auth0 User: undefined
+[00:31:51.014] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:51.014] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:51.014] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:51.014] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:51.014] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:31:51.014] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:51.014] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:51.014] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:51.014] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:51.014] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:51.014] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:51.351] Browser LOG     Current User: null
+[00:31:56.969] Server  LOG      ○ Compiling /post ...
+[00:31:57.578] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:57.579] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:59.007] Server  LOG     Auth0 User: undefined
+[00:31:59.692] Browser LOG     Auth0 User: undefined
+[00:31:59.692] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:59.692] Browser LOG     Auth0 User: undefined
+[00:31:59.692] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:59.692] Browser LOG     Auth0 User: undefined
+[00:31:59.692] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:59.692] Browser LOG     Auth0 User: undefined
+[00:31:59.693] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:31:59.693] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:59.693] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:59.693] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:59.861] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:59.861] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:59.861] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:59.861] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:31:59.861] Browser LOG     Auth0 User: Devesh Jadhav
+[00:31:59.861] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:31:59.996] Browser LOG     Current User: null
+[00:33:55.224] Server  LOG     Auth0 User: undefined
+[00:33:56.380] Browser LOG     Auth0 User: undefined
+[00:33:56.380] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:33:56.598] Browser LOG     Auth0 User: undefined
+[00:33:56.598] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:33:56.598] Browser LOG     Auth0 User: undefined
+[00:33:56.598] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:33:56.598] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:33:56.598] Browser LOG     Auth0 User: Devesh Jadhav
+[00:33:56.598] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:33:56.760] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:33:56.760] Browser LOG     Auth0 User: Devesh Jadhav
+[00:33:56.760] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:33:56.760] Browser LOG     Current User: null
+[00:33:56.760] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:33:56.760] Browser LOG     Auth0 User: Devesh Jadhav
+[00:33:56.760] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:02.959] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:02.959] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:02.959] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:02.959] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:02.959] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:02.959] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:02.959] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:02.959] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:02.959] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:02.959] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:02.959] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:02.959] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:02.959] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:02.959] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:02.959] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:02.959] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:02.959] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:02.959] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:04.412] Server  LOG     Auth0 User: undefined
+[00:34:04.850] Browser LOG     Auth0 User: undefined
+[00:34:04.850] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:04.850] Browser LOG     Auth0 User: undefined
+[00:34:04.850] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:04.850] Browser LOG     Auth0 User: undefined
+[00:34:04.850] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:04.850] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:04.850] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:05.039] Server  LOG     Auth0 User: undefined
+[00:34:05.069] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:05.069] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:05.070] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:05.974] Browser LOG     Auth0 User: undefined
+[00:34:05.975] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:05.975] Browser LOG     Auth0 User: undefined
+[00:34:05.975] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:05.975] Browser LOG     Auth0 User: undefined
+[00:34:05.975] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:05.975] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:05.975] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:05.975] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:05.975] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:05.975] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:05.975] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:05.975] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:05.975] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:05.975] Browser LOG     Current User: null
+[00:34:08.271] Server  LOG     Auth0 User: undefined
+[00:34:08.729] Browser LOG     Auth0 User: undefined
+[00:34:08.730] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:08.730] Browser LOG     Auth0 User: undefined
+[00:34:08.730] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:08.730] Browser LOG     Auth0 User: undefined
+[00:34:08.730] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:08.730] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:08.730] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:08.730] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:08.730] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:08.730] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:08.836] Server  LOG     Auth0 User: undefined
+[00:34:09.666] Browser LOG     Auth0 User: undefined
+[00:34:09.666] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:09.666] Browser LOG     Auth0 User: undefined
+[00:34:09.666] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:09.666] Browser LOG     Auth0 User: undefined
+[00:34:09.666] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:09.666] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:09.666] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:09.666] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:09.666] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:09.666] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:09.666] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:09.666] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:09.666] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:09.666] Browser LOG     Current User: null
+[00:34:14.723] Server  LOG     Auth0 User: undefined
+[00:34:15.535] Browser LOG     Auth0 User: undefined
+[00:34:15.535] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:15.535] Browser LOG     Auth0 User: undefined
+[00:34:15.535] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:15.535] Browser LOG     Auth0 User: undefined
+[00:34:15.535] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:15.535] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:15.535] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:15.536] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:15.536] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:15.536] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:15.536] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:15.536] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:15.536] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:15.536] Browser LOG     Current User: null
+[00:34:26.015] Server  LOG     Auth0 User: undefined
+[00:34:26.684] Browser LOG     Auth0 User: undefined
+[00:34:26.684] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:26.684] Browser LOG     Auth0 User: undefined
+[00:34:26.684] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:26.684] Browser LOG     Auth0 User: undefined
+[00:34:26.684] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:26.685] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:26.685] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:26.685] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:26.685] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:26.685] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:26.685] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:26.685] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:26.685] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:26.889] Browser LOG     Current User: null
+[00:34:29.958] Server  LOG     Auth0 User: undefined
+[00:34:30.654] Browser LOG     Auth0 User: undefined
+[00:34:30.654] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:30.654] Browser LOG     Auth0 User: undefined
+[00:34:30.654] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:30.654] Browser LOG     Auth0 User: undefined
+[00:34:30.654] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:30.654] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:30.654] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:30.654] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:30.654] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:30.654] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:30.654] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:30.654] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:30.654] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:30.654] Browser LOG     Current User: null
+[00:34:36.277] Server  LOG     Auth0 User: undefined
+[00:34:37.079] Browser LOG     Auth0 User: undefined
+[00:34:37.079] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:37.469] Browser LOG     Auth0 User: undefined
+[00:34:37.469] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:37.469] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:34:37.469] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:37.469] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:37.469] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:37.469] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:37.469] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:37.469] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:37.469] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:37.469] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:37.469] Browser LOG     Current User: null
+[00:34:39.657] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:39.657] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:39.657] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:39.657] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:39.657] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:39.657] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:39.657] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:39.657] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:39.657] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:39.657] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:39.657] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:39.657] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:39.990] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:39.990] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:39.990] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:40.107] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:40.107] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:40.107] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:41.167] Server  LOG     Auth0 User: undefined
+[00:34:41.682] Browser LOG     Auth0 User: undefined
+[00:34:41.682] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:41.682] Browser LOG     Auth0 User: undefined
+[00:34:41.682] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:41.682] Browser LOG     Auth0 User: undefined
+[00:34:41.682] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:34:42.041] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:42.041] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:42.041] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:42.041] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:42.041] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:42.041] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:42.041] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:42.041] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:42.041] Browser LOG     Current User: null
+[00:34:42.041] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:34:42.603] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:42.604] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:42.604] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:42.604] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:42.604] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:42.604] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:42.604] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:42.604] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:42.604] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:42.604] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:42.604] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:42.604] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:42.604] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:42.604] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:42.604] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:34:42.604] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:34:42.604] Browser LOG     Auth0 User: Devesh Jadhav
+[00:34:42.604] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:11.864] Server  LOG     Auth0 User: undefined
+[00:38:12.781] Browser LOG     Auth0 User: undefined
+[00:38:12.781] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:38:13.004] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:38:13.004] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:13.004] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:13.540] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:13.541] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:13.541] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:14.846] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:14.846] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:14.846] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:16.827] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:16.827] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:16.827] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:16.960] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:16.960] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:16.960] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:17.093] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:17.093] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:17.093] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:17.407] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:17.408] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:17.408] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:17.639] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:17.639] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:17.639] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:17.639] Browser LOG     Current User: null
+[00:38:17.639] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:17.639] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:17.639] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:18.343] Server  LOG     Auth0 User: undefined
+[00:38:18.795] Browser LOG     Auth0 User: undefined
+[00:38:18.795] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:38:19.119] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:19.119] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:19.119] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:19.119] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:19.119] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:19.119] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:19.119] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:19.119] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:19.119] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:38:19.379] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:19.379] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:19.379] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:19.817] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:19.817] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:19.817] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:19.817] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:19.817] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:19.817] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:19.817] Browser LOG     Current User: null
+[00:38:19.817] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:19.817] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:19.817] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:19.817] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:19.817] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:19.817] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:19.817] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:19.817] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:19.817] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:21.463] Server  LOG     Auth0 User: undefined
+[00:38:21.891] Browser LOG     Auth0 User: undefined
+[00:38:21.891] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:38:22.199] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:22.199] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:22.199] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:22.199] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:22.199] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:22.199] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:22.199] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:22.199] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:22.199] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:38:22.550] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:22.550] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:22.550] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:22.550] Browser LOG     Current User: null
+[00:38:23.078] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:23.078] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:23.079] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:23.615] Server  LOG     Auth0 User: undefined
+[00:38:24.060] Browser LOG     Auth0 User: undefined
+[00:38:24.060] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[00:38:24.313] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:24.313] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:24.313] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:24.313] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:24.313] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:24.313] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:38:24.313] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:24.313] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:24.313] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:24.426] Browser LOG     Current User: null
+[00:38:24.638] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:24.638] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:24.638] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:24.638] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:24.638] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:24.638] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:25.005] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:25.005] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:25.005] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:25.005] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:25.005] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:25.005] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:25.005] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:25.005] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:25.005] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:25.005] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:25.005] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:25.005] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:26.552] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:26.552] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:33.111] Server  LOG      ○ Compiling /profile ...
+[00:38:49.586] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:38:52.027] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:52.027] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:52.027] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:52.027] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:52.027] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:52.027] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:52.027] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:52.027] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:52.027] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:52.027] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:52.027] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:52.027] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:52.027] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:52.027] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:52.027] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:52.027] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[00:38:52.027] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:52.027] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[00:38:53.070] Browser LOG     Auth0 User: Devesh Jadhav
+[00:38:53.070] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
