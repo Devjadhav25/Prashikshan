@@ -18,6 +18,7 @@ import { Server } from "socket.io";
 dotenv.config();
 const app = express();
 
+app.set('trust proxy', 1);
 // ✅ Create the HTTP server using the Express app
 const httpServer = createServer(app);
 
@@ -53,7 +54,7 @@ const config = {
     absoluteDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
     cookie: {
       // ✅ Dynamic domain: use the live domain in production, undefined for localhost
-      domain: process.env.NODE_ENV === 'production' ? "prashikshan.onrender.com" : undefined,
+      
       
       // ✅ Must be true in production for HTTPS
       secure: process.env.NODE_ENV === 'production', 
