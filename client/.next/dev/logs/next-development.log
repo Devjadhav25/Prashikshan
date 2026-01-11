@@ -911,3 +911,34 @@ Import traces:
 [02:35:12.954] Browser LOG     Auth0 User: Devesh Jadhav
 [02:35:12.954] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
 [02:35:12.954] Browser LOG     Current User: null
+[02:36:54.487] Server  LOG     Auth0 User: undefined
+[02:36:54.989] Browser LOG     Auth0 User: undefined
+[02:36:54.989] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[02:36:55.228] Browser LOG     Auth0 User: Devesh Jadhav
+[02:36:55.228] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[02:36:55.228] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[02:36:55.228] Browser LOG     Auth0 User: Devesh Jadhav
+[02:36:55.228] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[02:36:55.228] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:36:55.228] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[02:36:55.228] Browser LOG     Auth0 User: Devesh Jadhav
+[02:36:55.228] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[02:36:55.228] Browser LOG     Current User: null
+[02:39:55.209] Server  LOG      ✓ Compiled in 257ms
+[02:39:55.538] Browser ERROR   uncaughtError: ReferenceError: CallToAction is not defined
+[02:41:19.292] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:41:19.309] Server  LOG      ✓ Compiled in 105ms
+[02:41:19.484] Server  LOG     Auth0 User: undefined
+[02:41:20.394] Server  LOG     Auth0 User: undefined
+[02:41:21.530] Browser LOG     Auth0 User: undefined
+[02:41:21.530] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[02:41:21.530] Browser LOG     Auth0 User: Devesh Jadhav
+[02:41:21.530] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[02:41:21.530] Browser LOG     Current User: null
+[02:41:21.530] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[02:41:21.530] Browser LOG     Auth0 User: Devesh Jadhav
+[02:41:21.530] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[02:41:21.530] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[02:41:21.530] Browser LOG     Auth0 User: Devesh Jadhav
+[02:41:21.530] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[02:42:01.707] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
