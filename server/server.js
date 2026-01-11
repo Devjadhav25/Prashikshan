@@ -92,7 +92,9 @@ app.set("io", io);
 // Function to ensure User exists in DB
 const ensureUserInDB = asyncHandler(async (user) => {
   try {
-    const existingUser = await User.findOne({ auth0Id: user.sub });
+    const existingUser = await User.findOne({ 
+      $or: [{ auth0Id: user.sub }, { email: user.email }] 
+    });
     if (!existingUser) {
       const newUser = new User({
         name: user.name,

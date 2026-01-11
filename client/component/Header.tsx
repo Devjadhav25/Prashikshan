@@ -125,22 +125,22 @@ function Header() {
             ))}
             
             {!isAuthenticated && (
-              <div className="grid grid-cols-2 gap-3 mt-4 pt-6 border-t border-gray-100">
-                <Link
-                  href={"https://prashikshan.onrender.com/login"}
-                  className="py-3 rounded-2xl bg-[#7263f3] text-white font-black text-sm flex items-center justify-center gap-2"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  <LogIn className="w-4 h-4" /> Login
-                </Link>
-                <Link
-                  href={"https://prashikshan.onrender.com/login"}
-                  className="py-3 rounded-2xl border-2 border-gray-100 text-gray-700 font-black text-sm flex items-center justify-center gap-2"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  <UserPlus className="w-4 h-4" /> Join
-                </Link>
-              </div>
+              <div className="hidden md:flex items-center gap-3">
+  <Link
+    href={"https://prashikshan.onrender.com/login"}
+    className="py-2.5 px-6 rounded-2xl text-sm font-black bg-[#7263f3] text-white shadow-lg shadow-[#7263f3]/20 hover:bg-[#5e4ee0] hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2"
+  >
+    <LogIn className="w-4 h-4" />
+    Login
+  </Link>
+  {/* Logout Link for testing - you should also put this inside your Profile component */}
+  <Link
+    href={"https://prashikshan.onrender.com/logout"}
+    className="py-2.5 px-6 rounded-2xl text-sm font-black border-2 border-gray-100 text-gray-700 hover:border-red-500 hover:text-red-500 transition-all duration-300 flex items-center gap-2"
+  >
+    Logout
+  </Link>
+</div>
             )}
           </nav>
         </div>
