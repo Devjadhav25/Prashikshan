@@ -113,7 +113,7 @@ function Profile() {
         <div className="p-1">
           <DropdownMenuItem
             className="cursor-pointer rounded-xl py-2.5 text-red-600 focus:bg-red-50 focus:text-red-700 group transition-all"
-            onClick={() => router.push("http://localhost:8000/logout")}
+            onClick={() => router.push("https://prashikshan.onrender.com/logout")}
           >
             <div className="p-1.5 rounded-lg bg-red-50 group-hover:bg-red-100 mr-3 transition-colors">
                <LogOut className="h-4 w-4" />

@@ -286,7 +286,7 @@ function JobCard({ job, activeJob }) {
                         className: `text-2xl transition-transform active:scale-90 ${isLiked ? "text-[#7263f3]" : "text-gray-400"} `,
                         onClick: (e)=>{
                             e.stopPropagation(); // Prevents navigating to job details when clicking like
-                            isAuthenticated ? handleLike(job._id) : router.push("http://localhost:8000/login");
+                            isAuthenticated ? handleLike(job._id) : router.push("https://prashikshan.onrender.com/login");
                         },
                         children: isLiked ? __TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$icons$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["bookmark"] : __TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$icons$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["bookmarkEmpty"]
                     }, void 0, false, {

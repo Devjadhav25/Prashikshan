@@ -28,7 +28,7 @@ const likedJobs = jobs ? jobs.filter((job: Job) => {
 
   useEffect(() => {
     if (!loading && !isAuthenticated) {
-      router.push("http://localhost:8000/login");
+      router.push("https://prashikshan.onrender.com/login");
     }
   }, [isAuthenticated, loading, router]);
 

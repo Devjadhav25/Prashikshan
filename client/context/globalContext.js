@@ -7,7 +7,7 @@ import { toast } from "react-hot-toast";
 
 const GlobalContext = createContext();
 
-axios.defaults.baseURL = "http://localhost:8000";
+axios.defaults.baseURL = "https://prashikshan.onrender.com";
 axios.defaults.withCredentials = true;
 
 

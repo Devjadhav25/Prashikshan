@@ -108,7 +108,7 @@ function Page() {
         toast.error("You have already applied to this job");
       }
     } else {
-      router.push("http://localhost:8000/login");
+      router.push("https://prashikshan.onrender.com/login");
     }
   };
 
@@ -168,7 +168,7 @@ function Page() {
                 className={`p-3 rounded-2xl transition-all shadow-sm ${
                   isLiked ? "bg-[#7263f3] text-white" : "bg-white text-gray-300 border border-gray-100"
                 }`}
-                onClick={() => isAuthenticated ? handleLike(job._id) : router.push("http://localhost:8000/login")}
+                onClick={() => isAuthenticated ? handleLike(job._id) : router.push("https://prashikshan.onrender.com/login")}
               >
                 <Bookmark size={22} fill={isLiked ? "white" : "none"} />
               </button>
