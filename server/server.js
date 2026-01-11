@@ -47,6 +47,7 @@ const config = {
     returnTo: process.env.CLIENT_URL
   },
   idpLogout: true,
+  auth0Logout: true,
   
   session: {
     absoluteDuration: 30 * 24 * 60 * 60 * 1000, // 30 days

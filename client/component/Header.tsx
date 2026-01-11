@@ -13,6 +13,13 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  // ✅ PRODUCTION-SAFE LOGIC
+  // This ensures the link is always correct instantly, without waiting for Axios
+  const isProduction = process.env.NODE_ENV === "production";
+  const authUrl = isProduction 
+    ? "https://prashikshan.onrender.com" 
+    : "http://localhost:8000";
+
   // Add scroll effect for glassmorphism
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -36,7 +43,7 @@ function Header() {
     >
       <div className="max-w-[1440px] mx-auto flex justify-between items-center">
         
-        {/* BRANDING WITH GRADIENT EFFECT */}
+        {/* BRANDING */}
         <Link href={"/"} className="flex items-center gap-3 group transition-transform duration-300 hover:scale-105">
           <div className="relative w-11 h-11 transition-transform group-hover:rotate-12">
             <Image src="/appLogo.png" alt="logo" fill className="object-contain" />
@@ -46,7 +53,7 @@ function Header() {
           </h1>
         </Link>
 
-        {/* DESKTOP NAVIGATION WITH HOVER EFFECTS */}
+        {/* DESKTOP NAVIGATION */}
         <nav className="hidden md:flex items-center gap-2">
           {navLinks.map((link) => (
             <Link
@@ -60,7 +67,6 @@ function Header() {
             >
               {link.icon}
               {link.name}
-              {/* Animated underline */}
               <span className={`absolute bottom-1 left-1/2 -translate-x-1/2 h-1 bg-[#7263f3] rounded-full transition-all duration-300 ${
                 pathname === link.href ? "w-4" : "w-0 group-hover:w-4"
               }`}></span>
@@ -77,15 +83,16 @@ function Header() {
             </div>
           ) : (
             <div className="hidden md:flex items-center gap-3">
+              {/* ✅ Uses the safe 'authUrl' variable */}
               <Link
-                href={"https://prashikshan.onrender.com/login"}
+                href={`${authUrl}/login`}
                 className="py-2.5 px-6 rounded-2xl text-sm font-black bg-[#7263f3] text-white shadow-lg shadow-[#7263f3]/20 hover:bg-[#5e4ee0] hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2"
               >
                 <LogIn className="w-4 h-4" />
                 Login
               </Link>
               <Link
-                href={"https://prashikshan.onrender.com/login"}
+                href={`${authUrl}/login`}
                 className="py-2.5 px-6 rounded-2xl text-sm font-black border-2 border-gray-100 text-gray-700 hover:border-[#7263f3] hover:text-[#7263f3] transition-all duration-300 flex items-center gap-2"
               >
                 <UserPlus className="w-4 h-4" />
@@ -104,7 +111,7 @@ function Header() {
         </div>
       </div>
 
-      {/* MOBILE NAVIGATION - ANIMATED OVERLAY */}
+      {/* MOBILE NAVIGATION */}
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-xl animate-in fade-in slide-in-from-top-4 duration-300">
           <nav className="flex flex-col gap-2 p-6">
@@ -124,23 +131,24 @@ function Header() {
               </Link>
             ))}
             
+            {/* ✅ FIXED: Mobile buttons are now visible and use safe 'authUrl' */}
             {!isAuthenticated && (
-              <div className="hidden md:flex items-center gap-3">
-  <Link
-    href={"https://prashikshan.onrender.com/login"}
-    className="py-2.5 px-6 rounded-2xl text-sm font-black bg-[#7263f3] text-white shadow-lg shadow-[#7263f3]/20 hover:bg-[#5e4ee0] hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2"
-  >
-    <LogIn className="w-4 h-4" />
-    Login
-  </Link>
-  {/* Logout Link for testing - you should also put this inside your Profile component */}
-  <Link
-    href={"https://prashikshan.onrender.com/logout"}
-    className="py-2.5 px-6 rounded-2xl text-sm font-black border-2 border-gray-100 text-gray-700 hover:border-red-500 hover:text-red-500 transition-all duration-300 flex items-center gap-2"
-  >
-    Logout
-  </Link>
-</div>
+              <div className="flex flex-col gap-4 mt-4 pt-4 border-t border-gray-100">
+                <Link
+                  href={`${authUrl}/login`}
+                  className="w-full py-3 px-6 rounded-2xl text-sm font-black bg-[#7263f3] text-white shadow-lg shadow-[#7263f3]/20 hover:bg-[#5e4ee0] flex items-center justify-center gap-2"
+                >
+                  <LogIn className="w-4 h-4" />
+                  Login
+                </Link>
+                <Link
+                  href={`${authUrl}/login`}
+                  className="w-full py-3 px-6 rounded-2xl text-sm font-black border-2 border-gray-100 text-gray-700 hover:border-[#7263f3] hover:text-[#7263f3] flex items-center justify-center gap-2"
+                >
+                  <UserPlus className="w-4 h-4" />
+                  Register
+                </Link>
+              </div>
             )}
           </nav>
         </div>

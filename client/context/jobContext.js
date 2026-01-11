@@ -10,16 +10,18 @@ import { io } from "socket.io-client";
 
 
 
-const socket = io("https://prashikshan.onrender.com");
 
 
+const isProduction = process.env.NODE_ENV === "production";
+const baseURL = isProduction 
+    ? "https://prashikshan.onrender.com" 
+    : "http://localhost:8000";
 
-
-
-const JobsContext = createContext();
-axios.defaults.baseURL = "https://prashikshan.onrender.com";
+// Update Axios
+axios.defaults.baseURL = baseURL;
 axios.defaults.withCredentials = true;
-
+const socket = io(baseURL);
+const JobsContext = createContext();
 
 export const JobsContextProvider =({children})   => { 
     const router = useRouter();

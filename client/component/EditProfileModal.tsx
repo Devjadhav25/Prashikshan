@@ -78,11 +78,29 @@ export default function EditProfileModal({ user, isOpen, onClose }: EditProfileM
     setFormData({ ...formData, skills: newSkills });
   };
 
-  const addInterest = (e: React.MouseEvent) => {
+  // ✅ Updated: Handles both Mouse clicks and Keyboard "Enter" presses
+  const addInterest = (e: React.MouseEvent | React.KeyboardEvent) => {
     e.preventDefault();
+    e.stopPropagation();
     if (interestInput.trim() && !formData.interests.includes(interestInput.trim())) {
       setFormData({ ...formData, interests: [...formData.interests, interestInput.trim()] });
       setInterestInput("");
+    }
+  };
+
+  // ✅ New: Specific handler for the Interest Input
+  const handleInterestKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+        addInterest(e);
+    }
+  };
+
+  // ✅ New: Global handler to prevent form submission on Enter key for other inputs
+  const handleFormKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter") {
+      // Allow Enter only in Textareas (for Bio), otherwise prevent submission
+      if (e.target instanceof HTMLTextAreaElement) return;
+      e.preventDefault();
     }
   };
 
@@ -134,7 +152,8 @@ export default function EditProfileModal({ user, isOpen, onClose }: EditProfileM
           </DialogHeader>
         </div>
 
-        <form onSubmit={handleSubmit} className="p-8 space-y-8">
+        {/* ✅ Added onKeyDown to form to prevent global submission */}
+        <form onSubmit={handleSubmit} onKeyDown={handleFormKeyDown} className="p-8 space-y-8">
           <div className="flex flex-col items-center -mt-20">
             <div className="relative group">
               <div className="w-28 h-28 rounded-3xl border-4 border-white overflow-hidden bg-gray-100 shadow-xl">
@@ -192,7 +211,13 @@ export default function EditProfileModal({ user, isOpen, onClose }: EditProfileM
           <div className="space-y-4 pt-4 border-t border-gray-50">
             <Label className="text-xs font-black text-gray-400 uppercase tracking-widest">Interests</Label>
             <div className="flex gap-2">
-              <Input placeholder="Design, AI..." value={interestInput} onChange={(e) => setInterestInput(e.target.value)} className="rounded-xl bg-gray-50" />
+              <Input 
+                placeholder="Design, AI... (Press Enter to add)" 
+                value={interestInput} 
+                onChange={(e) => setInterestInput(e.target.value)} 
+                onKeyDown={handleInterestKeyDown} // ✅ Added handler
+                className="rounded-xl bg-gray-50" 
+              />
               <Button type="button" onClick={addInterest} className="bg-[#7263f3] rounded-xl px-6">Add</Button>
             </div>
             <div className="flex flex-wrap gap-2">

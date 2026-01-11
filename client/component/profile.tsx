@@ -15,6 +15,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useGlobalContext } from "@/context/globalContext";
 import { Badge } from "@/components/ui/badge";
+import axios from "axios";
 
 function Profile() {
   const { userProfile, auth0User, loading } = useGlobalContext();
@@ -26,6 +27,11 @@ function Profile() {
   const profileProfession = userProfile?.profession;
 
   const [imgSrc, setImgSrc] = useState(profileImg);
+  const handleLogout = () => {
+    // This grabs the baseURL you set in your Context (localhost:8000 or production)
+    const baseUrl = axios.defaults.baseURL; 
+    window.location.href = `${baseUrl}/logout`;
+  };
 
   useEffect(() => {
     setImgSrc(profileImg);
@@ -113,7 +119,7 @@ function Profile() {
         <div className="p-1">
           <DropdownMenuItem
             className="cursor-pointer rounded-xl py-2.5 text-red-600 focus:bg-red-50 focus:text-red-700 group transition-all"
-            onClick={() => window.location.href = "https://prashikshan.onrender.com/logout"}
+            onClick={handleLogout}
           >
             <div className="p-1.5 rounded-lg bg-red-50 group-hover:bg-red-100 mr-3 transition-colors">
                <LogOut className="h-4 w-4" />

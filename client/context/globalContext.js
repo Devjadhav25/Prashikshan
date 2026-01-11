@@ -6,8 +6,10 @@ import { toast } from "react-hot-toast";
 
 
 const GlobalContext = createContext();
-
-axios.defaults.baseURL = "https://prashikshan.onrender.com";
+const isProduction = process.env.NODE_ENV === "production";
+axios.defaults.baseURL = isProduction 
+    ? "https://prashikshan.onrender.com" 
+    : "http://localhost:8000";
 axios.defaults.withCredentials = true;
 
 
