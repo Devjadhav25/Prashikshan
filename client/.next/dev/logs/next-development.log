@@ -759,3 +759,27 @@
 [00:38:52.027] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
 [00:38:53.070] Browser LOG     Auth0 User: Devesh Jadhav
 [00:38:53.070] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[01:16:11.686] Server  LOG      ✓ Compiled in 460ms
+[01:16:16.533] Browser LOG     Auth0 User: Devesh Jadhav
+[01:16:16.533] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[01:17:46.539] Browser LOG     Auth0 User: Devesh Jadhav
+[01:17:46.539] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[01:48:41.463] Server  LOG      ✓ Compiled in 230ms
+[01:48:43.526] Browser LOG     Auth0 User: Devesh Jadhav
+[01:48:43.526] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[01:50:47.628] Server  LOG      ✓ Compiled in 711ms
+[01:50:48.531] Browser LOG     Auth0 User: Devesh Jadhav
+[01:50:48.531] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[01:50:58.028] Server  LOG     Auth0 User: undefined
+[01:50:58.531] Browser LOG     Auth0 User: undefined
+[01:50:58.531] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: undefined
+[01:50:58.707] Browser LOG     Auth0 User: Devesh Jadhav
+[01:50:58.708] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[01:50:59.277] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[01:50:59.277] Browser LOG     Auth0 User: Devesh Jadhav
+[01:50:59.277] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[01:50:59.277] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree ram ram","createdAt":"2025-12-13T13:11:26.281Z","email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer"],"location":"Bhusawald","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLQ7kdDv-nRAI6X26CcCqUD5S4kXj2L8pZPUiQ08gpH1vcfKETbUw=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-01-09T19:27:23.820Z"}
+[01:50:59.277] Browser LOG     Auth0 User: Devesh Jadhav
+[01:50:59.277] Browser LOG     [2;38;2;124;124;124m%s[0m Auth0 User: Devesh Jadhav
+[01:50:59.277] Browser LOG     Current User: null
+[01:50:59.408] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
