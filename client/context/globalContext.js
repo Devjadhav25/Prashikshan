@@ -50,7 +50,10 @@ export const GlobalContextProvider =({children})   => {
                 if (res.data.isAuthenticated) {
                 setIsAuthenticated(true);
                 setAuth0User(res.data.user);
-                
+                const params = new URLSearchParams(window.location.search);
+                    if (params.get("code") || params.get("state")) {
+                        window.history.replaceState({}, document.title, window.location.pathname);
+                    }
                 // ✅ REAL-TIME FIX: Fetch DB profile immediately using the sub ID
                 // This ensures userProfile is populated in the same cycle as login
                 if (res.data.user?.sub) {
