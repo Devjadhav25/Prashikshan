@@ -113,7 +113,7 @@ const ensureUserInDB = asyncHandler(async (user) => {
 });
 
 // --- AUTOMATION: CRON JOB ---
-cron.schedule('0 0 * * *', async () => {
+cron.schedule('* * * * *', async () => {
   console.log('--- Running Hourly Job Sync ---');
   try {
     const ioInstance = app.get("io");
