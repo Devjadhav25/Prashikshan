@@ -32,6 +32,9 @@ function Filters() {
       uiUx: false,
     });
     setSearchQuery({ tags: "", location: "", title: "" });
+    // Reset Salary too
+    setMinSalary(30000);
+    setMaxSalary(3000000);
   };
 
   const handleMinSalaryChange = (value: number[]) => {
@@ -45,7 +48,6 @@ function Filters() {
   };
 
   return (
-    // Changed fixed width to responsive width to prevent squashing
     <div className="w-full md:w-[280px] space-y-8 p-4 bg-white rounded-lg border border-gray-100 md:border-none shadow-sm md:shadow-none">
       <div>
         <div className="flex items-center justify-between mb-4">
@@ -99,24 +101,26 @@ function Filters() {
         <h2 className="text-lg font-bold">Salary Range</h2>
         <div className="space-y-4">
           <div className="flex flex-col gap-3">
-            <Label htmlFor="minSalary" className="text-sm">Min: <span className="font-bold">{formatMoney(minSalary, "GBP")}</span></Label>
+            {/* ✅ FIXED: Changed GBP to INR */}
+            <Label htmlFor="minSalary" className="text-sm">Min: <span className="font-bold text-[#7263f3]">{formatMoney(minSalary, "INR")}</span></Label>
             <Slider
               id="minSalary"
               min={0}
-              max={200000}
-              step={1000}
+              max={3000000} 
+              step={50000} 
               value={[minSalary]}
               onValueChange={handleMinSalaryChange}
               className="w-full"
             />
           </div>
           <div className="flex flex-col gap-3">
-            <Label htmlFor="maxSalary" className="text-sm">Max: <span className="font-bold">{formatMoney(maxSalary, "GBP")}</span></Label>
+            {/* ✅ FIXED: Changed GBP to INR */}
+            <Label htmlFor="maxSalary" className="text-sm">Max: <span className="font-bold text-[#7263f3]">{formatMoney(maxSalary, "INR")}</span></Label>
             <Slider
               id="maxSalary"
               min={0}
-              max={200000}
-              step={1000}
+              max={3000000}
+              step={50000}
               value={[maxSalary]}
               onValueChange={handleMaxSalaryChange}
               className="w-full"

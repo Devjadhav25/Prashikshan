@@ -18,7 +18,6 @@ interface EditProfileModalProps {
   onUpdate?: () => void;
 }
 
-// ✅ Define a specific type for the social links keys to avoid 'any'
 type SocialLinkKey = "github" | "twitter" | "linkedin" | "instagram";
 
 export default function EditProfileModal({ user, isOpen, onClose }: EditProfileModalProps) {
@@ -67,6 +66,16 @@ export default function EditProfileModal({ user, isOpen, onClose }: EditProfileM
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
+      // ✅ Check file size (Limit to 2MB)
+      const MAX_FILE_SIZE = 2 * 1024 * 1024; // 2MB in bytes
+      
+      if (file.size > MAX_FILE_SIZE) {
+        toast.error("Image is too large! Please select an image under 2MB.");
+        // Clear the input so they can try again
+        e.target.value = ""; 
+        return;
+      }
+
       setSelectedFile(file);
       setPreview(URL.createObjectURL(file));
     }
@@ -78,7 +87,6 @@ export default function EditProfileModal({ user, isOpen, onClose }: EditProfileM
     setFormData({ ...formData, skills: newSkills });
   };
 
-  // ✅ Updated: Handles both Mouse clicks and Keyboard "Enter" presses
   const addInterest = (e: React.MouseEvent | React.KeyboardEvent) => {
     e.preventDefault();
     e.stopPropagation();
@@ -88,17 +96,14 @@ export default function EditProfileModal({ user, isOpen, onClose }: EditProfileM
     }
   };
 
-  // ✅ New: Specific handler for the Interest Input
   const handleInterestKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
         addInterest(e);
     }
   };
 
-  // ✅ New: Global handler to prevent form submission on Enter key for other inputs
   const handleFormKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter") {
-      // Allow Enter only in Textareas (for Bio), otherwise prevent submission
       if (e.target instanceof HTMLTextAreaElement) return;
       e.preventDefault();
     }
@@ -115,6 +120,8 @@ export default function EditProfileModal({ user, isOpen, onClose }: EditProfileM
       if (selectedFile) {
         const uploadData = new FormData();
         uploadData.append("avatar", selectedFile);
+        
+        // Explicitly defining the headers for FormData ensures the backend parses the boundary correctly
         const res = await axios.post("/api/v1/user/upload-avatar", uploadData);
         currentAvatarUrl = res.data.profilePicture;
       }
@@ -129,8 +136,8 @@ export default function EditProfileModal({ user, isOpen, onClose }: EditProfileM
     } catch (error: unknown) {
       let errorMessage = "Failed to update profile";
 
-      // Check if error is an Axios error to access the response data
       if (axios.isAxiosError(error)) {
+        // If the backend returns a specific error (like "Invalid Cloudinary API Key"), it will show here
         errorMessage = error.response?.data?.message || errorMessage;
       } else if (error instanceof Error) {
         errorMessage = error.message;
@@ -152,7 +159,6 @@ export default function EditProfileModal({ user, isOpen, onClose }: EditProfileM
           </DialogHeader>
         </div>
 
-        {/* ✅ Added onKeyDown to form to prevent global submission */}
         <form onSubmit={handleSubmit} onKeyDown={handleFormKeyDown} className="p-8 space-y-8">
           <div className="flex flex-col items-center -mt-20">
             <div className="relative group">
@@ -187,7 +193,6 @@ export default function EditProfileModal({ user, isOpen, onClose }: EditProfileM
             <Textarea value={formData.bio} onChange={(e) => setFormData({ ...formData, bio: e.target.value })} className="rounded-xl border-gray-100 bg-gray-50 min-h-[100px]" />
           </div>
 
-          {/* ✅ Fixed Social Links without 'any' */}
           <div className="space-y-4 pt-4 border-t border-gray-50">
             <h4 className="text-xs font-black text-gray-400 uppercase tracking-widest">Social Presence</h4>
             <div className="grid grid-cols-2 gap-4">
@@ -215,7 +220,7 @@ export default function EditProfileModal({ user, isOpen, onClose }: EditProfileM
                 placeholder="Design, AI... (Press Enter to add)" 
                 value={interestInput} 
                 onChange={(e) => setInterestInput(e.target.value)} 
-                onKeyDown={handleInterestKeyDown} // ✅ Added handler
+                onKeyDown={handleInterestKeyDown} 
                 className="rounded-xl bg-gray-50" 
               />
               <Button type="button" onClick={addInterest} className="bg-[#7263f3] rounded-xl px-6">Add</Button>

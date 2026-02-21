@@ -6,6 +6,10 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
+        hostname: 'res.cloudinary.com',
+      },
+      {
+        protocol: 'https',
         hostname: 's.gravatar.com', // ✅ Fixes the current error
       },
       {
@@ -23,7 +27,8 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'jsearch.p.rapidapi.com', // ✅ For JSearch job logos
-      }
+      },
+      { protocol: 'https', hostname: 'images.unsplash.com' }
     ],
   },
 };

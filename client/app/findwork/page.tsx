@@ -10,34 +10,27 @@ import SearchForm from "@/component/SearchForm";
 import { useJobsContext } from "@/context/jobContext";
 import { Job } from "@/types/custom";
 
-// ✅ SUB-COMPONENT: This contains the main logic that uses searchParams
 function FindWorkContent() {
-  const { jobs, filters, searchQuery, handleSearchChange, loading } = useJobsContext();
+  // ✅ ADDED: minSalary and maxSalary extracted from context
+  const { jobs, filters, searchQuery, handleSearchChange, loading, minSalary, maxSalary } = useJobsContext();
   const [columns, setColumns] = useState(3);
   const searchParams = useSearchParams();
-  
-  // Ref for auto-scrolling to results
   const resultsRef = useRef<HTMLDivElement>(null);
 
   const toggleGridColumns = () => {
     setColumns((prev) => (prev === 3 ? 2 : prev === 2 ? 1 : 3));
   };
 
-  // ✅ AUTO-SYNC: Syncs search from Home Page Query Param
   const queryTitle = searchParams.get("title");
   
   useEffect(() => {
-    // ✅ CRITICAL FIX: Only update if the value is DIFFERENT to prevent infinite loops
     if (queryTitle && queryTitle !== searchQuery.title) {
       handleSearchChange("title", queryTitle);
     }
   }, [queryTitle, handleSearchChange, searchQuery.title]);
 
-  // ✅ AUTO-SCROLL: Scroll to results when a search is active (Mobile Friendly)
   useEffect(() => {
-    // Check if there is a search query or title param, and ensure we aren't just loading the page for the first time
     if ((queryTitle || searchQuery.title) && jobs.length > 0) {
-       // Small timeout to allow DOM to paint
        const timer = setTimeout(() => {
          resultsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
        }, 500);
@@ -45,13 +38,14 @@ function FindWorkContent() {
     }
   }, [queryTitle, searchQuery.title, jobs.length]);
 
-
-  // ✅ FILTERING LOGIC
+  // ✅ FILTERING LOGIC (Now includes Salary)
   const filteredJobs = jobs.filter((job: Job) => {
+    // 1. Search Query
     const matchesSearch = 
       job.title.toLowerCase().includes(searchQuery.title.toLowerCase()) &&
       job.location.toLowerCase().includes(searchQuery.location.toLowerCase());
 
+    // 2. Checkboxes (Type)
     const noTypeFilters = !filters.fullTime && !filters.partTime && !filters.contract && !filters.internship;
     const matchesType = noTypeFilters || 
       (filters.fullTime && job.jobType.some(t => t.toLowerCase().includes("full"))) ||
@@ -59,6 +53,7 @@ function FindWorkContent() {
       (filters.contract && job.jobType.some(t => t.toLowerCase().includes("contract"))) ||
       (filters.internship && job.jobType.some(t => t.toLowerCase().includes("intern")));
 
+    // 3. Checkboxes (Category/Tags)
     const noCategoryFilters = !filters.fullStack && !filters.backend && !filters.devOps && !filters.uiux;
     const matchesCategory = noCategoryFilters ||
       (filters.fullStack && job.tags.some(tag => tag.toLowerCase().includes("stack"))) ||
@@ -66,7 +61,10 @@ function FindWorkContent() {
       (filters.devOps && job.tags.some(tag => tag.toLowerCase().includes("devops"))) ||
       (filters.uiux && job.tags.some(tag => tag.toLowerCase().includes("ui")));
 
-    return matchesSearch && matchesType && matchesCategory;
+    // 4. SALARY FILTER (This makes the slider work!)
+    const matchesSalary = job.salary >= minSalary && job.salary <= maxSalary;
+
+    return matchesSearch && matchesType && matchesCategory && matchesSalary;
   });
 
   return (
@@ -132,11 +130,12 @@ function FindWorkContent() {
                 ))}
               </div>
             ) : (
-              <div className="flex flex-col items-center justify-center py-20 bg-white rounded-xl border border-dashed border-gray-300">
-                <p className="text-gray-500 font-medium">No jobs found matching your criteria.</p>
+              <div className="flex flex-col items-center justify-center py-20 bg-white rounded-2xl border border-dashed border-gray-300">
+                <p className="text-gray-500 font-bold text-lg mb-2">No jobs found</p>
+                <p className="text-gray-400 text-sm mb-6">Try adjusting your salary range or filters.</p>
                 <button 
                   onClick={() => window.location.href = "/findwork"} 
-                  className="mt-4 text-[#7263f3] text-sm underline underline-offset-4"
+                  className="px-6 py-2 bg-[#7263f3] text-white rounded-xl text-sm font-bold shadow-md hover:bg-[#5e4ee0] transition-colors"
                 >
                   Clear all filters
                 </button>
@@ -151,7 +150,6 @@ function FindWorkContent() {
   );
 }
 
-// ✅ MAIN EXPORT: Wrapped in Suspense to prevent "Client Side Exception" on build/runtime
 export default function FindWorkPage() {
   return (
     <Suspense fallback={

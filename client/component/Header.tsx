@@ -6,12 +6,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState, useEffect } from "react";
 import Profile from "./profile";
+import { BookOpen } from 'lucide-react';
 
 function Header() {
   const { isAuthenticated } = useGlobalContext();
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  
 
   // ✅ PRODUCTION-SAFE LOGIC
   // This ensures the link is always correct instantly, without waiting for Axios
@@ -31,6 +33,7 @@ function Header() {
     { name: "Find Work", href: "/findwork", icon: <Briefcase className="w-4 h-4" /> },
     { name: "My Jobs", href: "/myjobs", icon: <LayoutDashboard className="w-4 h-4" /> },
     { name: "Post a Job", href: "/post", icon: <PlusCircle className="w-4 h-4" /> },
+    { name: "Learning Hub", href: "/learning-hub", icon: <BookOpen className="w-4 h-4" /> },
   ];
 
   return (
