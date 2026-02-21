@@ -295,17 +295,31 @@ export const updateUserProfile = asyncHandler(async (req, res) => {
 });
 
 export const uploadProfilePicture = asyncHandler(async (req, res) => {
-  if (!req.file) {
-    return res.status(400).json({ message: "No file uploaded" });
+  try {
+    if (!req.file) {
+      return res.status(400).json({ message: "No file uploaded" });
+    }
+
+    const userId = req.oidc.user.sub;
+    const imageUrl = req.file.path;
+
+    const updatedUser = await User.findOneAndUpdate(
+      { auth0Id: userId },
+      { $set: { profilePicture: imageUrl } }, // req.file.path is the Cloudinary URL
+      { new: true }
+    );
+
+    if (!updatedUser) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    // Return only the profilePicture as expected by the frontend
+    res.status(200).json({ 
+        success: true,
+        profilePicture: updatedUser.profilePicture 
+    });
+  } catch (error) {
+    console.error("Upload Avatar Error:", error);
+    res.status(500).json({ message: "Server Error" });
   }
-
-  const userId = req.oidc.user.sub;
-  
-  const updatedUser = await User.findOneAndUpdate(
-    { auth0Id: userId },
-    { $set: { profilePicture: req.file.path } }, // req.file.path is the Cloudinary URL
-    { new: true }
-  );
-
-  res.status(200).json(updatedUser);
 });

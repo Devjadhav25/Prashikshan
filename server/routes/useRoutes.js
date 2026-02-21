@@ -24,7 +24,30 @@ router.put("/user/update", (req, res, next) => {
   res.status(401).json({ message: "Not authenticated" });
 }, updateUserProfile);
 
-
-router.post("/user/upload-avatar", upload.single("avatar"), uploadProfilePicture);
+router.post("/user/upload-avatar", 
+  // 1. Auth Check
+  (req, res, next) => {
+    if (req.oidc.isAuthenticated()) return next();
+    return res.status(401).json({ message: "Not authenticated" });
+  },
+  // 2. Safe Multer Execution
+  (req, res, next) => {
+    const uploadMiddleware = upload.single("avatar");
+    
+    uploadMiddleware(req, res, function (err) {
+      if (err) {
+        // If Cloudinary fails (e.g., bad API key), it prints HERE in your backend terminal
+        console.error("🚨 CLOUDINARY/MULTER ERROR:", err);
+        return res.status(500).json({ 
+            message: "Upload to Cloudinary failed", 
+            error: err.message 
+        });
+      }
+      next();
+    });
+  },
+  // 3. Final Controller
+  uploadProfilePicture
+);
 
 export default router;

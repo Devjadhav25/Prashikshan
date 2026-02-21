@@ -21,11 +21,16 @@ router.get("/jobs/:id", protect, jobById);
 router.delete("/jobs/:id", protect, deleteJob);
 
 // ✅ Fixed Sync Route
+// ✅ Flexible Sync Route (Test in Browser)
 router.get("/sync-api", async (req, res) => {
     try {
-        // You can pass "React Developer" or a query from req.query
-        const result = await syncExternalJobs("React Developer", req.app.get("io"));
-        res.status(200).json({ message: "Sync process completed successfully" });
+        // You can pass specific queries in the URL, e.g.:
+        // http://localhost:8000/api/v1/sync-api?role=React&type=INTERN
+        const roleToSearch = req.query.role || "Frontend Developer";
+        const typeToSearch = req.query.type || "INTERN"; // "INTERN" or "FULLTIME"
+        
+        await syncExternalJobs(roleToSearch, typeToSearch, req.app.get("io"));
+        res.status(200).json({ message: `Successfully fetched ${typeToSearch} positions for: ${roleToSearch}` });
     } catch (error) {
         res.status(500).json({ message: "Sync failed", error: error.message });
     }

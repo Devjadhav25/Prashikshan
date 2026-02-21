@@ -2,17 +2,27 @@
 import axios from 'axios';
 import Job from '../models/jobModel.js';
 
-const syncExternalJobs = async (searchQuery = "Software Engineer", io) => {
-    console.log(`📡 Starting API Sync for: ${searchQuery}...`);
+const syncExternalJobs = async (searchQuery = "Software Engineer", employmentType = "", io) => {
+    // If it's an intern, append "Internship" to the search for better results
+    const queryText = employmentType === 'INTERN' ? `${searchQuery} Internship` : searchQuery;
+    console.log(`📡 Starting API Sync for: ${queryText} (${employmentType || 'MIXED'})...`);
+
+    // Build the dynamic parameters
+    const params = {
+        query: queryText,
+        page: '1',
+        num_pages: '1'
+    };
+
+    // Only force an employment type if one is specifically requested
+    if (employmentType) {
+        params.employment_types = employmentType;
+    }
 
     const options = {
         method: 'GET',
         url: 'https://jsearch.p.rapidapi.com/search',
-        params: {
-            query: searchQuery,
-            page: '1',
-            num_pages: '1'
-        },
+        params: params,
         headers: {
             'x-rapidapi-key': process.env.RAPID_API_KEY,
             'x-rapidapi-host': 'jsearch.p.rapidapi.com'
@@ -22,37 +32,30 @@ const syncExternalJobs = async (searchQuery = "Software Engineer", io) => {
     try {
         const response = await axios.request(options);
         const apiJobs = response.data.data;
-        console.log("RAW API DATA SAMPLE:", JSON.stringify(apiJobs[0], null, 2));
 
         if (!apiJobs || apiJobs.length === 0) {
-            console.log("⚠️ No jobs found from API.");
+            console.log("⚠️ No jobs found from API for this query.");
             return;
         }
 
         for (const job of apiJobs) {
-            // Extract and format salary
             const minSalary = job.job_min_salary || 0;
             const maxSalary = job.job_max_salary || 0;
+            // Internships generally pay less, so we adjust the fallback dynamically
+            const defaultFallback = employmentType === 'INTERN' ? 15000 : 45000;
             const avgSalary = minSalary && maxSalary 
                 ? Math.round((minSalary + maxSalary) / 2) 
-                : minSalary || maxSalary || 45000;
+                : minSalary || maxSalary || defaultFallback;
 
-            // Map JSearch salary period to your format
             const salaryPeriodMap = {
-                'YEARLY': 'Yearly',
-                'MONTHLY': 'Monthly',
-                'WEEKLY': 'Weekly',
-                'HOURLY': 'Hourly',
-                'YEAR': 'Yearly',
-                'MONTH': 'Monthly',
-                'WEEK': 'Weekly',
-                'HOUR': 'Hourly'
+                'YEARLY': 'Yearly', 'MONTHLY': 'Monthly', 'WEEKLY': 'Weekly', 'HOURLY': 'Hourly',
+                'YEAR': 'Yearly', 'MONTH': 'Monthly', 'WEEK': 'Weekly', 'HOUR': 'Hourly'
             };
-            const apiSalaryPeriod = job.job_salary_period?.toUpperCase() || 'YEARLY';
-            const salaryType = salaryPeriodMap[apiSalaryPeriod] || 'Yearly';
+            const apiSalaryPeriod = job.job_salary_period?.toUpperCase() || (employmentType === 'INTERN' ? 'MONTHLY' : 'YEARLY');
+            const salaryType = salaryPeriodMap[apiSalaryPeriod] || 'Monthly';
 
-            // Format employment type
-            const employmentType = job.job_employment_type || 'FULLTIME';
+            // Get Job Type from API, fallback to what we requested
+            const rawApiType = job.job_employment_type || employmentType || 'FULLTIME';
             const jobTypeMap = {
                 'FULLTIME': 'Full Time',
                 'PARTTIME': 'Part Time',
@@ -60,11 +63,10 @@ const syncExternalJobs = async (searchQuery = "Software Engineer", io) => {
                 'INTERN': 'Internship',
                 'TEMPORARY': 'Contract'
             };
-            const formattedJobType = jobTypeMap[employmentType.toUpperCase()] || 'Full Time';
+            const formattedJobType = jobTypeMap[rawApiType.toUpperCase()] || 'Full Time';
 
-            // Extract skills from description or use job title
             const extractSkills = (desc, title) => {
-                const commonSkills = ['React', 'JavaScript', 'TypeScript', 'Node.js', 'Python', 'Java', 'CSS', 'HTML', 'SQL', 'MongoDB', 'AWS', 'Git'];
+                const commonSkills = ['React', 'JavaScript', 'TypeScript', 'Node.js', 'Python', 'Java', 'CSS', 'HTML', 'SQL', 'MongoDB', 'AWS', 'Git', 'Figma', 'UI/UX'];
                 const foundSkills = commonSkills.filter(skill => 
                     desc?.toLowerCase().includes(skill.toLowerCase()) || 
                     title?.toLowerCase().includes(skill.toLowerCase())
@@ -72,25 +74,15 @@ const syncExternalJobs = async (searchQuery = "Software Engineer", io) => {
                 return foundSkills.length > 0 ? foundSkills.slice(0, 5) : [title || 'Contact Recruiter'];
             };
 
-            // Clean HTML from description
             const cleanDescription = (html) => {
                 if (!html) return "No description provided.";
-                // Remove HTML tags but preserve line breaks
-                return html
-                    .replace(/<[^>]*>/g, '')
-                    .replace(/&nbsp;/g, ' ')
-                    .replace(/&amp;/g, '&')
-                    .replace(/&lt;/g, '<')
-                    .replace(/&gt;/g, '>')
-                    .trim();
+                return html.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').trim();
             };
 
             const jobData = {
                 title: job.job_title || "Untitled Position",
-                employer_logo: job.employer_logo|| "",
+                employer_logo: job.employer_logo || "",
                 externalLink: job.job_apply_link || job.job_google_link || "",
-    
-                // ✅ FIX 2: Add applyLink to match your required Model field
                 applyLink: job.job_apply_link || job.job_google_link || "",
                 job_apply_link: job.job_apply_link || "",
                 job_google_link: job.job_google_link || "",
@@ -98,9 +90,9 @@ const syncExternalJobs = async (searchQuery = "Software Engineer", io) => {
                     ? `${job.job_city}, ${job.job_country}` 
                     : job.job_location || "Remote",
                 salary: avgSalary,
-                salaryType: salaryType, // Now matches frontend: "Yearly", "Monthly", etc.
+                salaryType: salaryType, 
                 negotiable: job.job_is_remote || false,
-                jobType: [formattedJobType], // Properly formatted: "Full Time", "Part Time", etc.
+                jobType: [formattedJobType], 
                 description: cleanDescription(job.job_description),
                 skills: extractSkills(job.job_description, job.job_title),
                 tags: [
@@ -111,27 +103,24 @@ const syncExternalJobs = async (searchQuery = "Software Engineer", io) => {
                 ].filter(Boolean),
                 externalId: job.job_id,
                 source: job.job_publisher || "JSearch",
-                createdBy: "67307854d3a71f000523fd75" // Your admin user ID
+                createdBy: "67307854d3a71f000523fd75" 
             };
 
-            // Check if it's a new job or existing one
             const existingJob = await Job.findOne({ externalId: job.job_id });
 
-            // Update or Create (Upsert)
             const savedJob = await Job.findOneAndUpdate(
                 { externalId: job.job_id },
                 { $set: jobData },
                 { upsert: true, new: true, runValidators: true }
             ).populate("createdBy", "name profilePicture");
 
-            // Emit to frontend ONLY if it's a brand new job and socket is available
             if (io && !existingJob && savedJob) {
-                console.log(`🚀 Broadcasting new job: ${savedJob.title}`);
+                console.log(`🚀 Broadcasting new Post: ${savedJob.title}`);
                 io.emit("newJobAvailable", savedJob);
             }
         }
 
-        console.log(`✅ Successfully synced ${apiJobs.length} jobs.`);
+        console.log(`✅ Successfully synced ${apiJobs.length} positions.`);
     } catch (error) {
         console.error("❌ Sync Logic Error:", error.message);
     }

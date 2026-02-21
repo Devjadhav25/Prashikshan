@@ -113,12 +113,22 @@ const ensureUserInDB = asyncHandler(async (user) => {
 });
 
 // --- AUTOMATION: CRON JOB ---
-cron.schedule('* * * * *', async () => {
-  console.log('--- Running Hourly Job Sync ---');
+// --- AUTOMATION: CRON JOB ---
+// Runs every 12 hours to stay well within JSearch 50/month free limit
+cron.schedule('0 */12 * * *', async () => {
+  console.log('--- Running Automatic Job/Internship Sync ---');
   try {
     const ioInstance = app.get("io");
-    // Only call this once
-    await syncExternalJobs("Software Engineer", ioInstance); 
+    
+    // 1. Pick a random tech role
+    const roles = ["Web Developer", "Software Engineer", "Data Analyst", "UI UX Designer", "Backend Developer"];
+    const randomRole = roles[Math.floor(Math.random() * roles.length)];
+    
+    // 2. Flip a coin: 50% chance for Internship, 50% chance for Full Time Job
+    const types = ["INTERN", "FULLTIME"];
+    const randomType = types[Math.floor(Math.random() * types.length)];
+    
+    await syncExternalJobs(randomRole, randomType, ioInstance); 
   } catch (err) {
     console.error("Cron Job Error:", err.message);
   }
