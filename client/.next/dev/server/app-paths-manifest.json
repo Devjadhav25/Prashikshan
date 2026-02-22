@@ -1,13 +1,6 @@
 {
   "/directorate/dashboard/page": "app/directorate/dashboard/page.js",
-  "/faculty/page": "app/faculty/page.js",
-  "/findwork/page": "app/findwork/page.js",
-  "/job/[id]/page": "app/job/[id]/page.js",
   "/learning-hub/page": "app/learning-hub/page.js",
-  "/logbook/page": "app/logbook/page.js",
-  "/myjobs/page": "app/myjobs/page.js",
   "/page": "app/page.js",
-  "/post/page": "app/post/page.js",
-  "/privacy/page": "app/privacy/page.js",
   "/profile/page": "app/profile/page.js"
 }

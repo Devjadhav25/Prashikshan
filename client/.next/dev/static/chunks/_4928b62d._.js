@@ -668,7 +668,7 @@ function Header() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                 className: "font-extrabold text-2xl text-[#7263f3]",
-                                children: "JobHelper"
+                                children: "Prashikshan"
                             }, void 0, false, {
                                 fileName: "[project]/component/Header.tsx",
                                 lineNumber: 22,

@@ -43,7 +43,7 @@ function JobCard({ job, activeJob }: JobProps) {
   } = job;
   
   const applyDestination = job.externalLink || job.job_apply_link || job.job_google_link;
-  const recruiterName = createdBy?.name || "JobHelper Recruiter";
+  const recruiterName = createdBy?.name || "Prashikshan Recruiter";
   const recruiterAvatar = employer_logo || createdBy?.profilePicture || "/user.png";
 
   const handleApply = (e: React.MouseEvent) => {

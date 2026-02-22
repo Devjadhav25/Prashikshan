@@ -977,7 +977,7 @@ function Page() {
     const { title, location, description, salary, createdBy, jobType, createdAt, salaryType, negotiable, employer_logo, externalLink, source// ✅ Added to check source
      } = job;
     // ✅ Fallback logic: Use Company Logo first, then User Profile, then default
-    const recruiterName = createdBy?.name || "JobHelper Recruiter";
+    const recruiterName = createdBy?.name || "Prashikshan Recruiter";
     const recruiterAvatar = employer_logo || createdBy?.profilePicture || "/user.png";
     const handleLike = (jobId)=>{
         likeJob(jobId);

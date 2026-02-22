@@ -48,7 +48,7 @@ function Page() {
   } = job;
 
   // ✅ FIX: Prioritize JSearch logo, then recruiter pic, then fallback icon
-  const recruiterName = createdBy?.name || "JobHelper Recruiter";
+  const recruiterName = createdBy?.name || "Prashikshan Recruiter";
   const recruiterAvatar = employer_logo || createdBy?.profilePicture || "/user.png";
 
   const handleLike = (jobId: string) => {

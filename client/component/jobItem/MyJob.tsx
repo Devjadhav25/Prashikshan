@@ -43,7 +43,7 @@ function MyJob({ job }: JobProps) {
   }, [isAuthenticated, job.createdBy?._id]); // ✅ Use optional chaining
 
   // ✅ Safe recruiter info (for API jobs where createdBy can be null)
-  const recruiterName = job.createdBy?.name || "JobHelper Recruiter";
+  const recruiterName = job.createdBy?.name || "Prashikshan Recruiter";
   const recruiterAvatar = job.createdBy?.profilePicture || "/user.png";
   const recruiterId = job.createdBy?._id;
 

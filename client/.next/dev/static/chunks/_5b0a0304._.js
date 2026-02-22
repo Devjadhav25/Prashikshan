@@ -1138,7 +1138,7 @@ function JobCard({ job, activeJob }) {
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const isLiked = userProfile?._id && Array.isArray(job.likes) ? job.likes.includes(userProfile._id) : false;
     const { title, location, salaryType, salary, createdBy, applicants, jobType, createdAt, employer_logo, externalLink, source } = job;
-    const recruiterName = createdBy?.name || "JobHelper Recruiter";
+    const recruiterName = createdBy?.name || "Prashikshan Recruiter";
     const recruiterAvatar = employer_logo || createdBy?.profilePicture || "/user.png";
     const handleLike = (id)=>{
         likeJob(id);
@@ -1448,7 +1448,7 @@ function Page() {
     const { title, location, description, salary, createdBy, jobType, createdAt, salaryType, negotiable, employer_logo, externalLink, source// ✅ Added to check source
      } = job;
     // ✅ Fallback logic: Use Company Logo first, then User Profile, then default
-    const recruiterName = createdBy?.name || "JobHelper Recruiter";
+    const recruiterName = createdBy?.name || "Prashikshan Recruiter";
     const recruiterAvatar = employer_logo || createdBy?.profilePicture || "/user.png";
     const handleLike = (jobId)=>{
         likeJob(jobId);

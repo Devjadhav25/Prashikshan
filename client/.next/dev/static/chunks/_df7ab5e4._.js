@@ -1998,7 +1998,7 @@ function JobCard({ job, activeJob }) {
     const isLiked = userProfile?._id && Array.isArray(job.likes) ? job.likes.includes(userProfile._id) : false;
     const { _id, title, location, salaryType, salary, createdBy, applicants, jobType, createdAt, employer_logo, source } = job;
     const applyDestination = job.externalLink || job.job_apply_link || job.job_google_link;
-    const recruiterName = createdBy?.name || "JobHelper Recruiter";
+    const recruiterName = createdBy?.name || "Prashikshan Recruiter";
     const recruiterAvatar = employer_logo || createdBy?.profilePicture || "/user.png";
     const handleApply = (e)=>{
         e.stopPropagation();

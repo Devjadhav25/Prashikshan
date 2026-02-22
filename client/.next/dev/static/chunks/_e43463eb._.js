@@ -1512,7 +1512,7 @@ function JobCard({ job, activeJob }) {
     const isLiked = userProfile?._id && Array.isArray(job.likes) ? job.likes.includes(userProfile._id) : false;
     const { _id, title, location, salaryType, salary, createdBy, applicants, jobType, createdAt, employer_logo, source } = job;
     const applyDestination = job.externalLink || job.job_apply_link || job.job_google_link;
-    const recruiterName = createdBy?.name || "JobHelper Recruiter";
+    const recruiterName = createdBy?.name || "Prashikshan Recruiter";
     const recruiterAvatar = employer_logo || createdBy?.profilePicture || "/user.png";
     const handleApply = (e)=>{
         e.stopPropagation();
@@ -1891,7 +1891,7 @@ function Page() {
     const isApplied = !!userProfile?._id && applicants.includes(userProfile._id);
     const { title, location, description, salary, createdBy, jobType, createdAt, salaryType, negotiable, employer_logo, externalLink, source, job_apply_link, job_google_link } = job;
     // ✅ FIX: Prioritize JSearch logo, then recruiter pic, then fallback icon
-    const recruiterName = createdBy?.name || "JobHelper Recruiter";
+    const recruiterName = createdBy?.name || "Prashikshan Recruiter";
     const recruiterAvatar = employer_logo || createdBy?.profilePicture || "/user.png";
     const handleLike = (jobId)=>{
         likeJob(jobId);
