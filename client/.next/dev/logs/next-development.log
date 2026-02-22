@@ -1,28 +1,731 @@
-[00:00:01.594] Server  LOG      ✓ Ready in 1131ms
-[00:00:04.643] Server  LOG      ○ Compiling /profile ...
-[00:00:05.281] Server  LOG     Auth0 User: undefined
-[00:00:05.597] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:07.334] Browser LOG     Auth0 User: undefined
-[00:00:07.334] Browser LOG     Auth0 User: undefined
-[00:00:07.334] Browser LOG     Auth0 User: Devesh Jadhav
-[00:00:07.334] Browser LOG     Auth0 User: Devesh Jadhav
-[00:00:07.334] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":[],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":0,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771608305/user_profiles/nkovp0qeiruvbbogde6t.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-20T17:25:10.068Z"}
-[00:00:07.334] Browser LOG     Auth0 User: Devesh Jadhav
-[00:00:07.334] Browser LOG     Auth0 User: Devesh Jadhav
-[00:00:07.334] Browser LOG     Response: {"__v":0,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":[],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":0,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771608305/user_profiles/nkovp0qeiruvbbogde6t.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":80},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-20T17:25:10.068Z"}
-[00:00:07.334] Browser LOG     Auth0 User: Devesh Jadhav
-[00:00:07.334] Browser LOG     Auth0 User: Devesh Jadhav
-[00:00:07.334] Browser LOG     Current User: null
-[00:00:09.311] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:09.311] Browser WARN    Image with src "https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771608305/user_profiles/nkovp0qeiruvbbogde6t.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:00:02.678] Server  LOG      ✓ Ready in 1883ms
+[00:00:05.775] Server  LOG      ○ Compiling /findwork ...
+[00:00:09.975] Server  LOG     Auth0 User: undefined
+[00:00:10.048] Server  LOG     Auth0 User: undefined
+[00:00:10.791] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:10.800] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:14.097] Browser LOG     Auth0 User: undefined
+[00:00:14.097] Browser LOG     Auth0 User: undefined
+[00:00:14.097] Browser LOG     Auth0 User: Devesh Jadhav
+[00:00:14.097] Browser LOG     Auth0 User: Devesh Jadhav
+[00:00:14.097] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[00:00:14.097] Browser LOG     Auth0 User: Devesh Jadhav
+[00:00:14.097] Browser LOG     Auth0 User: Devesh Jadhav
+[00:00:14.097] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[00:00:14.097] Browser LOG     Auth0 User: Devesh Jadhav
+[00:00:14.097] Browser LOG     Auth0 User: Devesh Jadhav
+[00:00:14.097] Browser LOG     Current User: null
+[00:00:14.853] Browser LOG     Auth0 User: undefined
+[00:00:14.853] Browser LOG     Auth0 User: undefined
+[00:00:14.853] Browser LOG     Auth0 User: Devesh Jadhav
+[00:00:14.853] Browser LOG     Auth0 User: Devesh Jadhav
+[00:00:14.853] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771608305/user_profiles/nkovp0qeiruvbbogde6t.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T00:35:59.927Z"}
+[00:00:14.853] Browser LOG     Auth0 User: Devesh Jadhav
+[00:00:14.853] Browser LOG     Auth0 User: Devesh Jadhav
+[00:00:14.853] Browser LOG     Current User: null
+[00:00:14.853] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771608305/user_profiles/nkovp0qeiruvbbogde6t.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T00:35:59.927Z"}
+[00:00:14.853] Browser LOG     Auth0 User: Devesh Jadhav
+[00:00:14.853] Browser LOG     Auth0 User: Devesh Jadhav
+[00:00:22.312] Server  LOG      ✓ Compiled in 200ms
+[00:00:25.767] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:25.767] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:25.880] Browser WARN    Image with src "/woman-on-phone.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:00:12.793] Browser WARN    Image with src "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:13.178] Browser WARN    Image with src "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:13.178] Browser WARN    Image with src "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:13.178] Browser WARN    Image with src "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:13.178] Browser WARN    Image with src "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:13.178] Browser WARN    Image with src "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:41.443] Server  LOG     Auth0 User: undefined
-[00:01:18.180] Browser WARN    Image with src "https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771608305/user_profiles/nkovp0qeiruvbbogde6t.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:27:39.199] Server  LOG      ○ Compiling /findwork ...
-[00:27:43.450] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:34.874] Server  LOG     Auth0 User: undefined
+[00:00:35.223] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:35.518] Browser LOG     Auth0 User: undefined
+[00:00:35.518] Browser LOG     Auth0 User: undefined
+[00:00:35.518] Browser WARN    Image with src "/woman-on-phone.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:00:35.518] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:35.518] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:35.792] Browser LOG     Auth0 User: Devesh Jadhav
+[00:00:35.792] Browser LOG     Auth0 User: Devesh Jadhav
+[00:00:35.792] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771608305/user_profiles/nkovp0qeiruvbbogde6t.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T00:35:59.927Z"}
+[00:00:35.792] Browser LOG     Auth0 User: Devesh Jadhav
+[00:00:35.792] Browser LOG     Auth0 User: Devesh Jadhav
+[00:00:35.792] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771608305/user_profiles/nkovp0qeiruvbbogde6t.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T00:35:59.927Z"}
+[00:00:35.792] Browser LOG     Auth0 User: Devesh Jadhav
+[00:00:35.792] Browser LOG     Auth0 User: Devesh Jadhav
+[00:00:36.227] Browser LOG     Current User: null
+[00:02:45.801] Server  LOG     Auth0 User: undefined
+[00:02:46.170] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:46.538] Browser LOG     Auth0 User: undefined
+[00:02:46.538] Browser LOG     Auth0 User: undefined
+[00:02:46.538] Browser WARN    Image with src "/woman-on-phone.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:02:46.538] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:46.538] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:02:46.822] Browser LOG     Auth0 User: Devesh Jadhav
+[00:02:46.822] Browser LOG     Auth0 User: Devesh Jadhav
+[00:02:46.822] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771608305/user_profiles/nkovp0qeiruvbbogde6t.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T00:35:59.927Z"}
+[00:02:46.822] Browser LOG     Auth0 User: Devesh Jadhav
+[00:02:46.822] Browser LOG     Auth0 User: Devesh Jadhav
+[00:02:46.822] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Student","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771608305/user_profiles/nkovp0qeiruvbbogde6t.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T00:35:59.927Z"}
+[00:02:46.822] Browser LOG     Auth0 User: Devesh Jadhav
+[00:02:46.822] Browser LOG     Auth0 User: Devesh Jadhav
+[00:02:47.533] Browser LOG     Current User: null
+[00:03:23.215] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:23.215] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:23.215] Browser WARN    Image with src "/woman-on-phone.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:03:26.945] Server  LOG     Auth0 User: undefined
+[00:03:27.189] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:27.492] Browser LOG     Auth0 User: undefined
+[00:03:27.492] Browser LOG     Auth0 User: undefined
+[00:03:27.492] Browser WARN    Image with src "/woman-on-phone.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:03:27.492] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:27.492] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:03:27.796] Browser LOG     Auth0 User: Devesh Jadhav
+[00:03:27.796] Browser LOG     Auth0 User: Devesh Jadhav
+[00:03:27.796] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[00:03:27.796] Browser LOG     Auth0 User: Devesh Jadhav
+[00:03:27.796] Browser LOG     Auth0 User: Devesh Jadhav
+[00:03:27.796] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[00:03:27.796] Browser LOG     Auth0 User: Devesh Jadhav
+[00:03:27.796] Browser LOG     Auth0 User: Devesh Jadhav
+[00:03:28.271] Browser LOG     Current User: null
+[00:04:54.324] Server  LOG     Auth0 User: undefined
+[00:04:54.601] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:54.815] Browser LOG     Auth0 User: undefined
+[00:04:54.815] Browser LOG     Auth0 User: undefined
+[00:04:54.815] Browser LOG     Auth0 User: undefined
+[00:04:54.815] Browser LOG     Auth0 User: undefined
+[00:04:54.815] Browser WARN    Image with src "/woman-on-phone.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:04:54.815] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:54.815] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:04:55.134] Browser LOG     Auth0 User: Devesh Jadhav
+[00:04:55.134] Browser LOG     Auth0 User: Devesh Jadhav
+[00:04:55.134] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[00:04:55.134] Browser LOG     Auth0 User: Devesh Jadhav
+[00:04:55.134] Browser LOG     Auth0 User: Devesh Jadhav
+[00:04:55.134] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[00:04:55.134] Browser LOG     Auth0 User: Devesh Jadhav
+[00:04:55.134] Browser LOG     Auth0 User: Devesh Jadhav
+[00:04:55.604] Browser LOG     Current User: null
+[01:33:02.544] Server  LOG     Auth0 User: undefined
+[01:33:02.926] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:33:03.218] Browser LOG     Auth0 User: undefined
+[01:33:03.218] Browser LOG     Auth0 User: undefined
+[01:33:03.218] Browser WARN    Image with src "/woman-on-phone.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:33:03.218] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:33:03.218] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:33:03.504] Browser LOG     Auth0 User: Devesh Jadhav
+[01:33:03.504] Browser LOG     Auth0 User: Devesh Jadhav
+[01:33:24.514] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[01:33:24.514] Browser LOG     Auth0 User: Devesh Jadhav
+[01:33:24.514] Browser LOG     Auth0 User: Devesh Jadhav
+[01:33:24.514] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[01:33:24.514] Browser LOG     Auth0 User: Devesh Jadhav
+[01:33:24.514] Browser LOG     Auth0 User: Devesh Jadhav
+[01:33:24.514] Browser LOG     Current User: null
+[01:41:19.305] Server  LOG      ✓ Compiled in 2.4s
+[01:42:49.244] Server  LOG     Auth0 User: undefined
+[01:42:49.786] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:42:50.146] Browser LOG     Auth0 User: undefined
+[01:42:50.146] Browser LOG     Auth0 User: undefined
+[01:42:50.147] Browser WARN    Image with src "/woman-on-phone.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:42:50.147] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:42:50.147] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:42:50.494] Browser LOG     Auth0 User: Devesh Jadhav
+[01:42:50.494] Browser LOG     Auth0 User: Devesh Jadhav
+[01:42:50.494] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[01:42:50.494] Browser LOG     Auth0 User: Devesh Jadhav
+[01:42:50.494] Browser LOG     Auth0 User: Devesh Jadhav
+[01:42:50.494] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[01:42:50.494] Browser LOG     Auth0 User: Devesh Jadhav
+[01:42:50.494] Browser LOG     Auth0 User: Devesh Jadhav
+[01:42:51.163] Browser LOG     Current User: null
+[01:43:10.991] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[01:43:10.991] Browser LOG     Auth0 User: Devesh Jadhav
+[01:43:10.991] Browser LOG     Auth0 User: Devesh Jadhav
+[01:43:10.991] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[01:43:10.991] Browser LOG     Auth0 User: Devesh Jadhav
+[01:43:10.991] Browser LOG     Auth0 User: Devesh Jadhav
+[01:43:29.405] Server  LOG     Auth0 User: undefined
+[01:43:29.760] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:43:30.065] Browser LOG     Auth0 User: undefined
+[01:43:30.066] Browser LOG     Auth0 User: undefined
+[01:43:30.066] Browser LOG     Auth0 User: undefined
+[01:43:30.066] Browser LOG     Auth0 User: undefined
+[01:43:30.066] Browser LOG     Auth0 User: undefined
+[01:43:30.066] Browser LOG     Auth0 User: undefined
+[01:43:30.066] Browser LOG     Auth0 User: undefined
+[01:43:30.066] Browser LOG     Auth0 User: undefined
+[01:43:30.066] Browser WARN    Image with src "/woman-on-phone.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:43:30.066] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:43:30.066] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:43:31.105] Browser LOG     Auth0 User: Devesh Jadhav
+[01:43:31.105] Browser LOG     Auth0 User: Devesh Jadhav
+[01:43:31.105] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[01:43:31.105] Browser LOG     Current User: null
+[01:43:31.105] Browser LOG     Auth0 User: Devesh Jadhav
+[01:43:31.105] Browser LOG     Auth0 User: Devesh Jadhav
+[01:43:31.105] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[01:43:31.105] Browser LOG     Auth0 User: Devesh Jadhav
+[01:43:31.105] Browser LOG     Auth0 User: Devesh Jadhav
+[01:44:25.642] Server  LOG     Auth0 User: undefined
+[01:44:26.005] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:44:26.199] Browser LOG     Auth0 User: undefined
+[01:44:26.199] Browser LOG     Auth0 User: undefined
+[01:44:26.309] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:44:26.309] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:44:26.604] Browser LOG     Auth0 User: Devesh Jadhav
+[01:44:26.604] Browser LOG     Auth0 User: Devesh Jadhav
+[01:44:26.604] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[01:44:26.604] Browser LOG     Auth0 User: Devesh Jadhav
+[01:44:26.604] Browser LOG     Auth0 User: Devesh Jadhav
+[01:44:26.604] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[01:44:26.604] Browser LOG     Auth0 User: Devesh Jadhav
+[01:44:26.604] Browser LOG     Auth0 User: Devesh Jadhav
+[01:44:27.219] Browser LOG     Current User: null
+[01:51:28.261] Server  LOG     Auth0 User: undefined
+[01:51:28.811] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:51:29.234] Browser LOG     Auth0 User: undefined
+[01:51:29.234] Browser LOG     Auth0 User: undefined
+[01:51:29.234] Browser WARN    Image with src "/woman-on-phone.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:51:29.234] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:51:29.234] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:51:29.570] Browser LOG     Auth0 User: Devesh Jadhav
+[01:51:29.571] Browser LOG     Auth0 User: Devesh Jadhav
+[01:51:29.571] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[01:51:29.571] Browser LOG     Auth0 User: Devesh Jadhav
+[01:51:29.571] Browser LOG     Auth0 User: Devesh Jadhav
+[01:51:29.571] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[01:51:29.571] Browser LOG     Auth0 User: Devesh Jadhav
+[01:51:29.571] Browser LOG     Auth0 User: Devesh Jadhav
+[01:51:30.848] Browser LOG     Current User: null
+[01:52:22.424] Server  LOG     Auth0 User: undefined
+[01:52:22.754] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:52:23.077] Browser LOG     Auth0 User: undefined
+[01:52:23.077] Browser LOG     Auth0 User: undefined
+[01:52:23.077] Browser LOG     Auth0 User: undefined
+[01:52:23.077] Browser LOG     Auth0 User: undefined
+[01:52:23.077] Browser WARN    Image with src "/woman-on-phone.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:52:23.077] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:52:23.077] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:52:26.081] Browser ERROR   Error fetching jobs {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000","env":{},"headers":{"Accept":"application/json, text/plain, */*"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/api/v1/jobs","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (http://localhost:3000/_next/static/chunks/node_modules_59f908cf._.js:4267:25)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_59f908cf._.js:5025:49)\n    at async getJobs (http://localhost:3000/_next/static/chunks/_06732ae1._.js:287:25)"}
+[01:52:26.081] Browser ERROR   Error checking authentication {"code":"ERR_NETWORK","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"http://localhost:8000","env":{},"headers":{"Accept":"application/json, text/plain, */*"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/api/v1/check-auth","withCredentials":true,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Network Error","name":"AxiosError","stack":"AxiosError: Network Error\n    at XMLHttpRequest.handleError (http://localhost:3000/_next/static/chunks/node_modules_59f908cf._.js:4267:25)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_59f908cf._.js:5025:49)\n    at async GlobalContextProvider.useEffect.checkAuth (http://localhost:3000/_next/static/chunks/_06732ae1._.js:61:37)"}
+[01:52:26.081] Browser LOG     Auth0 User: undefined
+[01:52:26.081] Browser LOG     Auth0 User: undefined
+[01:53:48.529] Server  LOG     Auth0 User: undefined
+[01:53:48.963] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:53:49.343] Browser LOG     Auth0 User: undefined
+[01:53:49.343] Browser LOG     Auth0 User: undefined
+[01:53:49.343] Browser LOG     Auth0 User: undefined
+[01:53:49.343] Browser LOG     Auth0 User: undefined
+[01:53:49.343] Browser LOG     Auth0 User: undefined
+[01:53:49.344] Browser LOG     Auth0 User: undefined
+[01:53:49.344] Browser LOG     Auth0 User: undefined
+[01:53:49.344] Browser LOG     Auth0 User: undefined
+[01:53:49.344] Browser LOG     Auth0 User: undefined
+[01:53:49.344] Browser LOG     Auth0 User: undefined
+[01:53:49.344] Browser LOG     Auth0 User: undefined
+[01:53:49.344] Browser LOG     Auth0 User: undefined
+[01:53:49.344] Browser WARN    Image with src "/woman-on-phone.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:53:49.344] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:53:49.344] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:53:49.712] Browser LOG     Auth0 User: Devesh Jadhav
+[01:53:49.712] Browser LOG     Auth0 User: Devesh Jadhav
+[01:53:49.712] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[01:53:49.712] Browser LOG     Auth0 User: Devesh Jadhav
+[01:53:49.712] Browser LOG     Auth0 User: Devesh Jadhav
+[01:53:49.712] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[01:53:49.712] Browser LOG     Auth0 User: Devesh Jadhav
+[01:53:49.712] Browser LOG     Auth0 User: Devesh Jadhav
+[01:53:50.371] Browser LOG     Current User: null
+[02:03:56.762] Server  LOG     Auth0 User: undefined
+[02:03:57.246] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:03:57.621] Browser LOG     Auth0 User: undefined
+[02:03:57.621] Browser LOG     Auth0 User: undefined
+[02:03:57.621] Browser WARN    Image with src "/woman-on-phone.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:03:57.621] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:03:57.621] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:03:57.967] Browser LOG     Auth0 User: Devesh Jadhav
+[02:03:57.967] Browser LOG     Auth0 User: Devesh Jadhav
+[02:03:57.967] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[02:03:57.967] Browser LOG     Auth0 User: Devesh Jadhav
+[02:03:57.967] Browser LOG     Auth0 User: Devesh Jadhav
+[02:03:57.967] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[02:03:57.967] Browser LOG     Auth0 User: Devesh Jadhav
+[02:03:57.968] Browser LOG     Auth0 User: Devesh Jadhav
+[02:03:58.554] Browser LOG     Current User: null
+[02:04:18.927] Server  LOG     Auth0 User: undefined
+[02:04:19.292] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:04:19.692] Browser LOG     Auth0 User: undefined
+[02:04:19.692] Browser LOG     Auth0 User: undefined
+[02:04:19.692] Browser LOG     Auth0 User: undefined
+[02:04:19.692] Browser LOG     Auth0 User: undefined
+[02:04:19.692] Browser LOG     Auth0 User: undefined
+[02:04:19.692] Browser LOG     Auth0 User: undefined
+[02:04:19.692] Browser LOG     Auth0 User: undefined
+[02:04:19.692] Browser LOG     Auth0 User: undefined
+[02:04:19.692] Browser WARN    Image with src "/woman-on-phone.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:04:19.692] Browser LOG     Auth0 User: Devesh Jadhav
+[02:04:19.692] Browser LOG     Auth0 User: Devesh Jadhav
+[02:04:19.692] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:04:19.692] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:04:19.692] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[02:04:19.692] Browser LOG     Auth0 User: Devesh Jadhav
+[02:04:19.692] Browser LOG     Auth0 User: Devesh Jadhav
+[02:04:19.692] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[02:04:19.692] Browser LOG     Auth0 User: Devesh Jadhav
+[02:04:19.692] Browser LOG     Auth0 User: Devesh Jadhav
+[02:04:20.534] Browser LOG     Current User: null
+[02:06:25.972] Server  LOG      ○ Compiling /post ...
+[02:06:32.060] Browser LOG     Auth0 User: Devesh Jadhav
+[02:06:32.060] Browser LOG     Auth0 User: Devesh Jadhav
+[02:06:43.375] Server  LOG     Auth0 User: undefined
+[02:06:43.765] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:06:44.106] Browser LOG     Auth0 User: undefined
+[02:06:44.106] Browser LOG     Auth0 User: undefined
+[02:06:44.106] Browser WARN    Image with src "/woman-on-phone.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:06:44.106] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:06:44.106] Browser WARN    Image with src "/woman-on-phone.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:06:44.438] Browser LOG     Auth0 User: Devesh Jadhav
+[02:06:44.438] Browser LOG     Auth0 User: Devesh Jadhav
+[02:06:44.438] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[02:06:44.438] Browser LOG     Auth0 User: Devesh Jadhav
+[02:06:44.438] Browser LOG     Auth0 User: Devesh Jadhav
+[02:06:44.557] Browser LOG     Response: {"__v":0,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":[],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":0,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T02:38:21.559Z"}
+[02:06:44.557] Browser LOG     Auth0 User: Devesh Jadhav
+[02:06:44.557] Browser LOG     Auth0 User: Devesh Jadhav
+[02:06:46.093] Browser LOG     Current User: null
+[02:07:14.858] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:14.858] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:17.239] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:17.239] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:17.495] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:17.495] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:17.495] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:17.495] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:20.423] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:20.423] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:22.446] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:22.446] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:23.653] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:23.653] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:23.937] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:23.937] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:23.937] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:23.937] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:24.284] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:24.284] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:27.048] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:27.048] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:27.298] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:27.298] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:27.498] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:27.498] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:28.316] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:28.316] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:29.694] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:29.694] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:34.603] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:34.603] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:41.512] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:41.513] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:41.681] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:41.681] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:41.891] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:41.891] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:43.261] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:43.261] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:43.261] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:43.262] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:43.510] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:43.510] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:43.510] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:43.510] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:44.750] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:44.750] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:45.132] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:45.132] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:45.132] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:45.132] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:45.388] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:45.388] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:45.388] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:45.388] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:50.614] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:50.614] Browser LOG     Auth0 User: Devesh Jadhav
+[02:07:51.819] Browser LOG     Current User: {
+  "sid": "iD3Drq-rZ80VsWaPfwPCfBxGDToUP7E7",
+  "given_name": "Devesh",
+  "family_name": "Jadhav",
+  "nickname": "deveshjadhav707",
+  "name": "Devesh Jadhav",
+  "picture": "https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c",
+  "updated_at": "2026-02-22T02:38:20.803Z",
+  "email": "deveshjadhav707@gmail.com",
+  "email_verified": true,
+  "sub": "google-oauth2|109950420495665520608"
+}
+[02:08:12.839] Browser LOG     Auth0 User: Devesh Jadhav
+[02:08:12.839] Browser LOG     Auth0 User: Devesh Jadhav
+[02:08:16.238] Browser WARN    Image with src "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:08:16.238] Browser WARN    Image with src "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:08:16.238] Browser WARN    Image with src "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:08:16.238] Browser WARN    Image with src "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:08:16.238] Browser WARN    Image with src "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:08:16.238] Browser WARN    Image with src "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:08:16.238] Browser WARN    Image with src "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:08:16.238] Browser WARN    Image with src "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:08:16.238] Browser WARN    Image with src "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:08:16.238] Browser WARN    Image with src "https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:08:16.238] Browser WARN    Image with src "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:08:16.238] Browser WARN    Image with src "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:08:16.238] Browser WARN    Image with src "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:08:16.238] Browser WARN    Image with src "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:08:16.727] Browser WARN    Image with src "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:08:16.727] Browser WARN    Image with src "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:08:16.793] Server  ERROR    ⨯ "upstream image response failed for" "https://images.unsplash.com/photo-1607252656733-fd7458052280?q=80&w=600&auto=format&fit=crop" 404
+[02:08:16.865] Server  ERROR    ⨯ "upstream image response failed for" "https://images.unsplash.com/photo-1526040652367-6000728c6ce5?q=80&w=600&auto=format&fit=crop" 404
+[02:08:16.925] Browser WARN    Image with src "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:08:48.182] Browser LOG     Response: {"__v":1,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":["699aade0d530aafea312e756"],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":3,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"699aae00d530aafea312e760","name":"Problem Solving","value":50}],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T07:19:28.334Z"}
+[02:08:48.182] Browser LOG     Auth0 User: Devesh Jadhav
+[02:08:48.182] Browser LOG     Auth0 User: Devesh Jadhav
+[02:09:03.692] Server  ERROR    ⨯ "upstream image response failed for" "https://images.unsplash.com/photo-1607252656733-fd7458052280?q=80&w=600&auto=format&fit=crop" 404
+[02:09:03.696] Server  ERROR    ⨯ "upstream image response failed for" "https://images.unsplash.com/photo-1526040652367-6000728c6ce5?q=80&w=600&auto=format&fit=crop" 404
+[02:09:07.555] Browser LOG     Response: {"__v":1,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":["699aade0d530aafea312e756"],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":3,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"699aae00d530aafea312e760","name":"Problem Solving","value":50}],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T07:19:28.334Z"}
+[02:09:07.555] Browser LOG     Auth0 User: Devesh Jadhav
+[02:09:07.555] Browser LOG     Auth0 User: Devesh Jadhav
+[02:09:07.555] Browser LOG     Response: {"__v":1,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":["699aade0d530aafea312e756"],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":3,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"699aae00d530aafea312e760","name":"Problem Solving","value":50}],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T07:19:28.334Z"}
+[02:09:07.555] Browser LOG     Auth0 User: Devesh Jadhav
+[02:09:07.555] Browser LOG     Auth0 User: Devesh Jadhav
+[02:09:07.555] Browser LOG     Response: {"__v":1,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":["699aade0d530aafea312e756"],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":3,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"699aae00d530aafea312e760","name":"Problem Solving","value":50}],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T07:19:28.334Z"}
+[02:09:07.555] Browser LOG     Auth0 User: Devesh Jadhav
+[02:09:07.555] Browser LOG     Auth0 User: Devesh Jadhav
+[02:09:07.555] Browser LOG     Response: {"__v":1,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":["699aade0d530aafea312e756"],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":3,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"699aae00d530aafea312e760","name":"Problem Solving","value":50}],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T07:19:28.334Z"}
+[02:09:07.555] Browser LOG     Auth0 User: Devesh Jadhav
+[02:09:07.555] Browser LOG     Auth0 User: Devesh Jadhav
+[02:09:08.793] Browser LOG     Auth0 User: Devesh Jadhav
+[02:09:08.793] Browser LOG     Auth0 User: Devesh Jadhav
+[02:11:23.767] Browser WARN    Image with src "https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771608305/user_profiles/nkovp0qeiruvbbogde6t.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:11:50.827] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:11:50.827] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:12:11.659] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:12:11.659] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:12:19.295] Browser LOG     Auth0 User: Devesh Jadhav
+[02:12:19.295] Browser LOG     Auth0 User: Devesh Jadhav
+[02:12:19.716] Browser LOG     Auth0 User: Devesh Jadhav
+[02:12:19.716] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:15.022] Server  LOG      ✓ Compiled in 2.3s
+[02:14:17.265] Server  LOG     Auth0 User: undefined
+[02:14:18.482] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:14:19.093] Browser LOG     Auth0 User: undefined
+[02:14:19.093] Browser LOG     Auth0 User: undefined
+[02:14:20.087] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:20.087] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:20.087] Browser LOG     Response: {"__v":1,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":["699aade0d530aafea312e756"],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":3,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"699aae00d530aafea312e760","name":"Problem Solving","value":50}],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T07:19:28.334Z"}
+[02:14:20.087] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:20.087] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:20.087] Browser LOG     Response: {"__v":1,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":["699aade0d530aafea312e756"],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":3,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"699aae00d530aafea312e760","name":"Problem Solving","value":50}],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T07:19:28.334Z"}
+[02:14:20.087] Browser LOG     Current User: null
+[02:14:20.087] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:20.087] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:28.535] Server  LOG      ✓ Compiled in 1725ms
+[02:14:41.015] Server  LOG      ✓ Compiled in 637ms
+[02:14:42.684] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:14:45.716] Server  LOG     Auth0 User: undefined
+[02:14:46.121] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:14:46.396] Browser LOG     Auth0 User: undefined
+[02:14:46.396] Browser LOG     Auth0 User: undefined
+[02:14:46.396] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:46.396] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:46.396] Browser LOG     Response: {"__v":1,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":["699aade0d530aafea312e756"],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":3,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"699aae00d530aafea312e760","name":"Problem Solving","value":50}],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T07:19:28.334Z"}
+[02:14:46.396] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:46.396] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:46.502] Browser LOG     Response: {"__v":1,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":["699aade0d530aafea312e756"],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":3,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"699aae00d530aafea312e760","name":"Problem Solving","value":50}],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T07:19:28.334Z"}
+[02:14:46.502] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:14:46.502] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:46.502] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:46.896] Browser LOG     Current User: null
+[02:14:57.742] Browser LOG     Response: {"__v":1,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":["699aade0d530aafea312e756"],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":3,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"699aae00d530aafea312e760","name":"Problem Solving","value":50}],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T07:19:28.334Z"}
+[02:14:57.742] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:57.742] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:57.742] Browser LOG     Response: {"__v":1,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":["699aade0d530aafea312e756"],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":3,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"699aae00d530aafea312e760","name":"Problem Solving","value":50}],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T07:19:28.334Z"}
+[02:14:57.742] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:57.742] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:57.742] Browser LOG     Response: {"__v":1,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":["699aade0d530aafea312e756"],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":3,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"699aae00d530aafea312e760","name":"Problem Solving","value":50}],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T07:19:28.334Z"}
+[02:14:57.742] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:57.742] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:57.742] Browser LOG     Response: {"__v":1,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":["699aade0d530aafea312e756"],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":3,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"699aae00d530aafea312e760","name":"Problem Solving","value":50}],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T07:19:28.334Z"}
+[02:14:57.742] Browser LOG     Auth0 User: Devesh Jadhav
+[02:14:57.742] Browser LOG     Auth0 User: Devesh Jadhav
+[02:15:03.042] Browser LOG     Auth0 User: Devesh Jadhav
+[02:15:03.042] Browser LOG     Auth0 User: Devesh Jadhav
+[02:17:08.259] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:17:08.259] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[02:17:27.447] Browser LOG     Auth0 User: Devesh Jadhav
+[02:17:27.447] Browser LOG     Auth0 User: Devesh Jadhav
+[02:17:27.843] Browser LOG     Auth0 User: Devesh Jadhav
+[02:17:27.843] Browser LOG     Auth0 User: Devesh Jadhav
+[02:21:23.335] Server  LOG      ○ Compiling / ...
+[02:22:07.376] Server  LOG      ✓ Compiled in 399ms
+[02:22:09.097] Browser ERROR   uncaughtError: ReferenceError: Check is not defined
+[02:26:17.511] Server  LOG      ✓ Compiled in 555ms
+[02:26:17.631] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:26:19.178] Server  LOG     Auth0 User: undefined
+[02:26:19.226] Browser LOG     Auth0 User: undefined
+[02:26:19.226] Browser LOG     Auth0 User: undefined
+[02:26:19.226] Browser LOG     Auth0 User: Devesh Jadhav
+[02:26:19.226] Browser LOG     Auth0 User: Devesh Jadhav
+[02:26:19.226] Browser LOG     Response: {"__v":1,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":["699aade0d530aafea312e756"],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":3,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"699aae00d530aafea312e760","name":"Problem Solving","value":50}],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T07:19:28.334Z"}
+[02:26:19.226] Browser LOG     Auth0 User: Devesh Jadhav
+[02:26:19.226] Browser LOG     Auth0 User: Devesh Jadhav
+[02:26:19.226] Browser LOG     Response: {"__v":1,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":["699aade0d530aafea312e756"],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":3,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"699aae00d530aafea312e760","name":"Problem Solving","value":50}],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T07:19:28.334Z"}
+[02:26:19.226] Browser LOG     Auth0 User: Devesh Jadhav
+[02:26:19.226] Browser LOG     Auth0 User: Devesh Jadhav
+[02:26:19.226] Browser LOG     Current User: null
+[02:26:19.953] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:26:21.090] Browser LOG     Auth0 User: undefined
+[02:26:21.090] Browser LOG     Auth0 User: undefined
+[02:26:21.090] Browser LOG     Auth0 User: Devesh Jadhav
+[02:26:21.090] Browser LOG     Auth0 User: Devesh Jadhav
+[02:26:21.090] Browser LOG     Response: {"__v":1,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":["699aade0d530aafea312e756"],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":3,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"699aae00d530aafea312e760","name":"Problem Solving","value":50}],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T07:19:28.334Z"}
+[02:26:21.090] Browser LOG     Auth0 User: Devesh Jadhav
+[02:26:21.090] Browser LOG     Auth0 User: Devesh Jadhav
+[02:26:21.090] Browser LOG     Response: {"__v":1,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":["699aade0d530aafea312e756"],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":3,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"699aae00d530aafea312e760","name":"Problem Solving","value":50}],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T07:19:28.334Z"}
+[02:26:21.090] Browser LOG     Current User: null
+[02:26:21.090] Browser LOG     Auth0 User: Devesh Jadhav
+[02:26:21.090] Browser LOG     Auth0 User: Devesh Jadhav
+[02:28:57.175] Server  LOG      ✓ Compiled in 759ms
+[02:28:58.095] Browser ERROR   ./app/profile/page.tsx:148:30
+Parsing ecmascript source code failed
+  146 |                 {stats.map((stat, idx) => (
+  147 |                         {/* ✅ xl:w-[150px] changed to xl:w-37.5 */}
+> 148 |                         <div key={idx} className="bg-white border border-gray-100 p-6 rounded-[24px] shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col items-center justify-center text-center w-full xl:w-37.5">
+      |                              ^^^
+  149 |                         <div className={`w-14 h-14 rounded-2xl ${stat.bg} flex items-center justify-center mb-4`}>
+  150 |                             {stat.icon}
+  151 |                         </div>
+
+Expected '</', got 'key'
+
+Import traces:
+  Client Component Browser:
+    ./app/profile/page.tsx [Client Component Browser]
+    ./app/profile/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/profile/page.tsx [Client Component SSR]
+    ./app/profile/page.tsx [Server Component]
+[02:30:12.637] Server  LOG      ✓ Compiled in 213ms
+[02:30:14.085] Browser LOG     Auth0 User: Devesh Jadhav
+[02:30:14.085] Browser LOG     Auth0 User: Devesh Jadhav
+[02:30:54.261] Server  LOG      ✓ Compiled in 265ms
+[02:32:22.998] Server  LOG      ✓ Compiled in 737ms
+[02:33:08.185] Server  LOG     Auth0 User: undefined
+[02:33:08.928] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:33:09.095] Browser LOG     Auth0 User: undefined
+[02:33:09.095] Browser LOG     Auth0 User: undefined
+[02:33:09.270] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:33:11.092] Browser LOG     Auth0 User: Devesh Jadhav
+[02:33:11.092] Browser LOG     Auth0 User: Devesh Jadhav
+[02:33:11.092] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:33:11.092] Browser LOG     Auth0 User: Devesh Jadhav
+[02:33:11.092] Browser LOG     Auth0 User: Devesh Jadhav
+[02:33:11.092] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:33:11.092] Browser LOG     Auth0 User: Devesh Jadhav
+[02:33:11.092] Browser LOG     Auth0 User: Devesh Jadhav
+[02:33:11.092] Browser LOG     Current User: null
+[02:34:03.557] Server  LOG     Auth0 User: undefined
+[02:34:03.909] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:34:04.068] Browser LOG     Auth0 User: undefined
+[02:34:04.068] Browser LOG     Auth0 User: undefined
+[02:34:04.068] Browser LOG     Auth0 User: undefined
+[02:34:04.068] Browser LOG     Auth0 User: undefined
+[02:34:04.686] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:04.686] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:04.686] Browser LOG     Current User: null
+[02:34:04.686] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:34:04.686] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:04.687] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:04.687] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:34:04.687] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:04.687] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:04.687] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:34:04.687] Browser WARN    Image with src "https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:34:15.524] Server  LOG     Auth0 User: undefined
+[02:34:15.786] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:34:15.931] Browser LOG     Auth0 User: undefined
+[02:34:15.931] Browser LOG     Auth0 User: undefined
+[02:34:15.931] Browser LOG     Auth0 User: undefined
+[02:34:15.931] Browser LOG     Auth0 User: undefined
+[02:34:16.504] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:16.505] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:16.505] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:34:16.505] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:16.505] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:16.505] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:34:16.505] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:16.505] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:16.505] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:34:16.505] Browser WARN    Image with src "https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:34:16.799] Browser LOG     Current User: null
+[02:34:18.736] Server  LOG     Auth0 User: undefined
+[02:34:19.027] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:34:19.481] Browser LOG     Auth0 User: undefined
+[02:34:19.481] Browser LOG     Auth0 User: undefined
+[02:34:19.482] Browser LOG     Auth0 User: undefined
+[02:34:19.482] Browser LOG     Auth0 User: undefined
+[02:34:19.482] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:19.482] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:19.482] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:34:19.482] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:34:19.482] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:19.482] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:19.482] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:34:19.482] Browser WARN    Image with src "https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:34:19.680] Browser LOG     Current User: null
+[02:34:27.707] Server  LOG     Auth0 User: undefined
+[02:34:27.990] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:34:28.156] Browser LOG     Auth0 User: undefined
+[02:34:28.156] Browser LOG     Auth0 User: undefined
+[02:34:28.156] Browser LOG     Auth0 User: undefined
+[02:34:28.156] Browser LOG     Auth0 User: undefined
+[02:34:28.910] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:28.910] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:28.910] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:34:28.910] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:28.910] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:28.910] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:34:28.910] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:28.910] Browser LOG     Auth0 User: Devesh Jadhav
+[02:34:28.910] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:34:28.910] Browser WARN    Image with src "https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:34:39.100] Browser LOG     Current User: null
+[02:34:39.794] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:08.924] Server  LOG     Auth0 User: undefined
+[02:35:09.292] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:35:09.544] Browser LOG     Auth0 User: undefined
+[02:35:09.544] Browser LOG     Auth0 User: undefined
+[02:35:09.544] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:09.952] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:09.953] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:09.953] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:35:09.953] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:09.953] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:09.953] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:35:09.953] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:09.953] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:10.577] Browser LOG     Current User: null
+[02:35:14.390] Server  LOG     Auth0 User: undefined
+[02:35:14.988] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:35:15.616] Browser LOG     Auth0 User: undefined
+[02:35:15.616] Browser LOG     Auth0 User: undefined
+[02:35:15.616] Browser WARN    Image with src "/woman-on-phone.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:35:15.616] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:15.616] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:15.616] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:15.616] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:35:15.616] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:15.616] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:15.616] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:35:15.616] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:15.616] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:16.498] Browser LOG     Current User: null
+[02:35:19.985] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:35:19.985] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:19.985] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:19.985] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:35:19.985] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:19.985] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:19.985] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:35:19.985] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:19.985] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:19.985] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:35:19.985] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:19.985] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:19.985] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:35:19.985] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:19.985] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:19.985] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:35:19.985] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:19.985] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:21.703] Server  LOG     Auth0 User: undefined
+[02:35:21.971] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:35:22.332] Browser LOG     Auth0 User: undefined
+[02:35:22.332] Browser LOG     Auth0 User: undefined
+[02:35:22.332] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:22.332] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:22.332] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:35:22.332] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:22.332] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:22.332] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:35:22.332] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:22.332] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:22.332] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:22.496] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:35:22.496] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:22.496] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:23.064] Browser LOG     Current User: null
+[02:35:23.064] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:35:23.064] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:23.064] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:23.064] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:35:23.064] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:23.064] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:23.064] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:35:23.064] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:23.064] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:23.064] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:35:23.064] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:23.064] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:23.064] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
+[02:35:23.064] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:23.064] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:24.054] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:24.054] Browser LOG     Auth0 User: Devesh Jadhav
+[02:35:27.177] Browser WARN    Image with src "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:27.177] Browser WARN    Image with src "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:27.177] Browser WARN    Image with src "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:27.177] Browser WARN    Image with src "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:27.177] Browser WARN    Image with src "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:27.177] Browser WARN    Image with src "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:27.177] Browser WARN    Image with src "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:27.177] Browser WARN    Image with src "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:27.177] Browser WARN    Image with src "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:27.177] Browser WARN    Image with src "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:27.177] Browser WARN    Image with src "https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:27.177] Browser WARN    Image with src "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:27.177] Browser WARN    Image with src "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:27.177] Browser WARN    Image with src "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:27.178] Browser WARN    Image with src "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:35:27.848] Server  ERROR    ⨯ "upstream image response failed for" "https://images.unsplash.com/photo-1526040652367-6000728c6ce5?q=80&w=600&auto=format&fit=crop" 404
+[02:35:27.854] Server  ERROR    ⨯ "upstream image response failed for" "https://images.unsplash.com/photo-1607252656733-fd7458052280?q=80&w=600&auto=format&fit=crop" 404
+[02:36:52.337] Server  LOG      ✓ Compiled in 1013ms
+[02:38:46.765] Server  LOG      ✓ Compiled in 629ms
+[02:39:00.325] Server  LOG     Auth0 User: undefined
+[02:39:00.649] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:39:00.825] Browser LOG     Auth0 User: undefined
+[02:39:00.825] Browser LOG     Auth0 User: undefined
+[02:39:01.442] Browser LOG     Auth0 User: Devesh Jadhav
+[02:39:01.442] Browser LOG     Auth0 User: Devesh Jadhav
+[02:39:01.442] Browser LOG     Response: {"__v":1,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":["699aade0d530aafea312e756"],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":3,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"699aae00d530aafea312e760","name":"Problem Solving","value":50}],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T07:19:28.334Z"}
+[02:39:01.442] Browser LOG     Auth0 User: Devesh Jadhav
+[02:39:01.442] Browser LOG     Auth0 User: Devesh Jadhav
+[02:39:01.442] Browser LOG     Response: {"__v":1,"_id":"699a6c1dbdb5792514923d8f","appliedJobs":[],"auth0Id":"google-oauth2|109950420495665520608","bio":"No bio provided.","completedCourses":["699aade0d530aafea312e756"],"createdAt":"2026-02-22T02:38:21.559Z","earnedCredits":3,"email":"deveshjadhav707@gmail.com","interests":[],"location":"India","name":"Devesh Jadhav","profession":"Unemployed","profilePicture":"https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c","role":"jobseeker","savedJobs":[],"skills":[{"_id":"699aae00d530aafea312e760","name":"Problem Solving","value":50}],"socialLinks":{"github":"","instagram":"","linkedin":"","twitter":""},"updatedAt":"2026-02-22T07:19:28.334Z"}
+[02:39:01.442] Browser LOG     Auth0 User: Devesh Jadhav
+[02:39:01.442] Browser LOG     Auth0 User: Devesh Jadhav
+[02:39:01.442] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:39:01.442] Browser WARN    Image with src "https://lh3.googleusercontent.com/a/ACg8ocLDiimymJzCIikK7wrAfoc-gvqIxRjirwm8hLmPHUhI4UYLjz8=s96-c" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:39:01.628] Browser LOG     Current User: null

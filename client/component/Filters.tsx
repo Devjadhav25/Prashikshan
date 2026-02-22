@@ -18,6 +18,7 @@ function Filters() {
     setMaxSalary,
     searchJobs,
     setSearchQuery,
+    setIsSalaryFiltered,
   } = useJobsContext();
 
   const clearAllFilters = () => {
@@ -35,6 +36,7 @@ function Filters() {
     // Reset Salary too
     setMinSalary(30000);
     setMaxSalary(3000000);
+    setIsSalaryFiltered(true);
   };
 
   const handleMinSalaryChange = (value: number[]) => {

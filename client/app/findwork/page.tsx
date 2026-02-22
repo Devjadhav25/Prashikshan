@@ -9,10 +9,14 @@ import JobCard from "@/component/jobItem/jobCard";
 import SearchForm from "@/component/SearchForm";
 import { useJobsContext } from "@/context/jobContext";
 import { Job } from "@/types/custom";
+import { Briefcase, Sparkles, LayoutGrid, List } from "lucide-react";
 
 function FindWorkContent() {
-  // ✅ ADDED: minSalary and maxSalary extracted from context
-  const { jobs, filters, searchQuery, handleSearchChange, loading, minSalary, maxSalary } = useJobsContext();
+  const { 
+    jobs, filters, searchQuery, handleSearchChange, loading, 
+    minSalary, maxSalary, isSalaryFiltered 
+  } = useJobsContext();
+  
   const [columns, setColumns] = useState(3);
   const searchParams = useSearchParams();
   const resultsRef = useRef<HTMLDivElement>(null);
@@ -38,14 +42,10 @@ function FindWorkContent() {
     }
   }, [queryTitle, searchQuery.title, jobs.length]);
 
-  // ✅ FILTERING LOGIC (Now includes Salary)
   const filteredJobs = jobs.filter((job: Job) => {
-    // 1. Search Query
-    const matchesSearch = 
-      job.title.toLowerCase().includes(searchQuery.title.toLowerCase()) &&
+    const matchesSearch = job.title.toLowerCase().includes(searchQuery.title.toLowerCase()) &&
       job.location.toLowerCase().includes(searchQuery.location.toLowerCase());
 
-    // 2. Checkboxes (Type)
     const noTypeFilters = !filters.fullTime && !filters.partTime && !filters.contract && !filters.internship;
     const matchesType = noTypeFilters || 
       (filters.fullTime && job.jobType.some(t => t.toLowerCase().includes("full"))) ||
@@ -53,7 +53,6 @@ function FindWorkContent() {
       (filters.contract && job.jobType.some(t => t.toLowerCase().includes("contract"))) ||
       (filters.internship && job.jobType.some(t => t.toLowerCase().includes("intern")));
 
-    // 3. Checkboxes (Category/Tags)
     const noCategoryFilters = !filters.fullStack && !filters.backend && !filters.devOps && !filters.uiux;
     const matchesCategory = noCategoryFilters ||
       (filters.fullStack && job.tags.some(tag => tag.toLowerCase().includes("stack"))) ||
@@ -61,68 +60,81 @@ function FindWorkContent() {
       (filters.devOps && job.tags.some(tag => tag.toLowerCase().includes("devops"))) ||
       (filters.uiux && job.tags.some(tag => tag.toLowerCase().includes("ui")));
 
-    // 4. SALARY FILTER (This makes the slider work!)
-    const matchesSalary = job.salary >= minSalary && job.salary <= maxSalary;
+    const matchesSalary = isSalaryFiltered ? (job.salary >= minSalary && job.salary <= maxSalary) : true; 
 
     return matchesSearch && matchesType && matchesCategory && matchesSalary;
   });
 
   return (
-    <main className="bg-gray-50 min-h-screen">
+    <main className="bg-[#F8F9FB] min-h-screen">
       <Header />
 
-      {/* Hero Section */}
-      <div className="relative px-6 md:px-16 bg-[#D7DEDC] overflow-hidden py-12">
-        <div className="relative z-10 max-w-3xl">
-          <h1 className="text-black font-bold text-3xl md:text-5xl mb-8">
-            Find Your Next Job Here
-          </h1>
-          <SearchForm />
-        </div>
+      {/* 🚀 MODERN HERO BANNER */}
+      <div className="bg-[#1e1b4b] text-white py-16 px-6 relative overflow-hidden">
+        {/* Glowing Background Effects */}
+        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#7263f3]/20 rounded-full blur-[120px] -translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-blue-500/20 rounded-full blur-[100px] translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
+        
+        <div className="max-w-[1400px] mx-auto relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
+          <div className="flex-1 w-full animate-in fade-in slide-in-from-bottom-6 duration-700">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-6 text-sm font-bold text-amber-300 uppercase tracking-widest">
+              <Sparkles size={16} /> Over {jobs.length}+ Opportunities
+            </div>
+            <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight tracking-tighter">
+              Discover your next <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7263f3] to-[#4facfe]">career move.</span>
+            </h1>
+            <div className="bg-white/10 p-2 rounded-3xl backdrop-blur-xl border border-white/20 shadow-2xl">
+                <SearchForm />
+            </div>
+          </div>
 
-        <div className="hidden lg:block">
-          <Image
-            src="/woman-on-phone.jpg"
-            alt="hero"
-            width={220}
-            height={500}
-            className="absolute top-0 right-20 h-full object-cover opacity-80"
-            style={{ clipPath: "polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%)" }}
-          />
+          <div className="hidden lg:block w-1/3 relative animate-in fade-in slide-in-from-right-8 duration-700">
+            <div className="absolute inset-0 bg-gradient-to-tr from-[#1e1b4b] via-transparent to-transparent z-10"></div>
+            <Image
+              src="/woman-on-phone.jpg"
+              alt="Professional working"
+              width={400}
+              height={400}
+              className="rounded-3xl shadow-2xl object-cover h-[350px] border border-white/10"
+            />
+          </div>
         </div>
       </div>
 
+      {/* 🚀 MAIN CONTENT */}
       <div className="w-[95%] max-w-[1400px] mx-auto py-12">
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex justify-between items-end mb-8">
           <div ref={resultsRef} className="scroll-mt-24">
-            <h2 className="text-3xl font-bold">Recent Jobs</h2>
-            <p className="text-gray-500 text-sm">Showing {filteredJobs.length} results</p>
+            <h2 className="text-3xl font-black text-gray-900 tracking-tight flex items-center gap-3">
+               <Briefcase className="text-[#7263f3]" size={28}/> Available Positions
+            </h2>
+            <p className="text-gray-500 font-bold text-xs uppercase tracking-widest mt-2">Showing {filteredJobs.length} results based on your criteria</p>
           </div>
           
           <button 
             onClick={toggleGridColumns} 
-            className="hidden md:flex items-center gap-2 border px-4 py-2 rounded-full bg-white shadow-sm hover:bg-gray-50 transition-colors"
+            className="hidden md:flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white shadow-sm border border-gray-200 text-gray-600 hover:bg-gray-50 hover:text-[#7263f3] transition-colors font-bold text-sm"
           >
-            <span className="text-sm font-medium">
-              {columns === 3 ? "Grid View" : columns === 2 ? "Table View" : "List View"}
-            </span>
+            {columns === 3 ? <><List size={18}/> List View</> : <><LayoutGrid size={18}/> Grid View</>}
           </button>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-8">
-          <div className="w-full md:w-[280px] shrink-0">
+        <div className="flex flex-col lg:flex-row gap-8 items-start">
+          {/* SIDEBAR FILTERS */}
+          <div className="w-full lg:w-[300px] shrink-0 sticky top-24 z-10">
             <Filters />
           </div>
 
-          <div className="flex-1">
+          {/* JOB GRID */}
+          <div className="flex-1 w-full">
             {loading ? (
-                 <div className="flex flex-col items-center justify-center py-20">
-                     <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#7263F3]"></div>
-                     <p className="mt-4 text-gray-500">Loading jobs...</p>
+                 <div className="flex flex-col items-center justify-center py-32 bg-white rounded-3xl shadow-sm border border-gray-100">
+                     <div className="animate-spin rounded-full h-14 w-14 border-t-4 border-b-4 border-[#7263F3]"></div>
+                     <p className="mt-6 font-bold text-gray-500 tracking-widest uppercase text-sm">Fetching Top Roles...</p>
                  </div>
             ) : filteredJobs.length > 0 ? (
-              <div className={`grid gap-6 ${
-                columns === 3 ? "grid-cols-1 md:grid-cols-2 lg:grid-cols-3" : 
+              <div className={`grid gap-6 animate-in fade-in duration-500 ${
+                columns === 3 ? "grid-cols-1 md:grid-cols-2 xl:grid-cols-3" : 
                 columns === 2 ? "grid-cols-1 md:grid-cols-2" : "grid-cols-1"
               }`}>
                 {filteredJobs.map((job: Job) => (
@@ -130,20 +142,22 @@ function FindWorkContent() {
                 ))}
               </div>
             ) : (
-              <div className="flex flex-col items-center justify-center py-20 bg-white rounded-2xl border border-dashed border-gray-300">
-                <p className="text-gray-500 font-bold text-lg mb-2">No jobs found</p>
-                <p className="text-gray-400 text-sm mb-6">Try adjusting your salary range or filters.</p>
+              <div className="flex flex-col items-center justify-center py-24 bg-white rounded-3xl border-2 border-dashed border-gray-200 shadow-sm">
+                <div className="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center text-gray-400 mb-4">
+                    <Briefcase size={32}/>
+                </div>
+                <p className="text-gray-900 font-black text-2xl mb-2">No roles match your criteria</p>
+                <p className="text-gray-500 font-medium mb-6 text-center max-w-md">Try expanding your search radius, adjusting the salary slider, or removing some tags.</p>
                 <button 
-                  onClick={() => window.location.href = "/findwork"} 
-                  className="px-6 py-2 bg-[#7263f3] text-white rounded-xl text-sm font-bold shadow-md hover:bg-[#5e4ee0] transition-colors"
+                  onClick={() => window.location.reload()} 
+                  className="px-8 py-3 bg-gray-900 text-white rounded-xl text-xs font-black uppercase tracking-widest shadow-lg hover:bg-[#7263f3] transition-all"
                 >
-                  Clear all filters
+                  Reset All Filters
                 </button>
               </div>
             )}
           </div>
         </div>
-        
       </div>
       <Footer />
     </main>
@@ -153,8 +167,8 @@ function FindWorkContent() {
 export default function FindWorkPage() {
   return (
     <Suspense fallback={
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#7263F3]"></div>
+      <div className="min-h-screen flex items-center justify-center bg-[#F8F9FB]">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-[#7263F3]"></div>
       </div>
     }>
       <FindWorkContent />

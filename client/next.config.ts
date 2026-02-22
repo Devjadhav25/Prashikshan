@@ -1,39 +1,26 @@
-import type { NextConfig } from "next";
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'res.cloudinary.com',
+      { protocol: 'https', hostname: 'res.cloudinary.com' },
+      { protocol: 'https', hostname: 's.gravatar.com' },
+      { protocol: 'https', hostname: 'cdn.auth0.com' },
+      { protocol: 'https', hostname: 'lh3.googleusercontent.com' },
+      { protocol: 'https', hostname: 'encrypted-tbn0.gstatic.com' },
+      { protocol: 'https', hostname: 'images.unsplash.com' },
+      { protocol: 'https', hostname: 'logo.clearbit.com' }, // ✅ Added for Hackathon Mock Data
+      { 
+        // ✅ RECOMMENDED FOR JOB BOARDS:
+        // This allows logos from ANY random company website the API returns
+        protocol: 'https', 
+        hostname: '**' 
       },
-      {
-        protocol: 'https',
-        hostname: 's.gravatar.com', // ✅ Fixes the current error
-      },
-      {
-        protocol: 'https',
-        hostname: 'cdn.auth0.com',   // ✅ For Auth0 default avatars
-      },
-      {
-        protocol: 'https',
-        hostname: 'lh3.googleusercontent.com', // ✅ For Google login avatars
-      },
-      {
-        protocol: 'https',
-        hostname: 'encrypted-tbn0.gstatic.com', // ✅ Common for API logos
-      },
-      {
-        protocol: 'https',
-        hostname: 'jsearch.p.rapidapi.com', // ✅ For JSearch job logos
-      },
-      { protocol: 'https', hostname: 'images.unsplash.com' }
+      { 
+        protocol: 'http', 
+        hostname: '**' 
+      }
     ],
   },
 };
-
-
-
 
 export default nextConfig;

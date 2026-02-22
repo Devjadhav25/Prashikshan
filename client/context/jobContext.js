@@ -49,8 +49,9 @@ export const JobsContextProvider =({children})   => {
         devOps: false,
         uiux: false,
      });
-    const [minSalary, setMinSalary] = useState(30000);
-    const [maxSalary, setMaxSalary] = useState(120000);
+    const [minSalary, setMinSalary] = useState(0);
+    const [maxSalary, setMaxSalary] = useState(1000000);
+    const [isSalaryFiltered, setIsSalaryFiltered] = useState(false);
 
     const getJobs = async () => {
         setLoading(true);

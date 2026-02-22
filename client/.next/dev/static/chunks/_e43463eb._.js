@@ -785,11 +785,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/briefcase.js [app-client] (ecmascript) <export default as Briefcase>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$layout$2d$dashboard$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LayoutDashboard$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/layout-dashboard.js [app-client] (ecmascript) <export default as LayoutDashboard>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__PlusCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-plus.js [app-client] (ecmascript) <export default as PlusCircle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/file-text.js [app-client] (ecmascript) <export default as FileText>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chart$2d$pie$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__PieChart$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chart-pie.js [app-client] (ecmascript) <export default as PieChart>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-check.js [app-client] (ecmascript) <export default as ShieldCheck>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$component$2f$profile$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/component/profile.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/book-open.js [app-client] (ecmascript) <export default as BookOpen>");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
@@ -800,12 +804,14 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
 function Header() {
     _s();
-    const { isAuthenticated } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$globalContext$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useGlobalContext"])();
+    const { isAuthenticated, userProfile, loginWithRedirect, logout } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$globalContext$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useGlobalContext"])();
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
     const [isMenuOpen, setIsMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const isAdmin = userProfile?.email === "sanketjadhav2504@gmail.com";
     // ✅ PRODUCTION-SAFE LOGIC
     // This ensures the link is always correct instantly, without waiting for Axios
     const isProduction = ("TURBOPACK compile-time value", "development") === "production";
@@ -830,7 +836,7 @@ function Header() {
                 className: "w-4 h-4"
             }, void 0, false, {
                 fileName: "[project]/component/Header.tsx",
-                lineNumber: 31,
+                lineNumber: 34,
                 columnNumber: 51
             }, this)
         },
@@ -841,7 +847,7 @@ function Header() {
                 className: "w-4 h-4"
             }, void 0, false, {
                 fileName: "[project]/component/Header.tsx",
-                lineNumber: 32,
+                lineNumber: 35,
                 columnNumber: 47
             }, this)
         },
@@ -852,10 +858,57 @@ function Header() {
                 className: "w-4 h-4"
             }, void 0, false, {
                 fileName: "[project]/component/Header.tsx",
-                lineNumber: 33,
+                lineNumber: 36,
                 columnNumber: 48
             }, this)
-        }
+        },
+        {
+            name: "Learning Hub",
+            href: "/learning-hub",
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__["BookOpen"], {
+                className: "w-4 h-4"
+            }, void 0, false, {
+                fileName: "[project]/component/Header.tsx",
+                lineNumber: 37,
+                columnNumber: 58
+            }, this)
+        },
+        {
+            name: "Govt Dashboard",
+            href: "/directorate/dashboard",
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chart$2d$pie$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__PieChart$3e$__["PieChart"], {
+                className: "w-4 h-4"
+            }, void 0, false, {
+                fileName: "[project]/component/Header.tsx",
+                lineNumber: 38,
+                columnNumber: 69
+            }, this)
+        },
+        {
+            name: "Logbook",
+            href: "/logbook",
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"], {
+                className: "w-4 h-4"
+            }, void 0, false, {
+                fileName: "[project]/component/Header.tsx",
+                lineNumber: 39,
+                columnNumber: 48
+            }, this)
+        },
+        // 👇 The safe React way to conditionally add an item
+        ...isAdmin ? [
+            {
+                name: "Faculty",
+                href: "/faculty",
+                icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"], {
+                    className: "w-4 h-4"
+                }, void 0, false, {
+                    fileName: "[project]/component/Header.tsx",
+                    lineNumber: 41,
+                    columnNumber: 63
+                }, this)
+            }
+        ] : []
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
         className: `sticky top-0 z-50 w-full transition-all duration-300 px-4 md:px-10 py-4 ${scrolled ? "bg-white/80 backdrop-blur-md shadow-sm" : "bg-[#F8F9FB] border-b border-gray-100"}`,
@@ -876,12 +929,12 @@ function Header() {
                                     className: "object-contain"
                                 }, void 0, false, {
                                     fileName: "[project]/component/Header.tsx",
-                                    lineNumber: 49,
+                                    lineNumber: 58,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/component/Header.tsx",
-                                lineNumber: 48,
+                                lineNumber: 57,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -889,13 +942,13 @@ function Header() {
                                 children: "Prashikshan"
                             }, void 0, false, {
                                 fileName: "[project]/component/Header.tsx",
-                                lineNumber: 51,
+                                lineNumber: 60,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/component/Header.tsx",
-                        lineNumber: 47,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -910,18 +963,18 @@ function Header() {
                                         className: `absolute bottom-1 left-1/2 -translate-x-1/2 h-1 bg-[#7263f3] rounded-full transition-all duration-300 ${pathname === link.href ? "w-4" : "w-0 group-hover:w-4"}`
                                     }, void 0, false, {
                                         fileName: "[project]/component/Header.tsx",
-                                        lineNumber: 70,
+                                        lineNumber: 79,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, link.name, true, {
                                 fileName: "[project]/component/Header.tsx",
-                                lineNumber: 59,
+                                lineNumber: 68,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/component/Header.tsx",
-                        lineNumber: 57,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -934,18 +987,18 @@ function Header() {
                                         className: "hidden lg:block h-8 w-[1px] bg-gray-200"
                                     }, void 0, false, {
                                         fileName: "[project]/component/Header.tsx",
-                                        lineNumber: 81,
+                                        lineNumber: 90,
                                         columnNumber: 16
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$component$2f$profile$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                         fileName: "[project]/component/Header.tsx",
-                                        lineNumber: 82,
+                                        lineNumber: 91,
                                         columnNumber: 16
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/component/Header.tsx",
-                                lineNumber: 80,
+                                lineNumber: 89,
                                 columnNumber: 13
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "hidden md:flex items-center gap-3",
@@ -958,14 +1011,14 @@ function Header() {
                                                 className: "w-4 h-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/component/Header.tsx",
-                                                lineNumber: 91,
+                                                lineNumber: 100,
                                                 columnNumber: 17
                                             }, this),
                                             "Login"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/component/Header.tsx",
-                                        lineNumber: 87,
+                                        lineNumber: 96,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -976,20 +1029,20 @@ function Header() {
                                                 className: "w-4 h-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/component/Header.tsx",
-                                                lineNumber: 98,
+                                                lineNumber: 107,
                                                 columnNumber: 17
                                             }, this),
                                             "Register"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/component/Header.tsx",
-                                        lineNumber: 94,
+                                        lineNumber: 103,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/component/Header.tsx",
-                                lineNumber: 85,
+                                lineNumber: 94,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -999,30 +1052,30 @@ function Header() {
                                     className: "w-6 h-6"
                                 }, void 0, false, {
                                     fileName: "[project]/component/Header.tsx",
-                                    lineNumber: 109,
+                                    lineNumber: 118,
                                     columnNumber: 27
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {
                                     className: "w-6 h-6"
                                 }, void 0, false, {
                                     fileName: "[project]/component/Header.tsx",
-                                    lineNumber: 109,
+                                    lineNumber: 118,
                                     columnNumber: 55
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/component/Header.tsx",
-                                lineNumber: 105,
+                                lineNumber: 114,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/component/Header.tsx",
-                        lineNumber: 78,
+                        lineNumber: 87,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/component/Header.tsx",
-                lineNumber: 44,
+                lineNumber: 53,
                 columnNumber: 7
             }, this),
             isMenuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1040,7 +1093,7 @@ function Header() {
                                 ]
                             }, link.name, true, {
                                 fileName: "[project]/component/Header.tsx",
-                                lineNumber: 119,
+                                lineNumber: 128,
                                 columnNumber: 15
                             }, this)),
                         !isAuthenticated && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1054,14 +1107,14 @@ function Header() {
                                             className: "w-4 h-4"
                                         }, void 0, false, {
                                             fileName: "[project]/component/Header.tsx",
-                                            lineNumber: 141,
+                                            lineNumber: 150,
                                             columnNumber: 19
                                         }, this),
                                         "Login"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/component/Header.tsx",
-                                    lineNumber: 137,
+                                    lineNumber: 146,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1072,41 +1125,41 @@ function Header() {
                                             className: "w-4 h-4"
                                         }, void 0, false, {
                                             fileName: "[project]/component/Header.tsx",
-                                            lineNumber: 148,
+                                            lineNumber: 157,
                                             columnNumber: 19
                                         }, this),
                                         "Register"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/component/Header.tsx",
-                                    lineNumber: 144,
+                                    lineNumber: 153,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/component/Header.tsx",
-                            lineNumber: 136,
+                            lineNumber: 145,
                             columnNumber: 15
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/component/Header.tsx",
-                    lineNumber: 117,
+                    lineNumber: 126,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/component/Header.tsx",
-                lineNumber: 116,
+                lineNumber: 125,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/component/Header.tsx",
-        lineNumber: 37,
+        lineNumber: 46,
         columnNumber: 5
     }, this);
 }
-_s(Header, "3q01hoTgphpF/B3ikt/wZ8YnO/8=", false, function() {
+_s(Header, "8aBUCqxRs+jE3xWHRXOdn7THQpw=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$globalContext$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useGlobalContext"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"]
@@ -1170,30 +1223,30 @@ function Footer() {
                     columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex gap-10",
+                    className: "flex gap-4 text-sm font-medium text-gray-500",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            href: "#",
-                            className: "text-gray-400 hover:text-[#7263f3] transition-colors font-bold text-sm",
-                            children: "Privacy"
+                            href: "/privacy",
+                            className: "hover:text-[#7263f3] transition-colors",
+                            children: "Privacy Policy"
                         }, void 0, false, {
                             fileName: "[project]/component/Footer.tsx",
-                            lineNumber: 29,
-                            columnNumber: 13
+                            lineNumber: 33,
+                            columnNumber: 5
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            href: "#",
-                            className: "text-gray-400 hover:text-[#7263f3] transition-colors font-bold text-sm",
-                            children: "Terms"
+                            href: "/terms",
+                            className: "hover:text-[#7263f3] transition-colors",
+                            children: "Terms of Service"
                         }, void 0, false, {
                             fileName: "[project]/component/Footer.tsx",
-                            lineNumber: 30,
-                            columnNumber: 13
+                            lineNumber: 34,
+                            columnNumber: 5
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/component/Footer.tsx",
-                    lineNumber: 28,
+                    lineNumber: 32,
                     columnNumber: 11
                 }, this)
             ]
@@ -1429,8 +1482,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/external-link.js [app-client] (ecmascript) <export default as ExternalLink>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-client] (ecmascript) <export default as MapPin>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/building-2.js [app-client] (ecmascript) <export default as Building2>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/briefcase.js [app-client] (ecmascript) <export default as Briefcase>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$separator$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/separator.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$formatMoney$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/utils/formatMoney.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$formatDate$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/utils/formatDate.tsx [app-client] (ecmascript)");
@@ -1454,6 +1508,7 @@ function JobCard({ job, activeJob }) {
     const { likeJob } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$jobContext$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useJobsContext"])();
     const { userProfile, isAuthenticated } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$globalContext$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useGlobalContext"])();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
+    const [imgError, setImgError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const isLiked = userProfile?._id && Array.isArray(job.likes) ? job.likes.includes(userProfile._id) : false;
     const { _id, title, location, salaryType, salary, createdBy, applicants, jobType, createdAt, employer_logo, source } = job;
     const applyDestination = job.externalLink || job.job_apply_link || job.job_google_link;
@@ -1509,22 +1564,26 @@ function JobCard({ job, activeJob }) {
                         className: "flex gap-4 items-center overflow-hidden",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center border border-gray-100 shrink-0 overflow-hidden shadow-sm",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                className: "w-14 h-14 bg-white rounded-2xl flex items-center justify-center border border-gray-100 shrink-0 overflow-hidden shadow-sm relative p-2",
+                                children: !imgError && recruiterAvatar ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                     src: recruiterAvatar,
                                     alt: recruiterName,
-                                    width: 56,
-                                    height: 56,
-                                    className: "object-contain p-2",
-                                    unoptimized: true
+                                    className: "w-full h-full object-contain",
+                                    onError: ()=>setImgError(true)
                                 }, void 0, false, {
                                     fileName: "[project]/component/jobItem/jobCard.tsx",
-                                    lineNumber: 97,
-                                    columnNumber: 13
+                                    lineNumber: 101,
+                                    columnNumber: 15
+                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__["Briefcase"], {
+                                    className: "w-6 h-6 text-gray-400"
+                                }, void 0, false, {
+                                    fileName: "[project]/component/jobItem/jobCard.tsx",
+                                    lineNumber: 108,
+                                    columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/component/jobItem/jobCard.tsx",
-                                lineNumber: 96,
+                                lineNumber: 98,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1535,7 +1594,7 @@ function JobCard({ job, activeJob }) {
                                         children: title
                                     }, void 0, false, {
                                         fileName: "[project]/component/jobItem/jobCard.tsx",
-                                        lineNumber: 108,
+                                        lineNumber: 113,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1549,7 +1608,7 @@ function JobCard({ job, activeJob }) {
                                                         className: "shrink-0"
                                                     }, void 0, false, {
                                                         fileName: "[project]/component/jobItem/jobCard.tsx",
-                                                        lineNumber: 113,
+                                                        lineNumber: 118,
                                                         columnNumber: 17
                                                     }, this),
                                                     " ",
@@ -1557,14 +1616,14 @@ function JobCard({ job, activeJob }) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/component/jobItem/jobCard.tsx",
-                                                lineNumber: 112,
+                                                lineNumber: 117,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "w-1 h-1 rounded-full bg-gray-300 shrink-0"
                                             }, void 0, false, {
                                                 fileName: "[project]/component/jobItem/jobCard.tsx",
-                                                lineNumber: 115,
+                                                lineNumber: 120,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1575,7 +1634,7 @@ function JobCard({ job, activeJob }) {
                                                         className: "shrink-0"
                                                     }, void 0, false, {
                                                         fileName: "[project]/component/jobItem/jobCard.tsx",
-                                                        lineNumber: 117,
+                                                        lineNumber: 122,
                                                         columnNumber: 17
                                                     }, this),
                                                     " ",
@@ -1583,25 +1642,25 @@ function JobCard({ job, activeJob }) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/component/jobItem/jobCard.tsx",
-                                                lineNumber: 116,
+                                                lineNumber: 121,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/component/jobItem/jobCard.tsx",
-                                        lineNumber: 111,
+                                        lineNumber: 116,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/component/jobItem/jobCard.tsx",
-                                lineNumber: 107,
+                                lineNumber: 112,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/component/jobItem/jobCard.tsx",
-                        lineNumber: 95,
+                        lineNumber: 97,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1613,13 +1672,13 @@ function JobCard({ job, activeJob }) {
                         children: isLiked ? __TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$icons$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["bookmark"] : __TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$icons$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["bookmarkEmpty"]
                     }, void 0, false, {
                         fileName: "[project]/component/jobItem/jobCard.tsx",
-                        lineNumber: 124,
+                        lineNumber: 129,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/component/jobItem/jobCard.tsx",
-                lineNumber: 92,
+                lineNumber: 94,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1630,7 +1689,7 @@ function JobCard({ job, activeJob }) {
                             children: type
                         }, index, false, {
                             fileName: "[project]/component/jobItem/jobCard.tsx",
-                            lineNumber: 140,
+                            lineNumber: 145,
                             columnNumber: 11
                         }, this)),
                     source && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1638,24 +1697,24 @@ function JobCard({ job, activeJob }) {
                         children: source === 'Manual' ? 'Direct' : `via ${source}`
                     }, void 0, false, {
                         fileName: "[project]/component/jobItem/jobCard.tsx",
-                        lineNumber: 148,
+                        lineNumber: 153,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "text-[10px] font-black text-gray-400 ml-auto uppercase tracking-widest bg-gray-50 px-3 py-1 rounded-full",
                         children: [
-                            applicants.length,
+                            applicants?.length || 0,
                             " Applicants"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/component/jobItem/jobCard.tsx",
-                        lineNumber: 152,
+                        lineNumber: 157,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/component/jobItem/jobCard.tsx",
-                lineNumber: 138,
+                lineNumber: 143,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1663,14 +1722,14 @@ function JobCard({ job, activeJob }) {
                 children: cleanDescription
             }, void 0, false, {
                 fileName: "[project]/component/jobItem/jobCard.tsx",
-                lineNumber: 157,
+                lineNumber: 162,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$separator$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Separator"], {
                 className: "opacity-50"
             }, void 0, false, {
                 fileName: "[project]/component/jobItem/jobCard.tsx",
-                lineNumber: 161,
+                lineNumber: 166,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1686,7 +1745,7 @@ function JobCard({ job, activeJob }) {
                                         children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$formatMoney$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])(salary, "INR")
                                     }, void 0, false, {
                                         fileName: "[project]/component/jobItem/jobCard.tsx",
-                                        lineNumber: 167,
+                                        lineNumber: 172,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1697,13 +1756,13 @@ function JobCard({ job, activeJob }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/component/jobItem/jobCard.tsx",
-                                        lineNumber: 168,
+                                        lineNumber: 173,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/component/jobItem/jobCard.tsx",
-                                lineNumber: 166,
+                                lineNumber: 171,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1714,20 +1773,20 @@ function JobCard({ job, activeJob }) {
                                         className: "text-[#7263f3]"
                                     }, void 0, false, {
                                         fileName: "[project]/component/jobItem/jobCard.tsx",
-                                        lineNumber: 173,
+                                        lineNumber: 178,
                                         columnNumber: 13
                                     }, this),
                                     (0, __TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$formatDate$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatDates"])(createdAt)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/component/jobItem/jobCard.tsx",
-                                lineNumber: 172,
+                                lineNumber: 177,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/component/jobItem/jobCard.tsx",
-                        lineNumber: 165,
+                        lineNumber: 170,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1740,29 +1799,29 @@ function JobCard({ job, activeJob }) {
                                 className: "ml-1"
                             }, void 0, false, {
                                 fileName: "[project]/component/jobItem/jobCard.tsx",
-                                lineNumber: 182,
+                                lineNumber: 187,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/component/jobItem/jobCard.tsx",
-                        lineNumber: 178,
+                        lineNumber: 183,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/component/jobItem/jobCard.tsx",
-                lineNumber: 164,
+                lineNumber: 169,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/component/jobItem/jobCard.tsx",
-        lineNumber: 82,
+        lineNumber: 84,
         columnNumber: 5
     }, this);
 }
-_s(JobCard, "sbtNjmMPPZbWDFK/e47akqWFQ4k=", false, function() {
+_s(JobCard, "ClVDTpsmYAp9AC8iHvssX0iP0JQ=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$jobContext$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useJobsContext"],
         __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$globalContext$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useGlobalContext"],

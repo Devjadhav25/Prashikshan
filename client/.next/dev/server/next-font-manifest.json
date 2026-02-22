@@ -1,12 +1,33 @@
 {
   "app": {
-    "[project]/app/_not-found/page": [
+    "[project]/app/directorate/dashboard/page": [
+      "static/media/ce62453a442c7f35-s.p.124b2306.woff2"
+    ],
+    "[project]/app/faculty/page": [
       "static/media/ce62453a442c7f35-s.p.124b2306.woff2"
     ],
     "[project]/app/findwork/page": [
       "static/media/ce62453a442c7f35-s.p.124b2306.woff2"
     ],
+    "[project]/app/job/[id]/page": [
+      "static/media/ce62453a442c7f35-s.p.124b2306.woff2"
+    ],
     "[project]/app/learning-hub/page": [
+      "static/media/ce62453a442c7f35-s.p.124b2306.woff2"
+    ],
+    "[project]/app/logbook/page": [
+      "static/media/ce62453a442c7f35-s.p.124b2306.woff2"
+    ],
+    "[project]/app/myjobs/page": [
+      "static/media/ce62453a442c7f35-s.p.124b2306.woff2"
+    ],
+    "[project]/app/page": [
+      "static/media/ce62453a442c7f35-s.p.124b2306.woff2"
+    ],
+    "[project]/app/post/page": [
+      "static/media/ce62453a442c7f35-s.p.124b2306.woff2"
+    ],
+    "[project]/app/privacy/page": [
       "static/media/ce62453a442c7f35-s.p.124b2306.woff2"
     ],
     "[project]/app/profile/page": [

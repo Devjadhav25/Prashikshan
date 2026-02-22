@@ -1,6 +1,6 @@
 "use client";
 import { useGlobalContext } from "@/context/globalContext";
-import { LogIn, UserPlus, Menu, X, Briefcase, LayoutDashboard, PlusCircle } from "lucide-react";
+import { LogIn, UserPlus, Menu, X, Briefcase, LayoutDashboard, PlusCircle ,FileText, PieChart, ShieldCheck} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -9,10 +9,11 @@ import Profile from "./profile";
 import { BookOpen } from 'lucide-react';
 
 function Header() {
-  const { isAuthenticated } = useGlobalContext();
+  const { isAuthenticated, userProfile ,loginWithRedirect, logout } = useGlobalContext();
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const isAdmin = userProfile?.email === "sanketjadhav2504@gmail.com";
   
 
   // ✅ PRODUCTION-SAFE LOGIC
@@ -34,7 +35,12 @@ function Header() {
     { name: "My Jobs", href: "/myjobs", icon: <LayoutDashboard className="w-4 h-4" /> },
     { name: "Post a Job", href: "/post", icon: <PlusCircle className="w-4 h-4" /> },
     { name: "Learning Hub", href: "/learning-hub", icon: <BookOpen className="w-4 h-4" /> },
+    { name: "Govt Dashboard", href: "/directorate/dashboard", icon: <PieChart className="w-4 h-4" /> },
+    { name: "Logbook", href: "/logbook", icon: <FileText className="w-4 h-4" /> },
+    // 👇 The safe React way to conditionally add an item
+    ...(isAdmin ? [{ name: "Faculty", href: "/faculty", icon: <ShieldCheck className="w-4 h-4" /> }] : []),
   ];
+  
 
   return (
     <header 

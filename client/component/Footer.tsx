@@ -25,10 +25,14 @@ function Footer() {
           <p className="text-gray-400 font-bold text-sm tracking-wide">
             &copy; {new Date().getFullYear()} Prashikshan. All rights reserved.
           </p>
-          <div className="flex gap-10">
+          {/* <div className="flex gap-10">
             <Link href="#" className="text-gray-400 hover:text-[#7263f3] transition-colors font-bold text-sm">Privacy</Link>
             <Link href="#" className="text-gray-400 hover:text-[#7263f3] transition-colors font-bold text-sm">Terms</Link>
-          </div>
+          </div> */}
+          <div className="flex gap-4 text-sm font-medium text-gray-500">
+    <Link href="/privacy" className="hover:text-[#7263f3] transition-colors">Privacy Policy</Link>
+    <Link href="/terms" className="hover:text-[#7263f3] transition-colors">Terms of Service</Link>
+</div>
         </div>
       
     </footer>

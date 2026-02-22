@@ -45,6 +45,8 @@ const GlobalContextProvider = ({ children })=>{
     const [salaryType, setSalaryType] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("Year");
     const [negotiable, setNegotiable] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [skills, setSkills] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    // Add this right below your other useState definitions:
+    const [isSalaryFiltered, setIsSalaryFiltered] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [location, setLocation] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
         country: "",
         city: "",
@@ -189,16 +191,18 @@ const GlobalContextProvider = ({ children })=>{
             setJobDescription,
             resetJobForm,
             setSalaryType,
-            updateUserProfile
+            updateUserProfile,
+            isSalaryFiltered,
+            setIsSalaryFiltered
         },
         children: children
     }, void 0, false, {
         fileName: "[project]/context/globalContext.js",
-        lineNumber: 161,
+        lineNumber: 163,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
-_s(GlobalContextProvider, "B1XAVwk1m5B4ogNTvLkHPCprHqw=", false, function() {
+_s(GlobalContextProvider, "TsEY72C0Ri3RJwkxSvYCQPAaNAY=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];
@@ -274,8 +278,9 @@ const JobsContextProvider = ({ children })=>{
         devOps: false,
         uiux: false
     });
-    const [minSalary, setMinSalary] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(30000);
-    const [maxSalary, setMaxSalary] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(120000);
+    const [minSalary, setMinSalary] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    const [maxSalary, setMaxSalary] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(1000000);
+    const [isSalaryFiltered, setIsSalaryFiltered] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const getJobs = async ()=>{
         setLoading(true);
         try {
@@ -480,11 +485,11 @@ const JobsContextProvider = ({ children })=>{
         children: children
     }, void 0, false, {
         fileName: "[project]/context/jobContext.js",
-        lineNumber: 232,
+        lineNumber: 233,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
-_s(JobsContextProvider, "7GX/vcW3247BEknH+GQdkhQOLWE=", false, function() {
+_s(JobsContextProvider, "v4fXnmJ3hr9ZpMBoeU/G5eMDD+4=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
         __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$globalContext$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useGlobalContext"],

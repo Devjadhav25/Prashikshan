@@ -2,10 +2,10 @@
 import { useGlobalContext } from "@/context/globalContext";
 import { useJobsContext } from "@/context/jobContext";
 import { Job } from "@/types/custom";
-import { Calendar, ExternalLink, MapPin, Building2 } from "lucide-react"; 
+import { Calendar, ExternalLink, MapPin, Building2, Briefcase } from "lucide-react"; 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import React from "react"; 
+import React, { useState } from "react"; 
 import { Separator } from "@/components/ui/separator";
 import formatMoney from "@/utils/formatMoney";
 import { formatDates } from "@/utils/formatDate";
@@ -21,6 +21,8 @@ function JobCard({ job, activeJob }: JobProps) {
   const { likeJob } = useJobsContext();
   const { userProfile, isAuthenticated } = useGlobalContext();
   const router = useRouter();
+  
+  const [imgError, setImgError] = useState(false);
 
   const isLiked = userProfile?._id && Array.isArray(job.likes) 
     ? job.likes.includes(userProfile._id) 
@@ -93,15 +95,18 @@ function JobCard({ job, activeJob }: JobProps) {
         
         {/* Left: Logo & Info */}
         <div className="flex gap-4 items-center overflow-hidden">
-          <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center border border-gray-100 shrink-0 overflow-hidden shadow-sm">
-            <Image
-              src={recruiterAvatar}
-              alt={recruiterName}
-              width={56}
-              height={56}
-              className="object-contain p-2"
-              unoptimized
-            />
+          <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center border border-gray-100 shrink-0 overflow-hidden shadow-sm relative p-2">
+            {/* ✅ FIXED: Standard HTML img tag forces the logo to load, bypassing Next.js blockers */}
+            {!imgError && recruiterAvatar ? (
+              <img
+                src={recruiterAvatar}
+                alt={recruiterName}
+                className="w-full h-full object-contain"
+                onError={() => setImgError(true)} // If image is broken, flip to Briefcase icon!
+              />
+            ) : (
+              <Briefcase className="w-6 h-6 text-gray-400" /> 
+            )}
           </div>
 
           <div className="flex flex-col overflow-hidden">
@@ -150,7 +155,7 @@ function JobCard({ job, activeJob }: JobProps) {
             </span>
         )}
         <span className="text-[10px] font-black text-gray-400 ml-auto uppercase tracking-widest bg-gray-50 px-3 py-1 rounded-full">
-          {applicants.length} Applicants
+          {applicants?.length || 0} Applicants
         </span>
       </div>
 

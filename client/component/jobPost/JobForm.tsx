@@ -8,6 +8,8 @@ import JobLocation from "./JobLocation";
 import { useJobsContext } from "@/context/jobContext";
 import toast from "react-hot-toast";
 
+// Change Line 11 to:
+import { useRouter } from "next/navigation";
 function JobForm() {
   const {
     jobTitle,
@@ -21,8 +23,10 @@ function JobForm() {
     tags,
     resetJobForm,
     isAuthenticated,
+    
   } = useGlobalContext();
   const { createJob } = useJobsContext();
+  
 
   const sections = ["About", "Job Details", "Skills", "Location", "Summary"];
   const [currentSection, setCurrentSection] = React.useState(sections[0]);
@@ -87,6 +91,10 @@ function JobForm() {
     });
 
     resetJobForm();
+    // Inside handleSubmit inside JobForm.tsx
+      
+      // 2. Success Feedback (Updated)
+      toast.success("Job posted successfully!");
   };
 
   return (

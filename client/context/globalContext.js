@@ -33,6 +33,8 @@ export const GlobalContextProvider =({children})   => {
     const [salaryType, setSalaryType] = useState("Year");
     const [negotiable, setNegotiable] = useState(false);
     const [skills, setSkills] = useState([]);
+    // Add this right below your other useState definitions:
+  const [isSalaryFiltered, setIsSalaryFiltered] = useState(false);
     const [location, setLocation] = useState({
         country: "",
         city: "",
@@ -188,6 +190,8 @@ export const GlobalContextProvider =({children})   => {
             resetJobForm,
             setSalaryType,
             updateUserProfile,
+            isSalaryFiltered,
+            setIsSalaryFiltered,
             
             
             
