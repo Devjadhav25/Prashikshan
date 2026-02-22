@@ -1,5 +1,5 @@
 import asyncHandler from "express-async-handler";
-import Logbook from "../models/logbookmodel.js";
+import Logbook from "../models/logbookModel.js";
 import User from "../models/userModel.js";
 
 // @desc    Submit a new daily log
