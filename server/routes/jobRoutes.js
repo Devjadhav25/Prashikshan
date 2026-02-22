@@ -1,7 +1,8 @@
 import express from 'express';
 import { 
     createJob, getJobs, getJobsByUser, searchJobs, 
-    applyJob, likeJob, jobById, deleteJob 
+    applyJob, likeJob, jobById, deleteJob, 
+
 } from '../controllers/jobController.js';
 import protect from '../middleware/protect.js';
 import syncExternalJobs from '../services/jobSync.js'; // ✅ Only one import needed
@@ -33,6 +34,27 @@ router.get("/sync-api", async (req, res) => {
         res.status(200).json({ message: `Successfully fetched ${typeToSearch} positions for: ${roleToSearch}` });
     } catch (error) {
         res.status(500).json({ message: "Sync failed", error: error.message });
+    }
+});
+router.get("/fix-my-jobs", async (req, res) => {
+    try {
+        const job = (await import("../models/jobModel.js")).default;
+        // Mark every job currently in the DB as Approved so they show up
+        await job.updateMany({}, { $set: { status: "Approved" } });
+        res.send("All existing jobs have been restored to Find Work!");
+    } catch (err) {
+        res.status(500).send(err.message);
+    }
+});
+// Add this temporarily to delete the fake jobs
+router.get("/clean-mock-jobs", async (req, res) => {
+    try {
+        const job = (await import("../models/jobModel.js")).default;
+        // Deletes any job where the ID starts with "mock-"
+        await job.deleteMany({ externalId: { $regex: /^mock-/ } });
+        res.send("All fake Google/Microsoft jobs have been deleted!");
+    } catch (err) {
+        res.status(500).send(err.message);
     }
 });
 

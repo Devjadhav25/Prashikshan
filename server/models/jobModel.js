@@ -34,6 +34,8 @@ const JobSchema = new mongoose.Schema({
   job_apply_link: { type: String, default: "" },
   job_google_link: { type: String, default: "" },
 
+  
+
 }, {
   timestamps: true
 });

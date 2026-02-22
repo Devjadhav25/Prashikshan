@@ -3,18 +3,15 @@ import axios from 'axios';
 import Job from '../models/jobModel.js';
 
 const syncExternalJobs = async (searchQuery = "Software Engineer", employmentType = "", io) => {
-    // If it's an intern, append "Internship" to the search for better results
     const queryText = employmentType === 'INTERN' ? `${searchQuery} Internship` : searchQuery;
     console.log(`📡 Starting API Sync for: ${queryText} (${employmentType || 'MIXED'})...`);
 
-    // Build the dynamic parameters
     const params = {
         query: queryText,
         page: '1',
         num_pages: '1'
     };
 
-    // Only force an employment type if one is specifically requested
     if (employmentType) {
         params.employment_types = employmentType;
     }
@@ -41,7 +38,6 @@ const syncExternalJobs = async (searchQuery = "Software Engineer", employmentTyp
         for (const job of apiJobs) {
             const minSalary = job.job_min_salary || 0;
             const maxSalary = job.job_max_salary || 0;
-            // Internships generally pay less, so we adjust the fallback dynamically
             const defaultFallback = employmentType === 'INTERN' ? 15000 : 45000;
             const avgSalary = minSalary && maxSalary 
                 ? Math.round((minSalary + maxSalary) / 2) 
@@ -54,24 +50,20 @@ const syncExternalJobs = async (searchQuery = "Software Engineer", employmentTyp
             const apiSalaryPeriod = job.job_salary_period?.toUpperCase() || (employmentType === 'INTERN' ? 'MONTHLY' : 'YEARLY');
             const salaryType = salaryPeriodMap[apiSalaryPeriod] || 'Monthly';
 
-            // Get Job Type from API, fallback to what we requested
             const rawApiType = job.job_employment_type || employmentType || 'FULLTIME';
             const jobTypeMap = {
-                'FULLTIME': 'Full Time',
-                'PARTTIME': 'Part Time',
-                'CONTRACTOR': 'Contract',
-                'INTERN': 'Internship',
-                'TEMPORARY': 'Contract'
+                'FULLTIME': 'Full Time', 'PARTTIME': 'Part Time', 'CONTRACTOR': 'Contract',
+                'INTERN': 'Internship', 'TEMPORARY': 'Contract'
             };
             const formattedJobType = jobTypeMap[rawApiType.toUpperCase()] || 'Full Time';
 
             const extractSkills = (desc, title) => {
-                const commonSkills = ['React', 'JavaScript', 'TypeScript', 'Node.js', 'Python', 'Java', 'CSS', 'HTML', 'SQL', 'MongoDB', 'AWS', 'Git', 'Figma', 'UI/UX'];
+                const commonSkills = ['React', 'JavaScript', 'Node.js', 'Python', 'Java', 'SQL', 'MongoDB', 'AWS', 'Git', 'UI/UX'];
                 const foundSkills = commonSkills.filter(skill => 
                     desc?.toLowerCase().includes(skill.toLowerCase()) || 
                     title?.toLowerCase().includes(skill.toLowerCase())
                 );
-                return foundSkills.length > 0 ? foundSkills.slice(0, 5) : [title || 'Contact Recruiter'];
+                return foundSkills.length > 0 ? foundSkills.slice(0, 5) : [title || 'Tech'];
             };
 
             const cleanDescription = (html) => {
@@ -86,24 +78,17 @@ const syncExternalJobs = async (searchQuery = "Software Engineer", employmentTyp
                 applyLink: job.job_apply_link || job.job_google_link || "",
                 job_apply_link: job.job_apply_link || "",
                 job_google_link: job.job_google_link || "",
-                location: job.job_city && job.job_country 
-                    ? `${job.job_city}, ${job.job_country}` 
-                    : job.job_location || "Remote",
+                location: job.job_city && job.job_country ? `${job.job_city}, ${job.job_country}` : job.job_location || "Remote",
                 salary: avgSalary,
                 salaryType: salaryType, 
                 negotiable: job.job_is_remote || false,
                 jobType: [formattedJobType], 
                 description: cleanDescription(job.job_description),
                 skills: extractSkills(job.job_description, job.job_title),
-                tags: [
-                    job.job_title,
-                    formattedJobType,
-                    job.job_city || 'Remote',
-                    ...extractSkills(job.job_description, job.job_title).slice(0, 2)
-                ].filter(Boolean),
+                tags: [job.job_title, formattedJobType, job.job_city || 'Remote'].filter(Boolean),
                 externalId: job.job_id,
                 source: job.job_publisher || "JSearch",
-                createdBy: "67307854d3a71f000523fd75" 
+                createdBy: "67307854d3a71f000523fd75",
             };
 
             const existingJob = await Job.findOne({ externalId: job.job_id });
@@ -115,14 +100,13 @@ const syncExternalJobs = async (searchQuery = "Software Engineer", employmentTyp
             ).populate("createdBy", "name profilePicture");
 
             if (io && !existingJob && savedJob) {
-                console.log(`🚀 Broadcasting new Post: ${savedJob.title}`);
                 io.emit("newJobAvailable", savedJob);
             }
         }
 
         console.log(`✅ Successfully synced ${apiJobs.length} positions.`);
     } catch (error) {
-        console.error("❌ Sync Logic Error:", error.message);
+        console.error("❌ API Error:", error.message);
     }
 };
 

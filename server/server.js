@@ -10,6 +10,7 @@ import asyncHandler from 'express-async-handler';
 import cron from 'node-cron';
 import syncExternalJobs from './services/jobSync.js';
 import jobRoutes from './routes/jobRoutes.js';
+import logbookRoutes from "./routes/logbookRoutes.js";
 
 // ✅ Fixed: Use ESM imports for HTTP and Socket.io
 import { createServer } from "http";
@@ -70,7 +71,7 @@ const PORT = process.env.PORT || 8000;
 app.use(cors({
   origin: process.env.CLIENT_URL,
   credentials: true,
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
   allowedHeaders: ["Content-Type", "Authorization"],
   exposedHeaders: ["set-cookie"],
 }));
@@ -79,6 +80,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(auth(config));
+app.use("/api/v1", logbookRoutes);
 
 // Socket.io Connection
 io.on("connection", (socket) => {
