@@ -36,17 +36,19 @@ function Filters() {
     // Reset Salary too
     setMinSalary(30000);
     setMaxSalary(3000000);
-    setIsSalaryFiltered(true);
+    setIsSalaryFiltered(false);
   };
 
   const handleMinSalaryChange = (value: number[]) => {
     setMinSalary(value[0]);
     if (value[0] > maxSalary) setMaxSalary(value[0]);
+    setIsSalaryFiltered(true);
   };
 
   const handleMaxSalaryChange = (value: number[]) => {
     setMaxSalary(value[0]);
     if (value[0] < minSalary) setMinSalary(value[0]);
+    setIsSalaryFiltered(true);
   };
 
   return (

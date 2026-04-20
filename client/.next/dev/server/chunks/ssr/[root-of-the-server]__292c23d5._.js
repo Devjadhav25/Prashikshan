@@ -346,8 +346,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-hot-toast/dist/index.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$socket$2e$io$2d$client$2f$build$2f$esm$2d$debug$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/socket.io-client/build/esm-debug/index.js [app-ssr] (ecmascript) <locals>");
-;
-;
+"use client";
 ;
 ;
 ;
@@ -364,8 +363,9 @@ const socket = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$
 const JobsContext = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createContext"])();
 const JobsContextProvider = ({ children })=>{
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
-    const { userProfile } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$globalContext$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useGlobalContext"])();
-    const { auth0User } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$globalContext$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useGlobalContext"])();
+    const { userProfile, auth0User } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$globalContext$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useGlobalContext"])();
+    // ✨ ARCHITECTURE FIX: 'allJobs' holds the raw database data. 'jobs' holds the filtered data for the UI.
+    const [allJobs, setAllJobs] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     const [jobs, setJobs] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [userJobs, setUserJobs] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
@@ -374,7 +374,7 @@ const JobsContextProvider = ({ children })=>{
         location: "",
         title: ""
     });
-    //filters
+    // Filters
     const [filters, setFilters] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
         fullTime: false,
         partTime: false,
@@ -383,17 +383,18 @@ const JobsContextProvider = ({ children })=>{
         fullStack: false,
         backend: false,
         devOps: false,
-        uiux: false
+        uiUx: false
     });
     const [minSalary, setMinSalary] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
-    const [maxSalary, setMaxSalary] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(1000000);
+    const [maxSalary, setMaxSalary] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(3000000);
+    // ✨ FIX: This tracks if the user has actually touched the salary slider
     const [isSalaryFiltered, setIsSalaryFiltered] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const getJobs = async ()=>{
         setLoading(true);
         try {
             const res = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get("/api/v1/jobs");
             console.log("Current User:", JSON.stringify(auth0User, null, 2));
-            setJobs(res.data);
+            setAllJobs(res.data); // Save raw data to allJobs
         } catch (error) {
             console.error("Error fetching jobs", error);
         } finally{
@@ -405,12 +406,12 @@ const JobsContextProvider = ({ children })=>{
             const res = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].post("/api/v1/jobs", jobData);
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].success("Job created successfully");
             const newJob = res.data.Newjob;
-            setJobs((prevJobs)=>[
+            setAllJobs((prevJobs)=>[
                     newJob,
                     ...prevJobs
                 ]);
-            //update userjobs
-            if (userProfile._id) {
+            // update userjobs
+            if (userProfile?._id) {
                 setUserJobs((prevUserJobs)=>[
                         newJob,
                         ...prevUserJobs
@@ -428,7 +429,6 @@ const JobsContextProvider = ({ children })=>{
         try {
             const res = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get("/api/v1/jobs/user/" + userId);
             setUserJobs(res.data);
-            setLoading(false);
         } catch (error) {
             console.error("Error fetching user jobs", error);
         } finally{
@@ -438,27 +438,25 @@ const JobsContextProvider = ({ children })=>{
     const searchJobs = async (tags, location, title)=>{
         setLoading(true);
         try {
-            // but query string
+            // build query string
             const querry = new URLSearchParams();
             if (tags) querry.append("tags", tags);
             if (location) querry.append("location", location);
             if (title) querry.append("title", title);
             // send request
             const res = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get(`/api/v1/jobs/search?${querry.toString()}`);
-            setJobs(res.data);
-            setLoading(false);
+            setAllJobs(res.data); // Save search results to raw data
         } catch (error) {
             console.error("Error searching jobs", error);
         } finally{
             setLoading(false);
         }
     };
-    //get job by id
+    // get job by id
     const getJobById = async (jobId)=>{
         setLoading(true);
         try {
             const res = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].get(`/api/v1/jobs/${jobId}`);
-            setLoading(false);
             return res.data;
         } catch (error) {
             console.error("Error fetching job by id", error);
@@ -466,22 +464,21 @@ const JobsContextProvider = ({ children })=>{
             setLoading(false);
         }
     };
-    //like a job
+    // like a job
     const likeJob = async (jobId)=>{
         console.log("Job liked", jobId);
         try {
             const res = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].put(`/api/v1/jobs/like/${jobId}`);
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].success(res.data.message || "Updated likes");
             getJobs();
-            console.log("Like response:", res.data);
-        //update jobs state
         } catch (error) {
             console.error("Error liking job", error);
         }
     };
-    //apply to a job
+    // apply to a job
     const applyToJob = async (jobId)=>{
-        const job = jobs.find((j)=>j._id === jobId);
+        // Find job from the raw list
+        const job = allJobs.find((j)=>j._id === jobId);
         if (!job) return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].error("Job not found");
         // Handle JSearch/External links
         if (job.source && job.source !== 'Manual') {
@@ -490,18 +487,18 @@ const JobsContextProvider = ({ children })=>{
         }
         // Handle Manual links
         try {
-            const res = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].put(`/api/v1/jobs/apply/${jobId}`);
+            await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].put(`/api/v1/jobs/apply/${jobId}`);
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].success("Applied to job successfully");
             getJobs();
         } catch (error) {
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].error(error.response?.data?.message || "Error applying to job");
         }
     };
-    //delete a job
+    // delete a job
     const deleteJob = async (jobId)=>{
         try {
-            const res = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].delete(`/api/v1/jobs/${jobId}`);
-            setJobs((prevJobs)=>prevJobs.filter((job)=>job._id !== jobId));
+            await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].delete(`/api/v1/jobs/${jobId}`);
+            setAllJobs((prevJobs)=>prevJobs.filter((job)=>job._id !== jobId));
             setUserJobs((prevJobs)=>prevJobs.filter((job)=>job._id !== jobId));
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].success("Job deleted successfully");
         } catch (error) {
@@ -515,21 +512,60 @@ const JobsContextProvider = ({ children })=>{
                 [searchName]: value
             }));
     }, []);
-    // ✅ FIX: Wrap handleFilterChange in useCallback
     const handleFilterChange = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])((filterName)=>{
         setFilters((prev)=>({
                 ...prev,
                 [filterName]: !prev[filterName]
             }));
     }, []);
+    // -------------------------------------------------------------
+    // ✨ THE MASTER FILTER EFFECT ✨
+    // This runs locally instantly every time you touch a checkbox or slider
+    // -------------------------------------------------------------
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        const locallyFiltered = allJobs.filter((job)=>{
+            // 1. Job Type Logic
+            const typeActive = filters.fullTime || filters.partTime || filters.contract || filters.internship;
+            if (typeActive) {
+                const jType = String(job.jobType || "").toUpperCase();
+                const matchesType = filters.fullTime && jType.includes("FULLTIME") || filters.partTime && jType.includes("PARTTIME") || filters.contract && (jType.includes("CONTRACT") || jType.includes("CONTRACTOR")) || filters.internship && jType.includes("INTERN");
+                if (!matchesType) return false; // Hide job if it doesn't match checked boxes
+            }
+            // 2. Tags Logic
+            const tagsActive = filters.fullStack || filters.backend || filters.devOps || filters.uiUx;
+            if (tagsActive) {
+                // Handle both array-style and string-style tags
+                const jTags = Array.isArray(job.tags) ? job.tags.map((t)=>t.toLowerCase()) : String(job.tags || "").toLowerCase();
+                const matchesTag = filters.fullStack && (jTags.includes("full stack") || jTags.includes("fullstack")) || filters.backend && jTags.includes("backend") || filters.devOps && jTags.includes("devops") || filters.uiUx && (jTags.includes("ui/ux") || jTags.includes("uiux") || jTags.includes("ui ux"));
+                if (!matchesTag) return false;
+            }
+            // 3. Salary Logic (ONLY APPLIES IF SLIDER WAS TOUCHED)
+            if (isSalaryFiltered) {
+                const jSalary = Number(job.salary || job.job_min_salary || 0);
+                if (jSalary < minSalary || jSalary > maxSalary) {
+                    return false; // Hide job if it's outside the slider range
+                }
+            }
+            // If it passed all tests, show it!
+            return true;
+        });
+        // Set the exported variable to the filtered array
+        setJobs(locallyFiltered);
+    }, [
+        allJobs,
+        filters,
+        minSalary,
+        maxSalary,
+        isSalaryFiltered
+    ]);
+    // -------------------------------------------------------------
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         getJobs();
-    // searchJobs("","","test data 2");
     }, []);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         // 👂 Listen for the "newJobAvailable" event
         socket.on("newJobAvailable", (newJob)=>{
-            setJobs((prevJobs)=>[
+            setAllJobs((prevJobs)=>[
                     newJob,
                     ...prevJobs
                 ]);
@@ -541,12 +577,10 @@ const JobsContextProvider = ({ children })=>{
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         if (userProfile?._id) {
             getUserJobs(userProfile._id);
-        //getUserProfile(userProfile.auth0Id);
         }
     }, [
-        userProfile._id
+        userProfile?._id
     ]);
-    //console.log("search Jobs:", jobs);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(JobsContext.Provider, {
         value: {
             jobs,
@@ -567,12 +601,14 @@ const JobsContextProvider = ({ children })=>{
             searchQuery,
             handleSearchChange,
             setFilters,
-            setSearchQuery
+            setSearchQuery,
+            isSalaryFiltered,
+            setIsSalaryFiltered
         },
         children: children
     }, void 0, false, {
         fileName: "[project]/context/jobContext.js",
-        lineNumber: 233,
+        lineNumber: 262,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };

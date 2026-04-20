@@ -1,6 +1,5 @@
 {
-  "/directorate/dashboard/page": "app/directorate/dashboard/page.js",
-  "/learning-hub/page": "app/learning-hub/page.js",
-  "/page": "app/page.js",
-  "/profile/page": "app/profile/page.js"
+  "/findwork/page": "app/findwork/page.js",
+  "/myjobs/page": "app/myjobs/page.js",
+  "/page": "app/page.js"
 }

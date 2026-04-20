@@ -1,15 +1,12 @@
 {
   "app": {
-    "[project]/app/directorate/dashboard/page": [
+    "[project]/app/findwork/page": [
       "static/media/ce62453a442c7f35-s.p.124b2306.woff2"
     ],
-    "[project]/app/learning-hub/page": [
+    "[project]/app/myjobs/page": [
       "static/media/ce62453a442c7f35-s.p.124b2306.woff2"
     ],
     "[project]/app/page": [
-      "static/media/ce62453a442c7f35-s.p.124b2306.woff2"
-    ],
-    "[project]/app/profile/page": [
       "static/media/ce62453a442c7f35-s.p.124b2306.woff2"
     ]
   },

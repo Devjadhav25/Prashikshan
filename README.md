@@ -1,2 +1,2 @@
-# JobHelper
+# Prashikshan
 job and Internship portal

@@ -1,136 +1,41 @@
-[00:00:05.589] Server  LOG      ✓ Ready in 4.4s
-[00:00:08.773] Server  LOG      ○ Compiling / ...
-[00:00:16.525] Server  LOG     Auth0 User: undefined
-[00:00:18.185] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:18.728] Browser LOG     Auth0 User: undefined
-[00:00:18.728] Browser LOG     Auth0 User: undefined
-[00:00:18.885] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:19.635] Browser LOG     Auth0 User: Devesh Jadhav
-[00:00:19.635] Browser LOG     Auth0 User: Devesh Jadhav
-[00:00:19.636] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
-[00:00:19.636] Browser LOG     Auth0 User: Devesh Jadhav
-[00:00:19.636] Browser LOG     Auth0 User: Devesh Jadhav
-[00:00:19.636] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
-[00:00:19.636] Browser LOG     Auth0 User: Devesh Jadhav
-[00:00:19.636] Browser LOG     Auth0 User: Devesh Jadhav
-[00:00:20.002] Browser LOG     Current User: null
-[00:00:25.184] Server  LOG      ○ Compiling /directorate/dashboard ...
-[00:00:32.340] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
-[00:00:32.340] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
-[00:00:32.340] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
-[00:00:32.340] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
-[00:01:16.915] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/directorate/dashboard/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:01:16.929] Server  LOG      ✓ Compiled in 1331ms
-[00:01:16.940] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/directorate/dashboard/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:01:18.163] Server  LOG     Auth0 User: undefined
-[00:01:19.109] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:19.369] Browser LOG     Auth0 User: undefined
-[00:01:19.369] Browser LOG     Auth0 User: undefined
-[00:01:19.369] Browser LOG     Auth0 User: undefined
-[00:01:19.369] Browser LOG     Auth0 User: undefined
-[00:01:19.369] Browser LOG     Auth0 User: undefined
-[00:01:19.369] Browser LOG     Auth0 User: undefined
-[00:01:19.369] Browser LOG     Auth0 User: undefined
-[00:01:19.369] Browser LOG     Auth0 User: undefined
-[00:01:19.369] Browser LOG     Auth0 User: undefined
-[00:01:19.369] Browser LOG     Auth0 User: undefined
-[00:01:19.369] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:01:19.831] Browser LOG     Auth0 User: Devesh Jadhav
-[00:01:19.831] Browser LOG     Auth0 User: Devesh Jadhav
-[00:01:19.831] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
-[00:01:19.831] Browser LOG     Auth0 User: Devesh Jadhav
-[00:01:19.831] Browser LOG     Auth0 User: Devesh Jadhav
-[00:01:19.831] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
-[00:01:19.831] Browser LOG     Auth0 User: Devesh Jadhav
-[00:01:19.831] Browser LOG     Auth0 User: Devesh Jadhav
-[00:01:20.187] Browser LOG     Current User: null
-[00:04:51.738] Server  LOG      ✓ Compiled in 1735ms
-[00:04:56.271] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
-[00:04:56.271] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
-[00:04:56.271] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
-[00:04:56.271] Browser WARN    The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
-[00:06:34.837] Server  LOG     Auth0 User: undefined
-[00:07:45.910] Server  LOG      ✓ Compiled in 714ms
-[00:10:35.346] Server  LOG      ○ Compiling /learning-hub ...
-[00:11:36.632] Server  LOG      ✓ Compiled in 354ms
-[00:11:37.801] Browser WARN    Image with src "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:37.801] Browser WARN    Image with src "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:37.801] Browser WARN    Image with src "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:37.801] Browser WARN    Image with src "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:37.801] Browser WARN    Image with src "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:37.994] Browser WARN    Image with src "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:37.995] Browser WARN    Image with src "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:37.995] Browser WARN    Image with src "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:37.995] Browser WARN    Image with src "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:37.995] Browser WARN    Image with src "https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:37.995] Browser WARN    Image with src "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:37.995] Browser WARN    Image with src "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:37.995] Browser WARN    Image with src "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:37.995] Browser WARN    Image with src "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:38.588] Server  ERROR    ⨯ "upstream image response failed for" "https://images.unsplash.com/photo-1607252656733-fd7458052280?q=80&w=600&auto=format&fit=crop" 404
-[00:11:38.606] Server  ERROR    ⨯ "upstream image response failed for" "https://images.unsplash.com/photo-1526040652367-6000728c6ce5?q=80&w=600&auto=format&fit=crop" 404
-[00:11:38.665] Browser WARN    Image with src "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:38.665] Browser WARN    Image with src "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:11:38.665] Browser WARN    Image with src "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:14:18.169] Server  LOG      ✓ Compiled in 850ms
-[00:16:50.155] Server  LOG      ✓ Compiled in 369ms
-[00:17:02.527] Server  LOG     Auth0 User: undefined
-[00:17:03.069] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:17:03.349] Browser LOG     Auth0 User: undefined
-[00:17:03.349] Browser LOG     Auth0 User: undefined
-[00:17:03.587] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:17:04.083] Browser LOG     Auth0 User: Devesh Jadhav
-[00:17:04.083] Browser LOG     Auth0 User: Devesh Jadhav
-[00:17:04.083] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
-[00:17:04.083] Browser LOG     Auth0 User: Devesh Jadhav
-[00:17:04.083] Browser LOG     Auth0 User: Devesh Jadhav
-[00:17:04.083] Browser LOG     Response: {"__v":1,"_id":"693d65feea59ee4aec28370b","appliedJobs":[],"auth0Id":"google-oauth2|117148929134758131984","bio":"jai shree krishna","completedCourses":["6999d916539bb79c436a896c"],"createdAt":"2025-12-13T13:11:26.281Z","earnedCredits":4,"email":"sanketjadhav2504@gmail.com","interests":["Java Developer ","Full Stack Developer","ai","ai dev"],"location":"Bhusawal","name":"Devesh Jadhav","profession":"Admin","profilePicture":"https://res.cloudinary.com/dvrkw5vzc/image/upload/v1771745287/user_profiles/pkgkeovpprhpvftabjbl.png","role":"jobseeker","savedJobs":[],"skills":[{"_id":"696140c3ed31cfa7365b01c9","name":"React","value":80},{"_id":"696140c3ed31cfa7365b01ca","name":"Java","value":100},{"_id":"69614c0245da31cb4c231157","name":"python","value":80},{"_id":"6963d657143fa4f2c5951434","name":"skill","value":80},{"_id":"699a4f6f98663a36bd81c46b","name":"OOP","value":50}],"socialLinks":{"github":"","instagram":"https://www.instagram.com/","linkedin":"https://github.com/Devjadhav2510/JobHelper","twitter":""},"updatedAt":"2026-02-22T07:28:08.082Z"}
-[00:17:04.083] Browser LOG     Auth0 User: Devesh Jadhav
-[00:17:04.083] Browser LOG     Auth0 User: Devesh Jadhav
-[00:17:04.537] Browser LOG     Current User: null
-[00:18:26.514] Server  LOG      ✓ Compiled in 542ms
-[00:18:27.587] Browser WARN    Image with src "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:27.587] Browser WARN    Image with src "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:27.587] Browser WARN    Image with src "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:27.587] Browser WARN    Image with src "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:27.587] Browser WARN    Image with src "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:27.587] Browser WARN    Image with src "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:27.587] Browser WARN    Image with src "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:27.587] Browser WARN    Image with src "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:27.587] Browser WARN    Image with src "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:27.587] Browser WARN    Image with src "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:27.587] Browser WARN    Image with src "https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:27.587] Browser WARN    Image with src "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:27.587] Browser WARN    Image with src "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:27.587] Browser WARN    Image with src "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:28.232] Server  ERROR    ⨯ "upstream image response failed for" "https://images.unsplash.com/photo-1607252656733-fd7458052280?q=80&w=600&auto=format&fit=crop" 404
-[00:18:28.237] Server  ERROR    ⨯ "upstream image response failed for" "https://images.unsplash.com/photo-1526040652367-6000728c6ce5?q=80&w=600&auto=format&fit=crop" 404
-[00:18:28.374] Browser WARN    Image with src "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:28.374] Browser WARN    Image with src "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:18:28.374] Browser WARN    Image with src "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=600&auto=format&fit=crop" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:22:50.672] Server  LOG      ✓ Compiled in 884ms
-[00:22:58.890] Server  LOG      ○ Compiling /profile ...
+[00:00:04.878] Server  LOG      ✓ Ready in 3.3s
+[00:00:17.846] Server  LOG      ○ Compiling / ...
+[00:00:40.945] Server  LOG     Auth0 User: undefined
+[00:00:46.856] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:47.259] Browser LOG     Auth0 User: undefined
+[00:00:47.259] Browser LOG     Auth0 User: undefined
+[00:00:47.259] Browser LOG     Auth0 User: undefined
+[00:00:47.259] Browser LOG     Auth0 User: undefined
+[00:00:47.259] Browser LOG     Auth0 User: undefined
+[00:00:47.259] Browser LOG     Auth0 User: undefined
+[00:00:47.259] Browser LOG     Auth0 User: undefined
+[00:00:47.259] Browser LOG     Auth0 User: undefined
+[00:00:47.259] Browser LOG     Auth0 User: undefined
+[00:00:47.259] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser LOG     Auth0 User: undefined
+[00:00:47.260] Browser WARN    Image with src "/appLogo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:47.693] Browser LOG     Auth0 User: undefined
+[00:00:47.694] Browser LOG     Auth0 User: undefined
+[00:00:48.929] Browser LOG     Current User: null
+[00:00:53.103] Server  LOG      ○ Compiling /myjobs ...
